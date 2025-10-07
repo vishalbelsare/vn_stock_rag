@@ -5,7 +5,7 @@ from crewai import Agent, LLM
 
 # Import các công cụ
 from tools.search_tools import search_tool, scrape_tool
-from tools.financial_tools import FundDataTool, TechDataTool
+from tools.financial_tools import ComprehensiveFinancialTool, TechDataTool
 from tools.file_tools import FileReadTool
 from tools.ocr_tool import MistralOCRTool
 
@@ -22,7 +22,7 @@ retry_config = {"num_retries": 3, "retry_on_failure": True}
 
 # Khởi tạo LLM
 GEMINI_FLASH_MODEL = 'gemini/gemini-2.5-flash'
-GEMINI_PRO_MODEL = 'gemini/gemini-2.5-flash'
+GEMINI_PRO_MODEL = 'gemini/gemini-2.5-pro'
 
 llm_flash = LLM(
     model=GEMINI_FLASH_MODEL, api_key=os.environ.get("GOOGLE_API_KEY"),
@@ -34,53 +34,44 @@ llm_pro = LLM(
 )
 
 # Khởi tạo các công cụ
-fund_tool = FundDataTool()
+comprehensive_financial_tool = ComprehensiveFinancialTool()
 tech_tool = TechDataTool()
 file_read_tool = FileReadTool()
 ocr_tool = MistralOCRTool()
 
 class StockAnalysisAgents():
-    """
-    Class chứa tất cả các agent cho quy trình phân tích.
-    """
-    def stock_news_researcher(self):
+    """Class chứa 3 agent đã được tối ưu."""
+    def market_data_analyst(self):
+        """Agent hợp nhất: Phân tích tin tức và kỹ thuật."""
         return Agent(
-            role='Chuyên gia Phân tích Tin tức Vĩ mô và Ngành.',
-            goal='Tìm kiếm, sàng lọc và tóm tắt các tin tức vĩ mô và ngành quan trọng ảnh hưởng đến thị trường và cổ phiếu mục tiêu.',
-            backstory=(
-                'Với kinh nghiệm báo chí kinh tế, bạn có khả năng nhận diện tin tức có tác động mạnh mẽ nhất. '
-                'Khi dùng tool, hãy tuân thủ định dạng: Thought, Action, Action Input.'
-            ),
-            verbose=True, tools=[search_tool, scrape_tool], llm=llm_flash, allow_delegation=False
+            role='Nhà phân tích Dữ liệu Thị trường.',
+            goal='Cung cấp một cái nhìn tổng quan về bối cảnh thị trường xung quanh một cổ phiếu, bao gồm cả tin tức vĩ mô và xu hướng giá kỹ thuật.',
+            backstory='Bạn là một nhà phân tích nhanh nhạy, có khả năng tổng hợp cả thông tin định tính (tin tức) và định lượng (giá, khối lượng) để đưa ra bức tranh toàn cảnh về thị trường.',
+            verbose=True,
+            tools=[search_tool, scrape_tool, tech_tool],
+            llm=llm_flash,
+            allow_delegation=False
         )
 
     def financial_analyst(self):
-        """Agent đã được hợp nhất: Phân tích cơ bản, đối thủ, và báo cáo tài chính."""
+        """Agent phân tích tài chính sâu, sử dụng siêu tool và OCR."""
         return Agent(
-            role='Chuyên gia Phân tích Tài chính Doanh nghiệp Toàn diện.',
-            goal='Đánh giá sức khỏe tài chính của công ty, so sánh với đối thủ, và phân tích sâu báo cáo tài chính (PDF).',
-            backstory=(
-                'Bạn là một nhà phân tích tài chính sắc sảo, có khả năng phân tích cả số liệu nội tại và bối cảnh cạnh tranh của ngành. '
-                'Khi dùng tool, hãy tuân thủ định dạng: Thought, Action, Action Input.'
-            ),
-            verbose=True, tools=[search_tool, fund_tool, file_read_tool, ocr_tool], llm=llm_flash, allow_delegation=False
-        )
-
-    def technical_analyst(self):
-        return Agent(
-            role='Nhà phân tích Kỹ thuật.',
-            goal='Xác định xu hướng giá, các vùng hỗ trợ/kháng cự và tín hiệu giao dịch dựa trên biểu đồ và chỉ báo.',
-            backstory=(
-                'Bạn là một trader kỷ luật, quyết định dựa trên dữ liệu giá và khối lượng, không bị ảnh hưởng bởi cảm tính. '
-                'Khi dùng tool, hãy tuân thủ định dạng: Thought, Action, Action Input.'
-            ),
-            verbose=True, tools=[tech_tool], llm=llm_flash, allow_delegation=False
+            role='Chuyên gia Phân tích Tài chính Doanh nghiệp.',
+            goal='Thực hiện phân tích sâu về tài chính công ty, dựa trên cả dữ liệu API (qua "siêu tool") và tài liệu PDF.',
+            backstory='Bạn là chuyên gia về tài chính doanh nghiệp, có khả năng "đọc vị" sức khỏe tài chính của một công ty từ nhiều nguồn dữ liệu khác nhau.',
+            verbose=True,
+            tools=[comprehensive_financial_tool, ocr_tool, file_read_tool],
+            llm=llm_flash,
+            allow_delegation=False
         )
 
     def investment_strategist(self):
+        """Agent tổng hợp cuối cùng."""
         return Agent(
             role='Chuyên gia Chiến lược Đầu tư.',
-            goal='Tổng hợp tất cả các phân tích để đưa ra khuyến nghị đầu tư cuối cùng (MUA/BÁN/GIỮ) kèm theo luận điểm rõ ràng.',
-            backstory='Bạn là giám đốc đầu tư, có trách nhiệm đưa ra quyết định cuối cùng dựa trên tất cả thông tin có sẵn.',
-            verbose=True, llm=llm_pro, allow_delegation=True
+            goal='Tổng hợp tất cả các phân tích (thị trường, tài chính) để đưa ra khuyến nghị đầu tư cuối cùng.',
+            backstory='Bạn là giám đốc đầu tư, người đưa ra quyết định cuối cùng dựa trên tất cả các báo cáo.',
+            verbose=True,
+            llm=llm_pro,
+            allow_delegation=True
         )
