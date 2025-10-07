@@ -59,7 +59,8 @@ pip install -r requirements.txt
 ```
 
 **d. Thiết lập API Keys:**
-Tạo một file có tên là `.env` trong thư mục gốc của dự án và điền các API key của bạn vào:```env
+Tạo một file có tên là `.env` trong thư mục gốc của dự án và điền các API key của bạn vào:
+```bash
 MISTRAL_API_KEY="your_mistral_api_key"
 SERPER_API_KEY="your_serper_api_key"
 GOOGLE_API_KEY="your_google_gemini_api_key"
