@@ -1,8 +1,16 @@
+# ---- Core Frameworks ----
 crewai
 crewai-tools
 python-dotenv
+langchain-google-genai
 mistralai
 vnstock
 pandas
 numpy
-langchain-google-genai 
+streamlit
+streamlit-chat
+beautifulsoup4
+google
+requests
+tenacity
+certifi
