@@ -89,6 +89,40 @@ Một tab mới sẽ tự động mở ra trên trình duyệt của bạn. Bây
     -   `Financial Analyst` phân tích file PDF và gọi "siêu tool" để lấy dữ liệu tài chính & cạnh tranh.
 5.  **Tổng hợp & Báo cáo:** `Investment Strategist` nhận tất cả các kết quả, tổng hợp, chấm điểm và viết ra báo cáo đầu tư cuối cùng, sau đó hiển thị lên giao diện.
 
+## 🐳 Hướng dẫn Chạy bằng Docker (Khuyến khích)
+
+Sử dụng Docker là cách dễ dàng và đáng tin cậy nhất để chạy dự án này mà không cần lo lắng về môi trường.
+
+### 1. Yêu cầu tiên quyết
+
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) đã được cài đặt và đang chạy trên máy của bạn.
+
+### 2. Cài đặt và Chạy
+
+**a. Clone repository và thiết lập file `.env`:**
+Thực hiện các bước 2a và 2d trong phần hướng dẫn cài đặt thông thường (không cần tạo môi trường ảo hay `pip install`).
+
+**b. Build và Run bằng Docker Compose:**
+Mở Terminal trong thư mục gốc của dự án và chạy lệnh duy nhất:
+```bash
+docker-compose up --build
+```
+
+- Lần đầu tiên chạy, Docker sẽ build image, quá trình này có thể mất vài phút.
+- Những lần chạy sau sẽ nhanh hơn rất nhiều.
+- Bạn sẽ thấy log của ứng dụng Streamlit trong terminal.
+
+**c. Truy cập ứng dụng:**
+Mở trình duyệt web và truy cập địa chỉ:
+[http://localhost:8501](http://localhost:8501)
+
+### 3. Dừng ứng dụng
+
+Trong terminal nơi bạn đã chạy `docker-compose up`, nhấn `Ctrl + C`. Để dọn dẹp hoàn toàn, chạy lệnh:
+```bash
+docker-compose down
+```
+
 ## 🔮 Hướng phát triển trong tương lai
 
 - [ ] Tích hợp biểu đồ tương tác vào báo cáo.
