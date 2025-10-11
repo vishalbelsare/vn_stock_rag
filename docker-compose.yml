@@ -1,20 +1,12 @@
 # docker-compose.yml
 
-version: '3.8'
-
 services:
   stock-analyzer-app:
-    # Build image từ Dockerfile trong thư mục hiện tại
     build: .
-    # Đặt tên cho container để dễ quản lý
     container_name: stock_analyzer_ui
-    # Ánh xạ (map) cổng 8501 từ máy chủ của bạn tới cổng 8501 bên trong container
     ports:
       - "8501:8501"
-    # Mount volume để kết quả phân tích (trong thư mục reports) được lưu lại trên máy thật của bạn
-    # Ngay cả khi container bị xóa, các báo cáo vẫn còn.
     volumes:
       - ./reports:/app/reports
-    # Truyền các biến môi trường từ file .env trên máy thật của bạn vào trong container
     env_file:
       - .env
