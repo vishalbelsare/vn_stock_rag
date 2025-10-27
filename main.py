@@ -11,6 +11,7 @@ from crewai import Crew, Process
 from agents import StockAnalysisAgents
 from tasks import StockAnalysisTasks
 from datetime import datetime
+import sys
 
 def get_user_intent_with_mistral(user_query: str) -> dict:
     """
@@ -55,9 +56,6 @@ def get_user_intent_with_mistral(user_query: str) -> dict:
         return {"task": "unknown", "ticker": None, "file_path": None}
 
 class FinancialCrew:
-    """
-    Class quản lý việc khởi tạo và chạy các quy trình phân tích của Crew đã được tối ưu.
-    """
     def __init__(self, symbol=None, file_path=None):
         self.symbol = symbol
         self.file_path = file_path
@@ -65,61 +63,68 @@ class FinancialCrew:
         self.tasks = StockAnalysisTasks()
 
     def run_stock_analysis(self):
-        """Chạy quy trình phân tích cổ phiếu cơ bản (không có file PDF)."""
-        market_analyst = self.agents.market_data_analyst()
-        financial_analyst_agent = self.agents.financial_analyst()
-        investment_strategist = self.agents.investment_strategist()
+        """Chạy quy trình phân tích cổ phiếu cơ bản (4 agents)."""
+        news_analyst = self.agents.market_news_analyst()
+        tech_analyst = self.agents.technical_analyst()
+        fin_comp_analyst = self.agents.financial_competitor_analyst()
+        editor = self.agents.report_editor() # Dùng editor để tổng hợp
 
-        market_task = self.tasks.market_analysis(market_analyst, self.symbol)
-        financial_task = self.tasks.financial_analysis_with_api(financial_analyst_agent, self.symbol)
+        market_task = self.tasks.market_news_analysis(news_analyst)
+        tech_task = self.tasks.technical_analysis(tech_analyst, self.symbol)
+        fin_comp_task = self.tasks.financial_competitor_analysis(fin_comp_analyst, self.symbol)
         
-        # Task tổng hợp cho quy trình này sẽ không có context từ PDF
-        # Chúng ta có thể tạo một task `investment_decision` riêng hoặc dùng chung `comprehensive_analysis_decision`
-        # và AI sẽ tự biết là thiếu context PDF.
-        decision_task = self.tasks.comprehensive_analysis_decision(
-            investment_strategist, self.symbol,
-            [market_task, financial_task] 
+        # Yêu cầu editor tổng hợp 3 báo cáo này
+        compose_task = self.tasks.compose_newsletter(
+            editor,
+            context=[market_task, tech_task, fin_comp_task],
+            symbol=self.symbol
         )
         
         crew = Crew(
-            agents=[market_analyst, financial_analyst_agent, investment_strategist],
-            tasks=[market_task, financial_task, decision_task],
+            agents=[news_analyst, tech_analyst, fin_comp_analyst, editor],
+            tasks=[market_task, tech_task, fin_comp_task, compose_task],
             process=Process.sequential, verbose=True, cache=True
         )
         return crew.kickoff()
 
     def run_pdf_analysis(self):
-        """Chạy quy trình chỉ phân tích file PDF."""
-        financial_analyst_agent = self.agents.financial_analyst()
-        pdf_task = self.tasks.analyze_financial_report_pdf(
-            agent=financial_analyst_agent, file_path=self.file_path, symbol=self.symbol
+        """Chạy quy trình chỉ phân tích file PDF (1 agent)."""
+        pdf_analyst = self.agents.financial_report_analyst()
+        pdf_task = self.tasks.analyze_pdf_report(
+            agent=pdf_analyst, file_path=self.file_path
         )
         crew = Crew(
-            agents=[financial_analyst_agent], 
+            agents=[pdf_analyst], 
             tasks=[pdf_task], 
             verbose=True, cache=True
         )
         return crew.kickoff()
 
-    def run_comprehensive_analysis(self):
-        """Chạy quy trình phân tích toàn diện, kết hợp mọi nguồn thông tin."""
-        market_analyst = self.agents.market_data_analyst()
-        financial_analyst_agent = self.agents.financial_analyst()
-        investment_strategist = self.agents.investment_strategist()
+    def run_newsletter_creation(self):
+        """Chạy quy trình 5 agent để tạo bản tin chứng khoán hoàn chỉnh."""
+        market_analyst = self.agents.market_news_analyst()
+        tech_analyst = self.agents.technical_analyst()
+        fin_comp_analyst = self.agents.financial_competitor_analyst()
+        pdf_analyst = self.agents.financial_report_analyst()
+        editor = self.agents.report_editor()
 
-        market_task = self.tasks.market_analysis(market_analyst, self.symbol)
-        pdf_task = self.tasks.analyze_financial_report_pdf(financial_analyst_agent, self.file_path, self.symbol)
-        financial_api_task = self.tasks.financial_analysis_with_api(financial_analyst_agent, self.symbol)
-        
-        comprehensive_task = self.tasks.comprehensive_analysis_decision(
-            investment_strategist, self.symbol,
-            [market_task, pdf_task, financial_api_task]
+        market_task = self.tasks.market_news_analysis(market_analyst)
+        tech_task = self.tasks.technical_analysis(tech_analyst, self.symbol)
+        fin_comp_task = self.tasks.financial_competitor_analysis(fin_comp_analyst, self.symbol)
+        pdf_task = self.tasks.analyze_pdf_report(pdf_analyst, self.file_path)
+
+        compose_task = self.tasks.compose_newsletter(
+            editor,
+            context=[market_task, tech_task, fin_comp_task, pdf_task],
+            symbol=self.symbol
         )
         
         crew = Crew(
-            agents=[market_analyst, financial_analyst_agent, investment_strategist],
-            tasks=[market_task, pdf_task, financial_api_task, comprehensive_task],
-            process=Process.sequential, verbose=True, cache=True
+            agents=[market_analyst, tech_analyst, fin_comp_analyst, pdf_analyst, editor],
+            tasks=[market_task, tech_task, fin_comp_task, pdf_task, compose_task],
+            process=Process.sequential,
+            verbose=True,
+            cache=True
         )
         return crew.kickoff()
 
@@ -136,27 +141,34 @@ def run_analysis_workflow(user_input):
     ticker = intent.get('ticker')
     file_path = intent.get('file_path')
 
-    if task_type == 'comprehensive_analysis' and ticker and file_path:
-        print(f"Bắt đầu quy trình phân tích TOÀN DIỆN cho {ticker}...")
+    print("\n" + "#"*50)
+    print("DEBUG TRẠM 2: BÊN TRONG MAIN.PY (full_analysis_process)")
+    print(f"Loại dữ liệu của user_query: {type(user_input)}")
+    print(f"Nội dung user_query nhận được từ api.py:\n---\n{user_input}\n---\n")
+    print("#"*50 + "\n")
+
+
+    if (task_type == 'create_newsletter' or task_type == 'comprehensive_analysis') and ticker and file_path:
+        print(f"Bắt đầu quy trình tạo Bản tin Toàn diện cho {ticker}...")
         crew_runner = FinancialCrew(symbol=ticker, file_path=file_path)
-        result = crew_runner.run_comprehensive_analysis()
-        report_filename = f"reports/{ticker.lower()}_comprehensive_analysis_{timestamp}.md"
+        result = crew_runner.run_newsletter_creation()
+        report_filename = f"reports/BanTin_{ticker}_{timestamp}.md"
 
     elif task_type == 'analyze_stock' and ticker:
         print(f"Bắt đầu quy trình phân tích cổ phiếu: {ticker}...")
         crew_runner = FinancialCrew(symbol=ticker)
         result = crew_runner.run_stock_analysis()
-        report_filename = f"reports/{ticker.lower()}_stock_analysis_{timestamp}.md"
+        report_filename = f"reports/PhanTich_{ticker}_{timestamp}.md"
 
     elif task_type == 'analyze_pdf' and file_path:
         print(f"Bắt đầu quy trình phân tích file PDF: {file_path}...")
         crew_runner = FinancialCrew(file_path=file_path, symbol=ticker)
         result = crew_runner.run_pdf_analysis()
         base_name = os.path.basename(file_path).split('.')[0]
-        report_filename = f"reports/{base_name}_pdf_analysis_{timestamp}.md"
+        report_filename = f"reports/TomTat_{base_name}_{timestamp}.md"
         
     else:
-        return "Không thể xác định yêu cầu của bạn. Vui lòng thử lại với yêu cầu rõ ràng hơn (ví dụ: 'phân tích FPT' hoặc đính kèm file).", None
+        return "Không thể xác định yêu cầu của bạn. Vui lòng cung cấp yêu cầu rõ ràng hơn (ví dụ: 'phân tích FPT' hoặc 'tạo bản tin cho HPG' và đính kèm file).", None
 
     if result and hasattr(result, 'raw') and result.raw:
         os.makedirs('reports', exist_ok=True)
@@ -173,14 +185,60 @@ def run_analysis_workflow(user_input):
 
 # Khối này chỉ được thực thi khi bạn chạy `python main.py` trực tiếp
 if __name__ == "__main__":
-    print("## Chào mừng bạn đến với Crew Phân tích Cổ phiếu ##")
+    print("## Chào mừng bạn đến với Trợ lý Phân tích AI ##")
     user_input_cli = input("Nhập yêu cầu của bạn: ")
     
     final_report_cli, filename_cli = run_analysis_workflow(user_input_cli)
     
     if filename_cli:
-        print("\n--- BÁO CÁO CUỐI CÙNG ---")
+        print("\n--- BÁO CÁO HOÀN CHỈNH ---")
         print(final_report_cli)
     else:
         print("\n--- LỖI ---")
-        print(final_report_cli) # In ra thông báo lỗi
+        print(final_report_cli)
+
+# if __name__ == "__main__":
+#     # Kiểm tra xem có nhận được đối số từ dòng lệnh không
+#     if len(sys.argv) < 2:
+#         print("Lỗi: Vui lòng cung cấp chuỗi yêu cầu của người dùng làm đối số.")
+#         sys.exit(1)
+        
+#     # Lấy chuỗi yêu cầu từ đối số dòng lệnh
+#     user_query = sys.argv[1]
+    
+#     # --- LOGIC ĐIỀU PHỐI ĐƯỢC CHUYỂN VỀ ĐÂY ---
+#     try:
+#         print("Bắt đầu phân tích yêu cầu người dùng...")
+#         intent = get_user_intent_with_mistral(user_query)
+        
+#         ticker = intent.get('ticker')
+#         file_path = intent.get('file_path')
+
+#         result = None
+#         crew_runner = FinancialCrew(symbol=ticker, file_path=file_path)
+
+#         if ticker and file_path:
+#             print(f"\nBắt đầu quy trình tạo Bản tin Toàn diện cho {ticker}...\n")
+#             result = crew_runner.run_newsletter_creation()
+#         elif ticker and not file_path:
+#             print(f"\nBắt đầu quy trình phân tích cổ phiếu {ticker}...\n")
+#             result = crew_runner.run_stock_analysis()
+#         elif file_path and not ticker:
+#             print(f"\nBắt đầu quy trình phân tích file PDF...\n")
+#             result = crew_runner.run_pdf_analysis()
+#         else:
+#             raise ValueError("Không thể xác định yêu cầu từ chuỗi đầu vào.")
+
+#         final_report = result.raw if result and hasattr(result, 'raw') else "Không có báo cáo được tạo ra."
+        
+#         # In một dấu hiệu đặc biệt để api.py biết rằng đây là kết quả cuối cùng
+#         print("\n---FINAL_REPORT_START---")
+#         print(final_report)
+#         print("---FINAL_REPORT_END---")
+
+#     except Exception as e:
+#         print(f"\n---ERROR_START---")
+#         print(f"Đã xảy ra lỗi trong quá trình xử lý: {e}")
+#         import traceback
+#         traceback.print_exc()
+#         print(f"---ERROR_END---")

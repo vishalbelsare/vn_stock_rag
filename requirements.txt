@@ -1,4 +1,3 @@
-# ---- Core Frameworks ----
 crewai
 crewai-tools
 python-dotenv
@@ -14,3 +13,7 @@ google
 requests
 tenacity
 certifi
+Flask
+Flask-SocketIO
+Flask-Cors
+eventlet

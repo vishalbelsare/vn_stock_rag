@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trợ lý Phân tích AI</title>
+    <link rel="stylesheet" href="/frontend/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Container chính cho toàn bộ nội dung chat -->
+    <div id="chat-container">
+        <!-- Các tin nhắn sẽ được thêm vào đây bởi JavaScript -->
+    </div>
+
+    <!-- Thanh nhập liệu cố định -->
+    <div id="input-area">
+        <div id="file-info"></div>
+        <div class="input-wrapper">
+            <input type="file" id="file-input" accept=".pdf" style="display: none;">
+            <button id="upload-button" title="Đính kèm tệp PDF"></button>
+            <input type="text" id="user-input" placeholder="Hỏi bất cứ điều gì..." autocomplete="off">
+            <button id="send-button" title="Gửi"></button>
+        </div>
+    </div>
+
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="/frontend/script.js"></script>
+</body>
+</html>

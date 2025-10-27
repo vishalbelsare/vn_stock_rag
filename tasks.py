@@ -4,39 +4,84 @@ from crewai import Task
 from datetime import datetime
 
 class StockAnalysisTasks():
-    """Class chứa các task đã được tối ưu."""
-    def market_analysis(self, agent, symbol):
-        """Task hợp nhất: Tin tức và Kỹ thuật."""
+    """
+    Class chứa các task chuyên biệt cho việc tạo bản tin chứng khoán,
+    tương ứng với kiến trúc 5 agent.
+    """
+
+    def market_news_analysis(self, agent):
+        current_date_str = datetime.now().strftime('%d/%m/%Y')
+        
         return Task(
-            description=f"Thực hiện phân tích dữ liệu thị trường toàn diện cho {symbol}. Bao gồm 2 phần: 1. Tìm và tóm tắt 2 tin tức vĩ mô/ngành quan trọng nhất. 2. Sử dụng 'Công cụ tra cứu dữ liệu Phân tích Kỹ thuật' để xác định xu hướng giá và các chỉ báo chính.",
-            expected_output=f"Một báo cáo markdown gồm 2 phần rõ rệt: 'Phân tích Tin tức Thị trường' và 'Phân tích Kỹ thuật' cho {symbol}.",
+            description=f"""
+                Hôm nay là ngày {current_date_str}.
+                Nhiệm vụ của bạn là phân tích tổng quan thị trường chứng khoán Việt Nam. 
+                Hãy tìm và tóm tắt 2-3 tin tức vĩ mô, chính sách, hoặc sự kiện ngành quan trọng nhất ảnh hưởng đến thị trường trong phiên giao dịch gần đây nhất.
+                QUAN TRỌNG: Nếu không tìm thấy tin tức chính xác cho ngày hôm nay, hãy tự động tìm kiếm cho ngày giao dịch gần nhất trước đó. Không được tự tạo ra kịch bản giả định.
+            """,
+            expected_output="Một đoạn văn hoàn chỉnh tóm tắt diễn biến và các tin tức vĩ mô quan trọng của phiên giao dịch gần nhất.",
+            agent=agent,
+        )
+
+    def technical_analysis(self, agent, symbol):
+        """Task cho Agent phân tích kỹ thuật."""
+        return Task(
+            description=f"Thực hiện phân tích kỹ thuật chi tiết cho chỉ số chứng khoán '{symbol}'. Sử dụng công cụ phân tích kỹ thuật để lấy dữ liệu và các chỉ báo cần thiết. Dựa vào kết quả, viết một nhận định chuyên sâu về xu hướng ngắn hạn và dài hạn, xác định các ngưỡng hỗ trợ và kháng cự quan trọng. Phân tích phải khách quan và dựa hoàn toàn vào dữ liệu kỹ thuật.",
+            expected_output=f"Một báo cáo phân tích kỹ thuật hoàn chỉnh cho chỉ số {symbol}, bao gồm các mục: Nhận định xu hướng, Phân tích chỉ báo (RSI, MACD), và các Vùng giá quan trọng. Văn phong phải giống như mục 'Phân tích kỹ thuật' trong các bản tin chuyên nghiệp.",
             agent=agent,
             async_execution=False
         )
 
-    def financial_analysis_with_api(self, agent, symbol):
-        """Task gọi 'siêu tool'."""
+    def financial_competitor_analysis(self, agent, symbol):
+        """Task cho Agent phân tích tài chính và đối thủ."""
         return Task(
-            description=f"Sử dụng 'Công cụ Phân tích Tài chính và Cạnh tranh Toàn diện' với mã cổ phiếu '{symbol}' để tạo ra một báo cáo phân tích tài chính nội tại và so sánh cạnh tranh. Đây là bước cực kỳ quan trọng để hiểu về định giá và hiệu quả hoạt động của công ty so với ngành.",
-            expected_output=f"Kết quả đầu ra chính xác từ tool, là một báo cáo Markdown chứa phân tích nội tại và bảng so sánh đối thủ của {symbol}.",
+            description=f"Sử dụng 'Công cụ Phân tích Tài chính và Cạnh tranh Toàn diện' với mã cổ phiếu '{symbol}'. Nhiệm vụ của bạn là thực thi công cụ này và trả về kết quả đầu ra của nó một cách chính xác. Không cần thêm bất kỳ phân tích hay bình luận nào khác.",
+            expected_output=f"Kết quả đầu ra chính xác và đầy đủ từ tool, là một báo cáo Markdown chứa phân tích tài chính nội tại và bảng so sánh các chỉ số của {symbol} với các đối thủ.",
             agent=agent,
             async_execution=False
         )
 
-    def analyze_financial_report_pdf(self, agent, file_path, symbol):
-        """Task phân tích file PDF."""
+    def analyze_pdf_report(self, agent, file_path):
+        """Task cho Agent phân tích file PDF."""
         return Task(
-            description=f"Phân tích chuyên sâu báo cáo tài chính của {symbol} từ file PDF tại '{file_path}'. Sử dụng tool OCR để đọc và tóm tắt các điểm chính: tăng trưởng doanh thu/lợi nhuận, biên lợi nhuận, sức khỏe tài chính và dòng tiền.",
-            expected_output="Một báo cáo markdown chuyên nghiệp tóm tắt các điểm nổi bật từ báo cáo tài chính PDF.",
+            description=f"Phân tích chuyên sâu báo cáo tài chính từ file PDF được cung cấp tại đường dẫn: '{file_path}'. Sử dụng các công cụ cần thiết (OCR và đọc file) để trích xuất nội dung. Sau đó, tóm tắt những kết quả kinh doanh, điểm nhấn tài chính và các chỉ số quan trọng nhất được đề cập trong báo cáo.",
+            expected_output="Một báo cáo markdown ngắn gọn, súc tích, tóm tắt các điểm nổi bật nhất từ file báo cáo tài chính PDF. Tập trung vào các con số về tăng trưởng doanh thu, lợi nhuận, biên lợi nhuận, và các điểm đáng chú ý về sức khỏe tài chính.",
             agent=agent,
             async_execution=False
         )
 
-    def comprehensive_analysis_decision(self, agent, symbol, context):
-        """Task tổng hợp cuối cùng cho quy trình toàn diện."""
+    def compose_newsletter(self, agent, context, symbol):
+        """Task cuối cùng, dành cho Tổng biên tập (với prompt đã được gia cố)."""
         return Task(
-            description=f"Tổng hợp thông tin từ tất cả các báo cáo trước đó (Dữ liệu thị trường, Phân tích tài chính từ PDF, Phân tích tài chính từ API) để đưa ra một quyết định đầu tư cuối cùng cho {symbol}. Phải chấm điểm từng yếu tố (Thị trường, Tài chính) và đưa ra luận điểm sắc bén, thể hiện sự liên kết giữa các nguồn thông tin.",
-            expected_output="Một báo cáo đầu tư toàn diện, có luận điểm, bảng điểm, và khuyến nghị hành động (MUA/BÁN/GIỮ).",
+            description=f"""
+                Tổng hợp tất cả các báo cáo phân tích được cung cấp trong context để tạo ra một BẢN TIN CHỨNG KHOÁN hoàn chỉnh về cổ phiếu {symbol}.
+                Nhiệm vụ của bạn là đóng vai một Tổng biên tập, tuân thủ NGHIÊM NGẶT cấu trúc được yêu cầu.
+
+                Các báo cáo đầu vào bạn có trong context:
+                1. Báo cáo Tổng quan Thị trường & Vĩ mô.
+                2. Báo cáo Phân tích Kỹ thuật cho cổ phiếu '{symbol}'.
+                3. Báo cáo Phân tích Cơ bản cho cổ phiếu '{symbol}'.
+                4. Báo cáo Tóm tắt từ file PDF của '{symbol}'.
+
+                **YÊU CẦU CẤU TRÚC CUỐI CÙNG (BẮT BUỘC TUÂN THỦ):**
+
+                - **Tiêu đề chính:** BẢN TIN CHỨNG KHOÁN - Ngày {datetime.now().strftime('%d/%m/%Y')}
+                
+                - **Phần 1: TỔNG QUAN THỊ TRƯỜNG:**
+                  Sử dụng **CHÍNH XÁC** nội dung từ Báo cáo Tổng quan Thị trường & Vĩ mô.
+                
+                - **Phần 2: PHÂN TÍCH DOANH NGHIỆP: {symbol}:**
+                  Đây là phần trọng tâm. Bạn phải kết hợp thông minh thông tin từ 3 nguồn:
+                  a. Báo cáo Phân tích Cơ bản ({symbol}).
+                  b. Báo cáo Tóm tắt từ file PDF ({symbol}).
+                  c. **Báo cáo Phân tích Kỹ thuật ({symbol}).**
+                  
+                  Hãy viết một phân tích tổng hợp về doanh nghiệp, bao gồm cả yếu tố cơ bản, kết quả kinh doanh từ PDF, và các tín hiệu kỹ thuật.
+                
+                - **Phần 3: KHUYẾN NGHỊ HÀNH ĐỘNG:**
+                  Dựa trên TẤT CẢ thông tin đã tổng hợp ở trên, hãy đưa ra một khuyến nghị rõ ràng: **MUA**, **BÁN**, hoặc **GIỮ** cho cổ phiếu {symbol}. Kèm theo một đoạn giải thích ngắn gọn (2-3 câu) cho khuyến nghị đó.
+            """,
+            expected_output=f"Một file Markdown hoàn chỉnh, được định dạng đẹp mắt và tuân thủ nghiêm ngặt cấu trúc đã yêu cầu, tập trung vào cổ phiếu {symbol}.",
             agent=agent,
             context=context
         )
