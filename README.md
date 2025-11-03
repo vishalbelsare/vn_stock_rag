@@ -1,130 +1,122 @@
-# 📈 Trợ lý Phân tích Đầu tư AI cho Thị trường Chứng khoán Việt Nam
+# 📈 Trợ lý Phân tích Chứng khoán AI Toàn diện cho Thị trường Việt Nam
 
-Dự án này là một ứng dụng web mạnh mẽ, sử dụng một đội ngũ AI Agents (được xây dựng bằng `crewAI`) để thực hiện quy trình phân tích cổ phiếu một cách tự động và đa chiều, đặc thù cho thị trường Việt Nam.
+Dự án này là một nền tảng phân tích đầu tư mạnh mẽ, sử dụng một đội ngũ AI Agents (xây dựng bằng `crewAI`) để tự động hóa hoàn toàn quy trình phân tích cổ phiếu đa chiều, đặc thù cho thị trường Việt Nam.
 
-Lấy cảm hứng từ các mô hình **RAG (Retrieval-Augmented Generation)** tiên tiến, hệ thống này không chỉ dựa vào kiến thức có sẵn mà còn chủ động "truy xuất" thông tin thời gian thực từ nhiều nguồn khác nhau để đưa ra những phân tích sâu sắc và đáng tin cậy.
+Một chatbot tương tác và một luồng dịch vụ tự động, gửi báo cáo phân tích chuyên nghiệp đến người dùng qua email hàng ngày.
+
+<!-- ![Giao diện Chatbot](https://raw.githubusercontent.com/meth04/vn_stock_rag/main/assets/demo.png) -->
 
 ## ✨ Các tính năng chính
 
-- **Hiểu ý định thông minh:** Sử dụng Mistral AI để phân tích yêu cầu của người dùng, tự động nhận diện tác vụ cần thực hiện (phân tích cổ phiếu, phân tích báo cáo tài chính, hoặc cả hai).
-- **Phân tích đa chiều (Multi-Aspect Analysis):**
-  - **Phân tích Thị trường:** Tự động tìm kiếm và tóm tắt các tin tức vĩ mô, ngành có ảnh hưởng.
-  - **Phân tích Kỹ thuật:** Lấy dữ liệu giá/khối lượng, tính toán các chỉ báo (RSI, MACD, SMA...) và xác định xu hướng.
-  - **Phân tích Tài chính & Cạnh tranh:** Đánh giá sức khỏe tài chính của công ty và tự động tạo bảng so sánh với các đối thủ cạnh tranh trong ngành.
-  - **Phân tích Báo cáo Tài chính (PDF):** Cho phép người dùng tải lên file PDF, hệ thống sẽ dùng OCR để trích xuất và tóm tắt các điểm chính.
-- **Tổng hợp và Ra quyết định:** Một AI Agent "Chiến lược gia" sẽ tổng hợp tất cả các báo cáo trên, chấm điểm từng yếu tố và đưa ra khuyến nghị cuối cùng: **MUA, BÁN, hoặc GIỮ** kèm theo luận điểm đầu tư rõ ràng.
+- **Hiểu Ngôn ngữ Tự nhiên:** Sử dụng **Google Gemini** để phân tích yêu cầu của người dùng, tự động nhận diện tác vụ cần thực hiện (phân tích cổ phiếu, tóm tắt báo cáo tài chính, hoặc phân tích toàn diện).
+- **Phân tích Đa chiều & Trực quan:**
+  - **Phân tích Vĩ mô & Ngành:** Tự động tìm kiếm, tổng hợp các tin tức vĩ mô, chính sách có ảnh hưởng đến thị trường.
+  - **Phân tích Kỹ thuật Trực quan:** Tự động tạo và nhúng **biểu đồ nến (candlestick)** 12 tháng (kèm SMA20, SMA50) vào báo cáo, cùng với phân tích chi tiết về xu hướng, chỉ báo (RSI, MACD) và các ngưỡng hỗ trợ/kháng cự.
+  - **Phân tích Cơ bản & Cạnh tranh:** Đánh giá sức khỏe tài chính (ROE), tự động tìm và tạo bảng so sánh với các đối thủ cạnh tranh trong ngành.
+  - **Phân tích Báo cáo Tài chính (PDF):** Cho phép người dùng tải lên file PDF, hệ thống sử dụng **Gemini 1.5 Pro** để OCR và tóm tắt các điểm chính, tự động lưu cache để tối ưu cho các lần phân tích sau.
+- **Tổng hợp & Đưa ra Khuyến nghị:** Một AI Agent "Tổng Biên tập" sẽ tổng hợp tất cả các báo cáo trên và đưa ra khuyến nghị cuối cùng: **MUA, BÁN, hoặc GIỮ** kèm theo luận điểm đầu tư rõ ràng.
+- **Dịch vụ Bản tin Tự động (Daily Newsletter Service):**
+  - **Lập lịch thông minh:** Một tiến trình chạy nền tự động kích hoạt vào 7 giờ sáng mỗi ngày.
+  - **Tạo báo cáo hàng loạt:** Tự động phân tích tất cả các mã cổ phiếu được người dùng đăng ký.
+  - **Xuất bản & Gửi Email:** Tự động chuyển đổi báo cáo phân tích (bao gồm cả biểu đồ) sang định dạng **PDF chuyên nghiệp** và gửi đến email của những người dùng tương ứng.
 
 ## 🛠️ Công nghệ sử dụng
 
-- **Backend Framework:** [CrewAI](https://github.com/joaomdmoura/crewAI)
-- **Mô hình Ngôn ngữ (LLMs):** Google Gemini (2.5 Flash & 2.5 Pro), Mistral AI
-- **Giao diện Người dùng (UI):** Flask
+- **Orchestration Framework:** [CrewAI](https://github.com/joaomdmoura/crewAI)
+- **Mô hình Ngôn ngữ (LLMs):** **Google Gemini 2.5** (Pro & Flash)
+- **Giao diện & Backend:** Flask & Flask-SocketIO
+- **Triển khai & Môi trường:** **Docker & Docker Compose**
 - **Nguồn dữ liệu:**
   - [vnstock](https://github.com/thinh-vu/vnstock) (Dữ liệu tài chính & kỹ thuật)
   - [Serper API](https://serper.dev/) (Tìm kiếm tin tức)
-  - [Mistral OCR](https://mistral.ai/) (Đọc file PDF)
-- **Ngôn ngữ:** Python
+- **Công cụ phụ trợ:** Matplotlib & Mplfinance (Vẽ biểu đồ), PDFKit (Xuất PDF), SQLite (Quản lý đăng ký).
+- **Ngôn ngữ:** Python 3.12+
 
-## 🚀 Hướng dẫn Cài đặt và Chạy dự án
+## 🤖 Đội ngũ AI Agents
+
+Hệ thống được vận hành bởi một đội ngũ gồm 5 AI Agents chuyên biệt, mỗi agent đảm nhận một nhiệm vụ riêng biệt:
+
+- **1. Chuyên gia Phân tích Tin tức Thị trường:**
+  - **Nhiệm vụ:** Hoạt động như một nhà báo kinh tế, liên tục tìm kiếm và tóm tắt những tin tức vĩ mô, chính sách của chính phủ, và các sự kiện ngành quan trọng nhất đang tác động đến toàn bộ thị trường.
+
+- **2. Nhà phân tích Kỹ thuật (Chartist):**
+  - **Nhiệm vụ:** Lấy dữ liệu giá và khối lượng, sau đó **vẽ biểu đồ nến (candlestick)** trực quan. Đồng thời, tính toán và diễn giải các chỉ báo kỹ thuật quan trọng như RSI, MACD, và các ngưỡng Hỗ trợ/Kháng cự.
+
+- **3. Chuyên gia Phân tích Tài chính & Cạnh tranh:**
+  - **Nhiệm vụ:** Một nhà phân tích tài chính doanh nghiệp. Nó sẽ "soi" sức khỏe của công ty mục tiêu qua các chỉ số như ROE và tự động tìm kiếm các đối thủ cạnh tranh chính để so sánh, giúp người dùng có cái nhìn toàn cảnh về vị thế của công ty trong ngành.
+
+- **4. Chuyên gia Phân tích Báo cáo Tài chính (PDF):**
+  - **Nhiệm vụ:**  Đọc hiểu file PDF. Khi người dùng tải lên một bản báo cáo tài chính, nó sẽ sử dụng công nghệ OCR của MistralOCR để "đọc" và chắt lọc những con số, thông tin cốt lõi về doanh thu, lợi nhuận, và dòng tiền.
+
+- **5. Tổng biên tập Bản tin Chứng khoán:**
+  - **Nhiệm vụ:** Agent này nhận tất cả các báo cáo riêng lẻ từ 4 chuyên gia trên và tổng hợp chúng lại thành một **Bản tin Chứng khoán duy nhất**, liền mạch và chuyên nghiệp. Đảm bảo cấu trúc báo cáo đúng chuẩn, văn phong hấp dẫn, và là người đưa ra khuyến nghị đầu tư cuối cùng (MUA, BÁN, hoặc GIỮ).
+
+
+## 🚀 Hướng dẫn Cài đặt và Chạy (Khuyến khích dùng Docker)
+
+Sử dụng Docker là cách dễ dàng và đáng tin cậy nhất để chạy dự án này mà không cần lo lắng về môi trường hay cài đặt thủ công các dependency phức tạp (như `wkhtmltopdf`).
 
 ### 1. Yêu cầu tiên quyết
 
-- Python 3.12+
-- Một hoặc nhiều tài khoản Google với API Key cho Gemini.
-- Một tài khoản Mistral AI với API Key.
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) đã được cài đặt.
+- Một hoặc nhiều tài khoản Google với API Key cho Gemini. (Lý do nên có nhiều API key vì quá trình chạy agent tốn khá nhiều request)
 - Một tài khoản Serper.dev với API Key.
+- Một tài khoản Mistral với API Key cho MistralOCR.
 
-### 2. Cài đặt
+### 2. Cài đặt và Chạy
 
-**a. Clone repository này về máy:**
+**a. Clone repository:**
 ```bash
 git clone https://github.com/meth04/vn_stock_rag.git
 cd vn_stock_rag
 ```
 
-**b. Tạo và kích hoạt môi trường ảo (khuyến khích):**
+**b. Thiết lập API Keys và Cấu hình:**
+Tạo một file có tên là `.env`.
 ```bash
 # Windows
-python -m venv venv
-venv\Scripts\activate
+copy .env.example .env
 
 # macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
+cp .env.example .env
 ```
+Cấu hình file `env.`:
 
-**c. Cài đặt các thư viện cần thiết:**
 ```bash
-pip install -r requirements.txt
-```
-
-**d. Thiết lập API Keys:**
-Tạo một file có tên là `.env` trong thư mục gốc của dự án và điền các API key của bạn vào:
-```bash
-MISTRAL_API_KEY="your_mistral_api_key"
+# API Keys
 SERPER_API_KEY="your_serper_api_key"
-GOOGLE_API_KEY_1="your_google_gemini_api_key"
-GOOGLE_API_KEY_2="your_google_gemini_api_key"
-GOOGLE_API_KEY_3="your_google_gemini_api_key"
-GOOGLE_API_KEY_4="your_google_gemini_api_key"
-GOOGLE_API_KEY_5="your_google_gemini_api_key"
-# có thể thêm nữa nếu bạn có
+GOOGLE_API_KEY_1="your_google_gemini_api_key_1"
+GOOGLE_API_KEY_2="your_google_gemini_api_key_2"
+# ...thêm bao nhiêu key tùy ý...
+GOOGLE_API_KEY_6="your_google_gemini_api_key_6"
+MISTRAL_API_KEY="your_mistral_api_key" # (Tùy chọn, nếu muốn dùng Mistral OCR)
 
-# (Tùy chọn, cần thiết cho Windows) Thêm 2 dòng sau để sửa lỗi kết nối SSL
-# Hãy đảm bảo đường dẫn đến môi trường ảo của bạn là chính xác
-SSL_CERT_FILE="path/to/your/venv/Lib/site-packages/certifi/cacert.pem"
-REQUESTS_CA_BUNDLE="path/to/your/venv/Lib/site-packages/certifi/cacert.pem"
+# Cấu hình gửi Email (sử dụng Gmail và Mật khẩu Ứng dụng)
+SMTP_HOST="smtp.gmail.com"
+SMTP_PORT=465
+SENDER_EMAIL="your_email@gmail.com" # gmail của bạn
+SMTP_PASSWORD="16chucai_matkhauungdung" # mật khẩu gmail app không phải mật khẩu gmail của bạn
 ```
 
-### 3. Chạy ứng dụng
-
-Sau khi cài đặt hoàn tất, mở Terminal và chạy lệnh sau:
+**c. Khởi tạo Cơ sở dữ liệu (Chỉ chạy lần đầu):**
+Khởi tạo database.
 ```bash
-python run api.py
+python database_manager.py
 ```
-Một tab mới sẽ tự động mở ra trên trình duyệt của bạn. Bây giờ bạn đã có thể bắt đầu sử dụng Trợ lý Phân tích Đầu tư AI!
 
-## 💡 Luồng hoạt động
-
-1.  **Nhận yêu cầu:** Người dùng nhập câu lệnh và/hoặc tải file PDF lên giao diện.
-2.  **Phân tích yêu cầu:** `main.py` sử dụng Mistral AI để xác định ý định của người dùng (chỉ phân tích cổ phiếu, chỉ phân tích PDF, hay phân tích toàn diện).
-3.  **Khởi tạo Crew:** Dựa trên ý định, một "Crew" (đội ngũ) gồm các AI Agent phù hợp được tập hợp.
-4.  **Thực thi Tasks:**
-    -   `Market Data Analyst` tìm kiếm tin tức.
-    -   `Technical Analysis` phân tích kỹ thuật.
-    -   `Financial Competitor Analysis` tìm kiếm và phân tích đối thủ cạnh tranh
-    -   `Financial Analyst` phân tích file báo cáo tài chính.
-5.  **Tổng hợp & Báo cáo:** `Investment Strategist` nhận tất cả các kết quả, tổng hợp và viết ra báo cáo đầu tư cuối cùng, sau đó hiển thị lên giao diện.
-
-## 🐳 Hướng dẫn Chạy bằng Docker (Khuyến khích)
-
-Sử dụng Docker là cách dễ dàng và đáng tin cậy nhất để chạy dự án này mà không cần lo lắng về môi trường.
-
-### 1. Yêu cầu tiên quyết
-
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) đã được cài đặt và đang chạy trên máy của bạn.
-
-### 2. Cài đặt và Chạy
-
-**a. Clone repository và thiết lập file `.env`:**
-Thực hiện các bước 2a và 2d trong phần hướng dẫn cài đặt thông thường (không cần tạo môi trường ảo hay `pip install`).
-
-**b. Build và Run bằng Docker Compose:**
+**d. Build và Run bằng Docker Compose:**
 Mở Terminal trong thư mục gốc của dự án và chạy lệnh duy nhất:
 ```bash
 docker-compose up --build
 ```
-
 - Lần đầu tiên chạy, Docker sẽ build image, quá trình này có thể mất vài phút.
-- Những lần chạy sau sẽ nhanh hơn rất nhiều.
-- Bạn sẽ thấy log của ứng dụng Streamlit trong terminal.
+- Bạn sẽ thấy log từ cả hai dịch vụ (Web API và Scheduler) được in xen kẽ trong terminal.
 
-**c. Truy cập ứng dụng:**
-Mở trình duyệt web và truy cập địa chỉ:
-[http://localhost:8000](http://localhost:8000)
+### 3. Truy cập ứng dụng
+- **Giao diện Chatbot:** Mở trình duyệt web và truy cập địa chỉ: `http://localhost:8000`
+- **Tác vụ nền:** Dịch vụ Scheduler đang chạy âm thầm. Nó sẽ tự động phân tích và gửi email vào thời gian cố định trong ngày. 
 
-### 3. Dừng ứng dụng
-
+### 4. Dừng ứng dụng
 Trong terminal nơi bạn đã chạy `docker-compose up`, nhấn `Ctrl + C`. Để dọn dẹp hoàn toàn, chạy lệnh:
 ```bash
 docker-compose down
@@ -132,5 +124,6 @@ docker-compose down
 
 ## 🔮 Hướng phát triển trong tương lai
 
-- [ ] Tích hợp biểu đồ giá vào báo cáo.
-- [ ] Mở rộng khả năng phân tích tâm lý thị trường từ mạng xã hội.
+- [ ] Xây dựng giao diện cho người dùng tự đăng ký/hủy đăng ký nhận bản tin email.
+- [ ] Tích hợp biểu đồ heatmap thị trường để cung cấp cái nhìn tổng quan hơn.
+- [ ] Thêm nhiều loại báo cáo hơn (ví dụ: báo cáo ngành, báo cáo chiến lược).

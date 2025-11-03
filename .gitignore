@@ -1,1 +1,8 @@
 .env
+\reports\
+\vn_stock_doc\
+\__pycache__\
+\uploads\
+subscriptions.db
+\financial_reports
+\charts\*.png

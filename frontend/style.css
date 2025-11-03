@@ -135,3 +135,11 @@ body {
     height: 1.2em;
     text-align: center;
 }
+
+.bot-message img {
+    max-width: 100%;      
+    height: auto;         
+    border-radius: 12px;  
+    display: block;       
+    margin-top: 10px;     
+}

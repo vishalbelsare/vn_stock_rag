@@ -141,10 +141,8 @@ class ComprehensiveFinancialTool(BaseTool):
         """
         print(f"[Financial Tool] Đang tìm các công ty cùng ngành với {ticker}...")
         try:
-            # --- ƯU TIÊN 1: SỬ DỤNG SCREENER (NHANH VÀ CÓ VỐN HÓA) ---
             screener = Screener()
-            all_market_data_df = screener.stock(params={"exchangeName": "HOSE,HNX,UPCOM"}, limit=3000)
-            all_market_data_df.to_csv("debug_screener_all_market_data.csv", index=False)  
+            all_market_data_df = screener.stock(params={"exchangeName": "HOSE,HNX,UPCOM"}, limit=5000)
             if not all_market_data_df.empty:
                 target_company_info = all_market_data_df[all_market_data_df['ticker'] == ticker]
                 
@@ -162,7 +160,6 @@ class ComprehensiveFinancialTool(BaseTool):
                         print(f"[Financial Tool] Đã tìm thấy các đối thủ (từ Screener): {top_peers}")
                         return top_peers
 
-            # --- PHƯƠNG ÁN 2: FALLBACK SANG LISTING NẾU SCREENER THẤT BẠI ---
             print(f"[Financial Tool] Không tìm thấy {ticker} trong Screener, chuyển sang phương án Listing...")
             listing = Listing()
             all_companies_df = listing.symbols_by_industries()
@@ -223,9 +220,8 @@ class ComprehensiveFinancialTool(BaseTool):
         report = f"### Phân tích Tài chính Nội tại & Cạnh tranh cho {ticker}\n\n"
         report += f"**Ngành:** {industry_name}\n\n"
         
-        # Tích hợp đọc file knowledge
         try:
-            with open('../knowledge/PE_PB_industry_average.json', 'r', encoding='utf-8') as f:
+            with open('/knowledge/PE_PB_industry_average.json', 'r', encoding='utf-8') as f:
                 industry_data = json.load(f).get('data', {})
                 for key, value in industry_data.items():
                     if key in industry_name or industry_name in key:

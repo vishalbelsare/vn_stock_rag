@@ -1,11 +1,15 @@
-venv/
-__pycache__/
+# .dockerignore
+
+# Bỏ qua môi trường ảo và cache của Python
+venv
+__pycache__
 *.pyc
 
-.vscode/
-.idea/
+.vscode
+.idea
 
-*.tmp
-.crewai_cache/
-reports/
-uploads/
+=.git
+.gitignore
+
+.DS_Store
+Thumbs.db

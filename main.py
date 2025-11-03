@@ -12,19 +12,41 @@ from agents import StockAnalysisAgents
 from tasks import StockAnalysisTasks
 from datetime import datetime
 import sys
+import google.generativeai as genai
+from key_manager import key_manager
 
-def get_user_intent_with_mistral(user_query: str) -> dict:
+
+def find_latest_report(ticker: str, reports_folder="financial_reports") -> tuple[str, str] | None:
     """
-    Sử dụng Mistral AI để phân tích yêu cầu của người dùng.
+    Tìm báo cáo quý gần nhất cho một mã cổ phiếu.
+    Đếm ngược từ Q4 -> Q1 của năm hiện tại.
+    Trả về (đường dẫn file, tên quý) hoặc None nếu không tìm thấy.
+    """
+    print(f"Đang tìm báo cáo gần nhất cho {ticker} trong thư mục {reports_folder}...")
+    current_year = datetime.now().year 
+    for q in range(4, 0, -1):
+        quarter_name = f"Q{q}"
+        # Kiểm tra cả .pdf và .PDF
+        for ext in ['pdf', 'PDF']:
+            file_path = os.path.join(reports_folder, f"{ticker}-{quarter_name}.{ext}")
+            if os.path.exists(file_path):
+                print(f"Đã tìm thấy báo cáo gần nhất: {file_path}")
+                return file_path, quarter_name
+    print(f"Không tìm thấy báo cáo nào cho {ticker} trong năm nay.")
+    return None
+
+def get_user_intent_with_gemini(user_query: str) -> dict:
+    """
+    Sử dụng Google Gemini để phân tích yêu cầu của người dùng.
     """
     try:
-        print("Đang dùng Mistral AI để phân tích yêu cầu...")
-        API_KEY = os.environ.get("MISTRAL_API_KEY")
-        if not API_KEY:
-            raise ValueError("Lỗi: MISTRAL_API_KEY chưa được thiết lập.")
-
-        url = "https://api.mistral.ai/v1/chat/completions"
+        print("Đang dùng Gemini AI để phân tích yêu cầu...") # <--- LOG MỚI
         
+        api_key = key_manager.get_next_key()
+        genai.configure(api_key=api_key)
+
+        model = genai.GenerativeModel('gemini-2.5-flash')
+
         prompt = f"""
         Phân tích yêu cầu của người dùng và trả về một đối tượng JSON.
         Yêu cầu: "{user_query}"
@@ -42,18 +64,19 @@ def get_user_intent_with_mistral(user_query: str) -> dict:
 
         Chỉ trả về đối tượng JSON, không giải thích gì thêm.
         """
-        payload = { "model": "mistral-large-latest", "messages": [{"role": "user", "content": prompt}], "response_format": {"type": "json_object"} }
-        headers = { "Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json", "Accept": "application/json" }
         
-        response = requests.post(url, json=payload, headers=headers)
-        response.raise_for_status()
+        response = model.generate_content(prompt)
         
-        intent_data = json.loads(response.json()["choices"][0]["message"]["content"])
-        print(f"Mistral đã phân tích yêu cầu: {intent_data}")
+        cleaned_text = response.text.strip().replace("```json", "").replace("```", "").strip()
+        
+        intent_data = json.loads(cleaned_text)
+        print(f"Gemini đã phân tích yêu cầu: {intent_data}")
         return intent_data
+        
     except Exception as e:
-        print(f"Lỗi khi phân tích yêu cầu: {e}")
+        print(f"Lỗi khi phân tích yêu cầu bằng Gemini: {e}")
         return {"task": "unknown", "ticker": None, "file_path": None}
+        
 
 class FinancialCrew:
     def __init__(self, symbol=None, file_path=None):
@@ -67,13 +90,12 @@ class FinancialCrew:
         news_analyst = self.agents.market_news_analyst()
         tech_analyst = self.agents.technical_analyst()
         fin_comp_analyst = self.agents.financial_competitor_analyst()
-        editor = self.agents.report_editor() # Dùng editor để tổng hợp
+        editor = self.agents.report_editor() 
 
         market_task = self.tasks.market_news_analysis(news_analyst)
         tech_task = self.tasks.technical_analysis(tech_analyst, self.symbol)
         fin_comp_task = self.tasks.financial_competitor_analysis(fin_comp_analyst, self.symbol)
         
-        # Yêu cầu editor tổng hợp 3 báo cáo này
         compose_task = self.tasks.compose_newsletter(
             editor,
             context=[market_task, tech_task, fin_comp_task],
@@ -129,10 +151,7 @@ class FinancialCrew:
         return crew.kickoff()
 
 def run_analysis_workflow(user_input):
-    """
-    Hàm điều phối chính, được gọi bởi cả giao diện Streamlit và dòng lệnh.
-    """
-    intent = get_user_intent_with_mistral(user_input)
+    intent = get_user_intent_with_gemini(user_input)    
     result = None
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     report_filename = ""
@@ -140,13 +159,6 @@ def run_analysis_workflow(user_input):
     task_type = intent.get('task')
     ticker = intent.get('ticker')
     file_path = intent.get('file_path')
-
-    print("\n" + "#"*50)
-    print("DEBUG TRẠM 2: BÊN TRONG MAIN.PY (full_analysis_process)")
-    print(f"Loại dữ liệu của user_query: {type(user_input)}")
-    print(f"Nội dung user_query nhận được từ api.py:\n---\n{user_input}\n---\n")
-    print("#"*50 + "\n")
-
 
     if (task_type == 'create_newsletter' or task_type == 'comprehensive_analysis') and ticker and file_path:
         print(f"Bắt đầu quy trình tạo Bản tin Toàn diện cho {ticker}...")
@@ -183,7 +195,28 @@ def run_analysis_workflow(user_input):
     print(error_message)
     return error_message, None
 
-# Khối này chỉ được thực thi khi bạn chạy `python main.py` trực tiếp
+def generate_report_for_ticker(ticker: str) -> tuple[str | None, str | None]:
+    print(f"Bắt đầu tạo báo cáo tự động cho mã: {ticker}")
+    
+    found_report = find_latest_report(ticker, reports_folder="financial_reports")
+    
+    if found_report:
+        file_path, quarter_name = found_report
+        user_query = f"tạo bản tin chứng khoán toàn diện cho {ticker} sử dụng file báo cáo {quarter_name} tại '{file_path}'"
+    else:
+        user_query = f"phân tích cổ phiếu {ticker}"
+
+    print(f"Query mô phỏng cho hệ thống AI: '{user_query}'")
+    
+    final_report, report_filename = run_analysis_workflow(user_query)
+    
+    if final_report and "Đã xảy ra lỗi" not in final_report and "Không thể xác định" not in final_report:
+        return final_report, report_filename
+    else:
+        print(f"Lỗi hoặc không có kết quả khi tạo báo cáo cho {ticker}. Chi tiết: {final_report}")
+        return None, None
+
+
 if __name__ == "__main__":
     print("## Chào mừng bạn đến với Trợ lý Phân tích AI ##")
     user_input_cli = input("Nhập yêu cầu của bạn: ")
@@ -196,6 +229,7 @@ if __name__ == "__main__":
     else:
         print("\n--- LỖI ---")
         print(final_report_cli)
+
 
 # if __name__ == "__main__":
 #     # Kiểm tra xem có nhận được đối số từ dòng lệnh không

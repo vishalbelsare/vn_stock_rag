@@ -17,3 +17,9 @@ Flask
 Flask-SocketIO
 Flask-Cors
 eventlet
+schedule
+weasyprint
+markdown2
+matplotlib
+mplfinance
+pdfkit

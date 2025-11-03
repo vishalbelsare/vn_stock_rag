@@ -7,6 +7,7 @@ from tools.search_tools import search_tool, scrape_tool
 from tools.financial_tools import ComprehensiveFinancialTool, TechDataTool
 from tools.file_tools import FileReadTool
 from tools.ocr_tool import MistralOCRTool
+from tools.charting_tool import ChartingTool
 
 safety_settings_config = {
     "safety_settings": [
@@ -39,6 +40,7 @@ comprehensive_financial_tool = ComprehensiveFinancialTool()
 tech_tool = TechDataTool()
 file_read_tool = FileReadTool()
 ocr_tool = MistralOCRTool()
+charting_tool = ChartingTool()
 
 
 class StockAnalysisAgents():
@@ -85,7 +87,7 @@ class StockAnalysisAgents():
                 'Phân tích của bạn chỉ dựa trên dữ liệu biểu đồ và các chỉ báo, không bị chi phối bởi cảm tính hay tin tức.'
             ),
             verbose=True,
-            tools=[tech_tool],
+            tools=[tech_tool, charting_tool],
             llm=self.llm_flash_2, 
             allow_delegation=False
         )

@@ -44,9 +44,9 @@ class OCRToolInput(BaseModel):
     pdf_path: str = Field(..., description="Đường dẫn đầy đủ và chính xác đến file PDF cần trích xuất văn bản.")
 
 class MistralOCRTool(BaseTool):
-    name: str = "Công cụ trích xuất văn bản từ file PDF"
+    name: str = "Công cụ trích xuất văn bản từ file PDF hoặc file Scan"
     description: str = (
-        "Rất hữu ích khi bạn cần đọc và trích xuất toàn bộ nội dung văn bản từ một file PDF. "
+        "Hữu ích khi cần đọc và trích xuất toàn bộ nội dung văn bản từ một file PDF. "
         "Đầu vào là đường dẫn đến file PDF. "
         "Đầu ra là một chuỗi thông báo thành công và đường dẫn đến file .txt chứa nội dung đã được trích xuất."
     )
@@ -57,6 +57,16 @@ class MistralOCRTool(BaseTool):
             pdf_file = Path(pdf_path)
             if not pdf_file.exists():
                 return f"Lỗi: Không tìm thấy file tại đường dẫn '{pdf_path}'. Vui lòng kiểm tra lại đường dẫn."
+            
+            output_prefix = pdf_file.with_suffix("")
+            txt_path = Path(str(output_prefix) + ".ocr_text.txt")
+
+            # Kiểm tra xem file .txt đã tồn tại chưa
+            if txt_path.exists():
+                print(f"\n[OCR Tool] Đã tìm thấy file OCR có sẵn: '{txt_path}'. Bỏ qua bước OCR.")
+                # Nếu đã có, trả về đường dẫn ngay lập tức
+                return f"Đã sử dụng lại kết quả OCR có sẵn. Nội dung được lưu tại file: '{txt_path}'"
+
             api_key = os.environ.get("MISTRAL_API_KEY")
             if not api_key:
                 return "Lỗi: Biến môi trường MISTRAL_API_KEY chưa được thiết lập."

@@ -47,6 +47,4 @@ class KeyManager:
             print(f"KeyManager: Cấp phát key #{self.current_index + 1}")
             return key
 
-# Tạo một instance duy nhất của KeyManager để toàn bộ ứng dụng có thể sử dụng
-# Đây gọi là mẫu thiết kế Singleton (Singleton Pattern)
 key_manager = KeyManager()
