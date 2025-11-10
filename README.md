@@ -98,13 +98,15 @@ SENDER_EMAIL="your_email@gmail.com" # gmail của bạn
 SMTP_PASSWORD="16chucai_matkhauungdung" # mật khẩu gmail app không phải mật khẩu gmail của bạn
 ```
 
-**c. Khởi tạo Cơ sở dữ liệu (Chỉ chạy lần đầu):**
+**c. Download thư mục financial_reports và thêm vào thư mục gốc của dự án [URL](https://drive.google.com/drive/folders/1NBpK8iOS33Ngv4Hs1I4QlV4ZJmaDy_uZ?usp=sharing)**
+
+**d. Khởi tạo Cơ sở dữ liệu (Chỉ chạy lần đầu):**
 Khởi tạo database.
 ```bash
 python database_manager.py
 ```
 
-**d. Build và Run bằng Docker Compose:**
+**e. Build và Run bằng Docker Compose:**
 Mở Terminal trong thư mục gốc của dự án và chạy lệnh duy nhất:
 ```bash
 docker-compose up --build
