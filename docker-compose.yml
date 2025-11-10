@@ -5,6 +5,10 @@ version: '3.8'
 services:
   api:
     build: .  
+    environment:
+      - name=value
+      - SSL_CERT_FILE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
+      - REQUESTS_CA_BUNDLE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
     container_name: vn_stock_rag
     command: python api.py  
     ports:
@@ -23,6 +27,9 @@ services:
     build: . 
     container_name: vn_stock_scheduler
     command: python scheduler.py 
+    environment:
+      - SSL_CERT_FILE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
+      - REQUESTS_CA_BUNDLE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
     volumes:
       - ./reports:/home/app/reports
       - ./charts:/home/app/charts
@@ -31,4 +38,4 @@ services:
       - ./subscriptions.db:/home/app/subscriptions.db
     env_file:
       - .env 
-    restart: unless-stopped 
+    restart: unless-stopped

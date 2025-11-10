@@ -4,12 +4,15 @@ python-dotenv
 langchain-google-genai
 mistralai
 vnstock
+vnai==2.1.9
 pandas
 numpy
 streamlit
 streamlit-chat
 beautifulsoup4
+crewai[google-genai]
 google
+google-generativeai
 requests
 tenacity
 certifi
@@ -23,3 +26,4 @@ markdown2
 matplotlib
 mplfinance
 pdfkit
+certifi

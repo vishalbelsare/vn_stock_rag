@@ -1,15 +1,27 @@
 # .dockerignore
-
-# Bỏ qua môi trường ảo và cache của Python
 venv
 __pycache__
 *.pyc
+*.pyo
+*.pyd
 
 .vscode
 .idea
-
-=.git
-.gitignore
-
 .DS_Store
 Thumbs.db
+
+.git
+.gitignore
+.gitattributes
+
+reports/
+charts/
+uploads/
+financial_reports/
+
+*.db
+*.db-journal*
+
+Dockerfile
+docker-compose.yml
+.dockerignore
