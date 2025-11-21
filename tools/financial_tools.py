@@ -220,18 +220,6 @@ class ComprehensiveFinancialTool(BaseTool):
         report = f"### Phân tích Tài chính Nội tại & Cạnh tranh cho {ticker}\n\n"
         report += f"**Ngành:** {industry_name}\n\n"
         
-        try:
-            with open('/knowledge/PE_PB_industry_average.json', 'r', encoding='utf-8') as f:
-                industry_data = json.load(f).get('data', {})
-                for key, value in industry_data.items():
-                    if key in industry_name or industry_name in key:
-                        report += f"**So sánh với Ngành (từ Knowledge Base):**\n"
-                        report += f"- P/E Ngành: {value.get('PE', 'N/A')}\n"
-                        report += f"- P/B Ngành: {value.get('PB', 'N/A')}\n\n"
-                        break
-        except Exception as e:
-            print(f"[Financial Tool] Lỗi khi đọc file knowledge: {e}")
-
         report += f"**Các chỉ số chính của {ticker} (dữ liệu năm gần nhất):**\n"
 
         def safe_format(value, format_spec):

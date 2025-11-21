@@ -4,103 +4,142 @@ from crewai import Task
 from datetime import datetime
 
 class StockAnalysisTasks():
-    """
-    Class chứa các task chuyên biệt cho việc tạo bản tin chứng khoán,
-    tương ứng với kiến trúc 5 agent.
-    """
 
     def market_news_analysis(self, agent):
         current_date_str = datetime.now().strftime('%d/%m/%Y')
-        
         return Task(
             description=f"""
-                Hôm nay là ngày {current_date_str}.
-                Nhiệm vụ của bạn là phân tích tổng quan thị trường chứng khoán Việt Nam. 
-                Hãy tìm và tóm tắt 2-3 tin tức vĩ mô, chính sách, hoặc sự kiện ngành quan trọng nhất ảnh hưởng đến thị trường trong phiên giao dịch gần đây nhất.
-                QUAN TRỌNG: Nếu không tìm thấy tin tức chính xác cho ngày hôm nay, hãy tự động tìm kiếm cho ngày giao dịch gần nhất trước đó. Không được tự tạo ra kịch bản giả định.
+                Hôm nay là ngày: {current_date_str}.
+                
+                NHIỆM VỤ:
+                Tìm kiếm và phân tích 3 tin tức vĩ mô hoặc sự kiện ngành nổi bật nhất có tác động trực tiếp đến thị trường chứng khoán Việt Nam trong 24h qua.
+                
+                YÊU CẦU CHI TIẾT:
+                1. Không liệt kê tin rác, chỉ chọn tin có tác động lớn (Lãi suất, Tỷ giá, Chính sách công, Kết quả kinh doanh ngành).
+                2. Với mỗi tin, phải có một câu "Đánh giá tác động": Tin này tích cực hay tiêu cực? Tại sao?
+                3. Nếu không có tin nóng hôm nay, hãy lấy tin quan trọng nhất của 2 ngày gần nhất.
+
+                Output format: Markdown (Gạch đầu dòng).
             """,
-            expected_output="Một đoạn văn hoàn chỉnh tóm tắt diễn biến và các tin tức vĩ mô quan trọng của phiên giao dịch gần nhất.",
+            expected_output="Báo cáo tóm tắt tin tức vĩ mô có nhận định tác động.",
             agent=agent,
+            async_execution=True 
         )
 
     def technical_analysis(self, agent, symbol):
-        """Task cho Agent phân tích kỹ thuật."""
         return Task(
             description=f"""
-                Nhiệm vụ của bạn là thực hiện phân tích kỹ thuật toàn diện cho mã cổ phiếu '{symbol}'.
-                Quy trình bắt buộc phải tuân theo 2 bước:
+                Thực hiện phân tích kỹ thuật chuyên sâu cho mã cổ phiếu '{symbol}'.
                 
-                Bước 1: Sử dụng "Công cụ Vẽ Biểu đồ Chứng khoán Chuyên nghiệp" với mã '{symbol}'. Công cụ này sẽ trả về một chuỗi Markdown chứa thông tin về chỉ số VN-Index và một đường dẫn đến file ảnh biểu đồ nến 1 năm.
+                QUY TRÌNH THỰC HIỆN:
+                1. **Vẽ biểu đồ:** Dùng `ChartingTool` để tạo snapshot biểu đồ nến (1 năm). Bắt buộc phải lấy được đường dẫn ảnh.
+                2. **Lấy chỉ số:** Dùng `TechDataTool` để lấy RSI, MACD, MA(50, 200).
+                3. **Phân tích:**
+                   - Xu hướng hiện tại là gì? (Uptrend, Downtrend, Sideway).
+                   - Vị thế giá so với các đường MA.
+                   - RSI đang ở vùng nào (Quá mua >70, Quá bán <30 hay Trung tính)?
+                   - Xác định các vùng Hỗ trợ cứng và Kháng cự cứng (Ghi rõ con số cụ thể).
                 
-                Bước 2: Sử dụng "Công cụ tra cứu dữ liệu Phân tích Kỹ thuật" với mã '{symbol}' để lấy các giá trị chỉ báo chi tiết (RSI, MACD) và các vùng hỗ trợ/kháng cự.
-                
-                Bước 3: Tổng hợp kết quả từ hai bước trên. Viết một nhận định chuyên sâu, kết hợp cả phần diễn giải các chỉ báo từ Bước 2 và bối cảnh thị trường (VN-Index) từ Bước 1.
+                YÊU CẦU OUTPUT (BẮT BUỘC):
+                - Phải chứa dòng code hiển thị ảnh: `![Biểu đồ {symbol}](path/to/image.png)` (Lấy từ tool).
+                - Nhận định: MUA, BÁN hay CHỜ MUA.
             """,
-            expected_output=f"""
-                Một báo cáo phân tích kỹ thuật hoàn chỉnh cho mã {symbol}, được định dạng bằng Markdown.
-                Báo cáo BẮT BUỘC phải bao gồm các phần sau:
-                
-                1.  **Tổng Quan Thị Trường:** Lấy chính xác thông tin về VN-Index từ output của công cụ vẽ biểu đồ.
-                2.  **Biểu Đồ Kỹ Thuật:** Chèn đường dẫn ảnh Markdown chính xác (ví dụ: ![Biểu đồ...](../charts/TICKER_YYYYMMDD.png)) mà công cụ vẽ biểu đồ đã cung cấp. 
-                3.  **Phân Tích Chi Tiết:** Một đoạn văn diễn giải về xu hướng, các chỉ báo (RSI, MACD), và các vùng giá quan trọng dựa trên dữ liệu từ cả hai công cụ.
-            """,
+            expected_output=f"Báo cáo phân tích kỹ thuật chi tiết của {symbol} kèm biểu đồ minh họa.",
             agent=agent,
-            async_execution=False
+            async_execution=True 
         )
 
     def financial_competitor_analysis(self, agent, symbol):
-        """Task cho Agent phân tích tài chính và đối thủ."""
-        return Task(
-            description=f"Sử dụng 'Công cụ Phân tích Tài chính và Cạnh tranh Toàn diện' với mã cổ phiếu '{symbol}'. Nhiệm vụ của bạn là thực thi công cụ này và trả về kết quả đầu ra của nó một cách chính xác. Không cần thêm bất kỳ phân tích hay bình luận nào khác.",
-            expected_output=f"Kết quả đầu ra chính xác và đầy đủ từ tool, là một báo cáo Markdown chứa phân tích tài chính nội tại và bảng so sánh các chỉ số của {symbol} với các đối thủ.",
-            agent=agent,
-            async_execution=False
-        )
-
-    def analyze_pdf_report(self, agent, file_path):
-        """Task cho Agent phân tích file PDF."""
-        return Task(
-            description=f"Phân tích chuyên sâu báo cáo tài chính từ file PDF được cung cấp tại đường dẫn: '{file_path}'. Sử dụng các công cụ cần thiết (OCR và đọc file) để trích xuất nội dung. Sau đó, tóm tắt những kết quả kinh doanh, điểm nhấn tài chính và các chỉ số quan trọng nhất được đề cập trong báo cáo.",
-            expected_output="Một báo cáo markdown ngắn gọn, súc tích, tóm tắt các điểm nổi bật nhất từ file báo cáo tài chính PDF. Tập trung vào các con số về tăng trưởng doanh thu, lợi nhuận, biên lợi nhuận, và các điểm đáng chú ý về sức khỏe tài chính.",
-            agent=agent,
-            async_execution=False
-        )
-
-    def compose_newsletter(self, agent, context, symbol):
-        """Task cuối cùng, dành cho Tổng biên tập (với prompt đã được gia cố)."""
         return Task(
             description=f"""
-                Tổng hợp tất cả các báo cáo phân tích được cung cấp trong context để tạo ra một BẢN TIN CHỨNG KHOÁN hoàn chỉnh về cổ phiếu {symbol}.
-                Nhiệm vụ của bạn là đóng vai một Tổng biên tập, tuân thủ NGHIÊM NGẶT cấu trúc được yêu cầu.
-
-                Các báo cáo đầu vào bạn có trong context:
-                1. Báo cáo Tổng quan Thị trường & Vĩ mô.
-                2. Báo cáo Phân tích Kỹ thuật cho cổ phiếu '{symbol}'.
-                3. Báo cáo Phân tích Cơ bản cho cổ phiếu '{symbol}'.
-                4. (Nếu có) Báo cáo Tóm tắt từ file PDF của '{symbol}'.
-
-                **YÊU CẦU CẤU TRÚC CUỐI CÙNG (BẮT BUỘC TUÂN THỦ):**
-
-                - **Tiêu đề chính:** BẢN TIN CHỨNG KHOÁN - Ngày {datetime.now().strftime('%d/%m/%Y')}
+                Phân tích sức khỏe tài chính và tin tức đối thủ của '{symbol}'.
                 
-                - **Phần 1: TỔNG QUAN THỊ TRƯỜNG:**
-                  Sử dụng **CHÍNH XÁC** nội dung từ Báo cáo Tổng quan Thị trường & Vĩ mô.
+                QUY TRÌNH THỰC HIỆN (Làm từng bước):
                 
-                - **Phần 2: PHÂN TÍCH DOANH NGHIỆP: {symbol}:**
-                  Đây là phần trọng tâm. Bạn phải kết hợp thông minh thông tin từ các nguồn:
-                  a. Báo cáo Phân tích Cơ bản ({symbol}).
-                  b. (Nếu có) Báo cáo Tóm tắt từ file PDF ({symbol}).
-                  c. Báo cáo Phân tích Kỹ thuật ({symbol}).
+                BƯỚC 1: XÁC ĐỊNH ĐỐI THỦ & LẤY SỐ LIỆU
+                - Dùng `FinancialTool` để xác định danh sách đối thủ cùng ngành.
+                - Chọn ra tối đa 3 đối thủ lớn nhất.
+                - Lấy chỉ số P/E, P/B, ROE của {symbol} và 3 đối thủ này.
 
-                  **!!! QUAN TRỌNG !!!**
-                  **BẠN PHẢI SAO CHÉP VÀ DÁN NGUYÊN VẸN DÒNG MÃ MARKDOWN CỦA ẢNH NÀY** vào phần phân tích kỹ thuật của báo cáo cuối cùng. Đừng chỉ tóm tắt phần chữ mà bỏ qua phần ảnh.
-
-                  Hãy viết một phân tích tổng hợp về doanh nghiệp, bao gồm cả yếu tố cơ bản, kết quả kinh doanh từ PDF, và **CẢ BIỂU ĐỒ LẪN PHẦN DIỄN GIẢI TÍN HIỆU KỸ THUẬT**.
+                BƯỚC 2: SĂN TIN ĐỐI THỦ (QUAN TRỌNG)
+                - Với **MỖI** đối thủ trong 3 đối thủ trên, hãy dùng `SearchTool` thực hiện lệnh tìm kiếm riêng biệt.
+                - Query mẫu: "Tin tức mới nhất về công ty [Tên đối thủ]".
+                - **YÊU CẦU:** Lọc ra đúng **3 bài báo mới nhất/quan trọng nhất** cho từng đối thủ.
                 
-                - **Phần 3: KHUYẾN NGHỊ HÀNH ĐỘNG:**
-                  Dựa trên TẤT CẢ thông tin đã tổng hợp ở trên, hãy đưa ra một khuyến nghị rõ ràng: **MUA**, **BÁN**, hoặc **GIỮ** cho cổ phiếu {symbol}. Kèm theo một đoạn giải thích ngắn gọn (2-3 câu) cho khuyến nghị đó.
+                YÊU CẦU OUTPUT (QUAN TRỌNG):
+                1. **TUYỆT ĐỐI KHÔNG** bao quanh kết quả bằng dấu ```markdown hoặc ```. Chỉ trả về văn bản thô (Raw Markdown).
+                2. Cấu trúc trả về:
+                   - Phần 1: Nhận định chung về vị thế tài chính (Text).
+                   - Phần 2: Mục "Chuyển động đối thủ" (Text).
+                   - Phần 3: Bảng so sánh chỉ số tài chính (Table).
             """,
-            expected_output=f"Một file Markdown hoàn chỉnh, được định dạng đẹp mắt và tuân thủ nghiêm ngặt cấu trúc đã yêu cầu, tập trung vào cổ phiếu {symbol}. File Markdown này PHẢI chứa đường dẫn ảnh biểu đồ được lấy từ báo cáo phân tích kỹ thuật. File phải bắt đầu bằng tiêu đề chính và không chứa bất kỳ văn bản thừa nào.",
+            expected_output=f"Báo cáo phân tích cạnh tranh {symbol} (Raw Markdown, không có code block).",
             agent=agent,
-            context=context
+            async_execution=True 
+        )
+
+    def analyze_pdf_graph_rag(self, agent, ticker, extraction_query):
+        return Task(
+            description=f"Trích xuất chính xác số liệu từ tài liệu BCTC của {ticker} theo yêu cầu: {extraction_query}. Trả về nguyên văn con số tìm thấy.",
+            expected_output="Dữ liệu thô trích xuất từ văn bản.",
+            agent=agent,
+            async_execution=True
+        )
+
+    def compose_newsletter(self, agent, context, symbol, chat_history=None, has_rag_data=False):
+        
+        rag_instruction = ""
+        if has_rag_data:
+            rag_instruction = """
+            !!! ƯU TIÊN DỮ LIỆU NỘI BỘ (RAG) !!!
+            Trong Context có phần "DỮ LIỆU TỪ BÁO CÁO TÀI CHÍNH GỐC". Đây là nguồn sự thật duy nhất (Single Source of Truth).
+            Nếu số liệu từ RAG khác với số liệu từ Tool bên ngoài, HÃY DÙNG SỐ LIỆU TỪ RAG.
+            """
+
+        return Task(
+            description=f"""
+            Bạn là Tổng biên tập của FinAI. Nhiệm vụ của bạn là tổng hợp báo cáo phân tích cho mã **{symbol}**.
+
+            {rag_instruction}
+
+            ============== QUY TẮC "SẠCH SẼ" (CLEAN REPORTING) - CỰC KỲ QUAN TRỌNG ==============
+            1. **XỬ LÝ BẢNG SỐ LIỆU (Table Cleaning):**
+               - Kiểm tra bảng so sánh tài chính trong Context.
+               - Nếu một dòng (ví dụ dòng P/E) toàn là "N/A" hoặc "0", **HÃY XÓA DÒNG ĐÓ KHỎI BẢNG**.
+               - Nếu một cột (một đối thủ) toàn là "N/A", **HÃY XÓA CỘT ĐÓ**.
+               - Tuyệt đối không để bảng hiển thị các ô "N/A" làm xấu báo cáo. Thà ít dữ liệu mà chất lượng còn hơn nhiều mà rỗng.
+            
+            2. **Đơn vị tiền tệ:**
+               - Giá cổ phiếu: Viết **90,230 đồng**.
+               - Doanh thu/Lợi nhuận/Nợ: Quy đổi về **Tỷ đồng**.
+            
+            3. **Không dùng Code Block:** Trả về Markdown thuần.
+            ======================================================================================
+
+            CẤU TRÚC BÁO CÁO (MARKDOWN):
+            
+            # 🇻🇳 BÁO CÁO PHÂN TÍCH: {symbol}
+            *(Ngày: {datetime.now().strftime('%d/%m/%Y')})*
+
+            ## 1. 📰 Điểm tin Vĩ mô & Ngành
+            (Tóm tắt tin tức thị trường)
+
+            ## 2. 🏢 Sức khỏe Tài chính & Vị thế
+            - **Kết quả kinh doanh:** (Số liệu từ RAG/Tool).
+            - **Định giá:** (Nhận định ngắn gọn về P/E, P/B nếu có số liệu).
+            - **Chuyển động Đối thủ:** (Tin tức đối thủ).
+            
+            *(Chèn Bảng so sánh tài chính ĐÃ ĐƯỢC LÀM SẠCH vào cuối mục này)*
+
+            ## 3. 📈 Góc nhìn Kỹ thuật
+            - **Xu hướng & Chỉ báo.**
+            - **Vùng giá quan trọng.**
+            *(Chèn biểu đồ)*
+
+            ## 4. 🎯 KẾT LUẬN & KHUYẾN NGHỊ
+            - Khuyến nghị và Luận điểm.
+            """,
+            expected_output=f"Bản tin phân tích {symbol} chuyên nghiệp, bảng số liệu không chứa dòng N/A vô nghĩa.",
+            agent=agent,
+            context=context 
         )

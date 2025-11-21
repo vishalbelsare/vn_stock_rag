@@ -1,278 +1,299 @@
 # main.py
 
-# Tải biến môi trường ngay từ đầu
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv() 
 
 import os
-import requests
 import json
+import sys
+import google.generativeai as genai
+import database_manager as db
+from datetime import datetime
 from crewai import Crew, Process
 from agents import StockAnalysisAgents
 from tasks import StockAnalysisTasks
-from datetime import datetime
-import sys
-import google.generativeai as genai
 from key_manager import key_manager
+from rag_engine import rag_engine
+from evaluation_manager import eval_manager
+
+session_storage = {}
+
+def get_or_create_session(session_id):
+    if not session_id: return {"history": [], "current_ticker": None, "context_report": ""}
+    if session_id not in session_storage:
+        session_storage[session_id] = {"history": [], "current_ticker": None, "context_report": ""}
+    return session_storage[session_id]
 
 
-def find_latest_report(ticker: str, reports_folder="financial_reports") -> tuple[str, str] | None:
+def get_user_intent(user_query: str, has_context: bool = False) -> dict:
     """
-    Tìm báo cáo quý gần nhất cho một mã cổ phiếu.
-    Đếm ngược từ Q4 -> Q1 của năm hiện tại.
-    Trả về (đường dẫn file, tên quý) hoặc None nếu không tìm thấy.
-    """
-    print(f"Đang tìm báo cáo gần nhất cho {ticker} trong thư mục {reports_folder}...")
-    current_year = datetime.now().year 
-    for q in range(4, 0, -1):
-        quarter_name = f"Q{q}"
-        # Kiểm tra cả .pdf và .PDF
-        for ext in ['pdf', 'PDF']:
-            file_path = os.path.join(reports_folder, f"{ticker}-{quarter_name}.{ext}")
-            if os.path.exists(file_path):
-                print(f"Đã tìm thấy báo cáo gần nhất: {file_path}")
-                return file_path, quarter_name
-    print(f"Không tìm thấy báo cáo nào cho {ticker} trong năm nay.")
-    return None
-
-def get_user_intent_with_gemini(user_query: str) -> dict:
-    """
-    Sử dụng Google Gemini để phân tích yêu cầu của người dùng.
+    Phân tích ý định. Đã tinh chỉnh Prompt để phân biệt rõ việc "Hỏi thông tin" vs "Yêu cầu phân tích".
+    Đặc biệt: Tự động chuẩn hóa tên công ty (BIDV, Hòa Phát...) thành mã chứng khoán (BID, HPG...).
     """
     try:
-        print("Đang dùng Gemini AI để phân tích yêu cầu...") # <--- LOG MỚI
+        print(f"🔍 Gemini đang phân tích ý định: '{user_query}'...")
         
         api_key = key_manager.get_next_key()
         genai.configure(api_key=api_key)
-
         model = genai.GenerativeModel('gemini-2.5-flash')
 
+        context_info = "Đã có ngữ cảnh hội thoại trước đó." if has_context else "Cuộc hội thoại mới."
+
         prompt = f"""
-        Phân tích yêu cầu của người dùng và trả về một đối tượng JSON.
-        Yêu cầu: "{user_query}"
+        Bạn là bộ định tuyến (Router) thông minh cho hệ thống chứng khoán Việt Nam.
+        
+        INPUT:
+        - Ngữ cảnh: {context_info}
+        - Câu hỏi: "{user_query}"
 
-        Các nhiệm vụ có thể có:
-        - "analyze_stock": Nếu người dùng chỉ muốn phân tích một mã cổ phiếu.
-        - "analyze_pdf": Nếu người dùng chỉ muốn phân tích một file PDF.
-        - "comprehensive_analysis": Nếu người dùng muốn phân tích một mã cổ phiếu VÀ có cung cấp một file PDF.
-        - "unknown": Nếu không xác định được.
+        NHIỆM VỤ 1: PHÂN LOẠI Ý ĐỊNH (3 NHÓM)
+        1. "analyze_stock": 
+           - Khi người dùng YÊU CẦU: "Phân tích", "Đánh giá", "Soi mã", "Nhận định", "Xem biểu đồ", "Có nên mua".
+        2. "chat_with_rag":
+           - Khi hỏi CỤ THỂ về SỐ LIỆU TÀI CHÍNH trong báo cáo (Doanh thu, Lợi nhuận, Tài sản, Nợ...).
+        3. "chat_direct":
+           - Hỏi thông tin sự thật (Fact), kiến thức chung, ai là chủ tịch, trụ sở ở đâu, hoặc chào hỏi.
 
-        Đối tượng JSON phải có 3 trường: "task", "ticker", "file_path".
-        - "task": điền một trong các giá trị trên.
-        - "ticker": trích xuất mã cổ phiếu (chuỗi 3-4 ký tự viết hoa). Nếu không có, điền null.
-        - "file_path": trích xuất đường dẫn file PDF. Nếu không có, điền null.
+        NHIỆM VỤ 2: TRÍCH XUẤT VÀ CHUẨN HÓA TICKER (QUAN TRỌNG)
+        - Xác định mã cổ phiếu (Ticker) trong câu hỏi.
+        - NẾU NGƯỜI DÙNG GỌI TÊN CÔNG TY, HÃY CHUYỂN VỀ MÃ 3 CHỮ CÁI (HOSE/HNX), ví dụ:
+           + "BIDV" -> "BID"
+           + "Vietcombank" -> "VCB"
+           + "Hòa Phát" -> "HPG"
+           + "Vinamilk" -> "VNM"
+           + "Thế Giới Di Động" -> "MWG"
+           + "Vingroup" -> "VIC"
+        - Tuyệt đối không trả về sai mã cổ phiếu, nếu người dùng hỏi về BIDV thì mã cổ phiếu phải là BID.
 
-        Chỉ trả về đối tượng JSON, không giải thích gì thêm.
+        OUTPUT JSON:
+        {{ "type": "analyze_stock" | "chat_with_rag" | "chat_direct", "ticker": "MÃ_CK_3_CHỮ" | null, "file_path": null }}
         """
         
         response = model.generate_content(prompt)
-        
         cleaned_text = response.text.strip().replace("```json", "").replace("```", "").strip()
-        
         intent_data = json.loads(cleaned_text)
-        print(f"Gemini đã phân tích yêu cầu: {intent_data}")
-        return intent_data
         
-    except Exception as e:
-        print(f"Lỗi khi phân tích yêu cầu bằng Gemini: {e}")
-        return {"task": "unknown", "ticker": None, "file_path": None}
-        
+        if intent_data.get('ticker'):
+            intent_data['ticker'] = intent_data['ticker'].upper().strip()
 
+        print(f"✅ Intent: {intent_data['type']} | Ticker: {intent_data['ticker']}")
+        return intent_data
+
+    except Exception as e:
+        print(f"⚠️ Lỗi phân tích ý định: {e}")
+        return {"type": "chat_direct", "ticker": None, "file_path": None}
+    
 class FinancialCrew:
-    def __init__(self, symbol=None, file_path=None):
+    def __init__(self, session_id, symbol, file_path=None, status_callback=None):
+        self.session_id = session_id
         self.symbol = symbol
         self.file_path = file_path
+        self.status_callback = status_callback 
         self.agents = StockAnalysisAgents()
         self.tasks = StockAnalysisTasks()
+        messages = db.get_messages(session_id)
+        self.history = [{'role': m['role'], 'content': m['content']} for m in messages]
 
-    def run_stock_analysis(self):
-        """Chạy quy trình phân tích cổ phiếu cơ bản (4 agents)."""
-        news_analyst = self.agents.market_news_analyst()
-        tech_analyst = self.agents.technical_analyst()
-        fin_comp_analyst = self.agents.financial_competitor_analyst()
-        editor = self.agents.report_editor() 
+    def _emit(self, msg):
+        if self.status_callback: self.status_callback(msg)
 
-        market_task = self.tasks.market_news_analysis(news_analyst)
-        tech_task = self.tasks.technical_analysis(tech_analyst, self.symbol)
-        fin_comp_task = self.tasks.financial_competitor_analysis(fin_comp_analyst, self.symbol)
+    def _step_callback(self, step):
+        thought = "Đang xử lý..."
+        if hasattr(step, 'tool') and step.tool:
+            t = step.tool
+            if "Search" in t: thought = "🌍 Đang tìm tin tức..."
+            elif "Chart" in t: thought = "📈 Đang vẽ biểu đồ..."
+            elif "Financial" in t: thought = "💰 Đang lấy số liệu..."
+            else: thought = f"🔧 Tool: {t}"
+        self._emit(thought)
+
+    def run(self):
+        self.symbol = self.symbol.upper().strip()
+
+        if self.file_path:
+            self._emit(f"Đang đọc tài liệu {self.symbol}...")
+            try: rag_engine.ingest_pdf(self.file_path, self.symbol)
+            except Exception as e: print(f"Ingest Err: {e}")
+
+        self._emit(f"🚀 Bắt đầu phân tích {self.symbol}...")
+
+        base_storage_dir = os.path.abspath("./storage_rag")
+        persist_path = os.path.join(base_storage_dir, self.symbol)
         
-        compose_task = self.tasks.compose_newsletter(
-            editor,
-            context=[market_task, tech_task, fin_comp_task],
-            symbol=self.symbol
+        has_rag_data = os.path.exists(persist_path) or self.file_path
+        
+        rag_raw_text = ""
+        if has_rag_data:
+            self._emit("📑 Đang trích xuất dữ liệu BCTC gốc...")
+            query = f"Trích xuất số liệu {self.symbol}: Doanh thu, Lợi nhuận, Tổng tài sản, Nợ, Dòng tiền."
+            rag_raw_text = rag_engine.query_data(self.symbol, query, is_deep_analysis=True)
+        else:
+            self._emit("⚠️ Dùng dữ liệu đại chúng (Không có BCTC nội bộ).")
+
+        market_agent = self.agents.market_news_analyst()
+        tech_agent = self.agents.technical_analyst()
+        fin_agent = self.agents.financial_competitor_analyst() 
+        editor_agent = self.agents.report_editor()
+
+        t_market = self.tasks.market_news_analysis(market_agent)
+        t_tech = self.tasks.technical_analysis(tech_agent, self.symbol)
+        t_fin = self.tasks.financial_competitor_analysis(fin_agent, self.symbol)
+        
+        gathering_tasks = [t_market, t_tech, t_fin]
+        agents_list = [market_agent, tech_agent, fin_agent, editor_agent]
+
+        t_compose = self.tasks.compose_newsletter(
+            editor_agent, 
+            context=gathering_tasks, 
+            symbol=self.symbol, 
+            chat_history=self.history,
+            has_rag_data=has_rag_data
         )
         
+        if rag_raw_text:
+            t_compose.description += f"\n\n=== DỮ LIỆU TỪ BÁO CÁO TÀI CHÍNH GỐC ===\n{rag_raw_text}\n==================================\n"
+
         crew = Crew(
-            agents=[news_analyst, tech_analyst, fin_comp_analyst, editor],
-            tasks=[market_task, tech_task, fin_comp_task, compose_task],
-            process=Process.sequential, verbose=True, cache=True
-        )
-        return crew.kickoff()
-
-    def run_pdf_analysis(self):
-        """Chạy quy trình chỉ phân tích file PDF (1 agent)."""
-        pdf_analyst = self.agents.financial_report_analyst()
-        pdf_task = self.tasks.analyze_pdf_report(
-            agent=pdf_analyst, file_path=self.file_path
-        )
-        crew = Crew(
-            agents=[pdf_analyst], 
-            tasks=[pdf_task], 
-            verbose=True, cache=True
-        )
-        return crew.kickoff()
-
-    def run_newsletter_creation(self):
-        """Chạy quy trình 5 agent để tạo bản tin chứng khoán hoàn chỉnh."""
-        market_analyst = self.agents.market_news_analyst()
-        tech_analyst = self.agents.technical_analyst()
-        fin_comp_analyst = self.agents.financial_competitor_analyst()
-        pdf_analyst = self.agents.financial_report_analyst()
-        editor = self.agents.report_editor()
-
-        market_task = self.tasks.market_news_analysis(market_analyst)
-        tech_task = self.tasks.technical_analysis(tech_analyst, self.symbol)
-        fin_comp_task = self.tasks.financial_competitor_analysis(fin_comp_analyst, self.symbol)
-        pdf_task = self.tasks.analyze_pdf_report(pdf_analyst, self.file_path)
-
-        compose_task = self.tasks.compose_newsletter(
-            editor,
-            context=[market_task, tech_task, fin_comp_task, pdf_task],
-            symbol=self.symbol
-        )
-        
-        crew = Crew(
-            agents=[market_analyst, tech_analyst, fin_comp_analyst, pdf_analyst, editor],
-            tasks=[market_task, tech_task, fin_comp_task, pdf_task, compose_task],
-            process=Process.sequential,
+            agents=agents_list,
+            tasks=gathering_tasks + [t_compose],
             verbose=True,
-            cache=True
+            memory=False,
+            process=Process.sequential, 
+            step_callback=self._step_callback
         )
-        return crew.kickoff()
 
-def run_analysis_workflow(user_input):
-    intent = get_user_intent_with_gemini(user_input)    
-    result = None
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    report_filename = ""
-
-    task_type = intent.get('task')
-    ticker = intent.get('ticker')
-    file_path = intent.get('file_path')
-
-    if (task_type == 'create_newsletter' or task_type == 'comprehensive_analysis') and ticker and file_path:
-        print(f"Bắt đầu quy trình tạo Bản tin Toàn diện cho {ticker}...")
-        crew_runner = FinancialCrew(symbol=ticker, file_path=file_path)
-        result = crew_runner.run_newsletter_creation()
-        report_filename = f"reports/BanTin_{ticker}_{timestamp}.md"
-
-    elif task_type == 'analyze_stock' and ticker:
-        print(f"Bắt đầu quy trình phân tích cổ phiếu: {ticker}...")
-        crew_runner = FinancialCrew(symbol=ticker)
-        result = crew_runner.run_stock_analysis()
-        report_filename = f"reports/PhanTich_{ticker}_{timestamp}.md"
-
-    elif task_type == 'analyze_pdf' and file_path:
-        print(f"Bắt đầu quy trình phân tích file PDF: {file_path}...")
-        crew_runner = FinancialCrew(file_path=file_path, symbol=ticker)
-        result = crew_runner.run_pdf_analysis()
-        base_name = os.path.basename(file_path).split('.')[0]
-        report_filename = f"reports/TomTat_{base_name}_{timestamp}.md"
-        
-    else:
-        return "Không thể xác định yêu cầu của bạn. Vui lòng cung cấp yêu cầu rõ ràng hơn (ví dụ: 'phân tích FPT' hoặc 'tạo bản tin cho HPG' và đính kèm file).", None
-
-    if result and hasattr(result, 'raw') and result.raw:
-        os.makedirs('reports', exist_ok=True)
+        result = crew.kickoff()
         final_report = result.raw
-        with open(report_filename, "w", encoding='utf-8') as f:
-            f.write(final_report)
-        print('--------------------------------------------------')
-        print(f"Báo cáo phân tích đã được lưu tại: {report_filename}")
-        return final_report, report_filename
-    
-    error_message = f"Đã xảy ra lỗi trong quá trình phân tích. Kết quả trả về không hợp lệ: {result}"
-    print(error_message)
-    return error_message, None
 
-def generate_report_for_ticker(ticker: str) -> tuple[str | None, str | None]:
-    print(f"Bắt đầu tạo báo cáo tự động cho mã: {ticker}")
+        try:
+            agent_outputs = {
+                "market": t_market.output.raw if t_market.output else "No Data",
+                "tech": t_tech.output.raw if t_tech.output else "No Data",
+                "fin": t_fin.output.raw if t_fin.output else "No Data", 
+                "rag_raw": rag_raw_text if rag_raw_text else "No PDF Data"
+            }
+
+            eval_manager.save_granular_session(
+                session_id=self.session_id,
+                ticker=self.symbol,
+                query=f"Phân tích tổng hợp cổ phiếu {self.symbol}",
+                agent_outputs=agent_outputs,
+                final_report=final_report
+            )
+        except Exception as e:
+            print(f"⚠️ Lỗi khi lưu Eval Data: {e}")
+
+        return final_report
+
+
+class SmartChatbot:
+    def __init__(self, session_id, symbol, context_report, history, status_callback=None):
+        self.symbol = symbol
+        self.context_report = context_report
+        self.history = history
+        self.status_callback = status_callback
+
+    def _emit(self, msg):
+        if self.status_callback: self.status_callback(msg)
+
+    def reply(self, user_query, rag_info=None):
+        rag_section = ""
+        if rag_info and "NO_DATA" not in rag_info:
+            rag_section = f"THÔNG TIN TỪ TÀI LIỆU GỐC (Ưu tiên 1):\n{rag_info}\n"
+        
+        recent_history = self.history[-4:] if self.history else []
+        history_text = ""
+        for msg in recent_history:
+            role = "USER" if msg['role'] == 'user' else "AI"
+            history_text += f"- {role}: {msg['content']}\n"
+
+        report_context = ""
+        if self.context_report:
+            report_context = f"BÁO CÁO PHÂN TÍCH TRƯỚC ĐÓ (Tham khảo):\n{self.context_report[:1000]}...\n"
+
+        system_prompt = f"""
+        Bạn là FinAI, trợ lý tài chính thông minh.
+
+        === LỊCH SỬ HỘI THOẠI (Để hiểu ngữ cảnh 'ông ấy', 'công ty này' là ai) ===
+        {history_text}
+        ========================================================================
+
+        === DỮ LIỆU TRA CỨU ===
+        Mã đang xem: {self.symbol}
+        {rag_section}
+        {report_context}
+        
+        === YÊU CẦU CỦA NGƯỜI DÙNG ===
+        Câu hỏi: "{user_query}"
+
+        === HƯỚNG DẪN TRẢ LỜI ===
+        1. RÀ SOÁT LỊCH SỬ: Nếu câu hỏi dùng đại từ (ông ấy, bà ấy, nó, công ty đó...), hãy nhìn vào 'LỊCH SỬ HỘI THOẠI' để xác định chủ thể.
+        2. KIẾN THỨC CHUNG: Nếu câu hỏi về tiểu sử, quê quán, địa lý, hoặc kiến thức xã hội (không phải số liệu tài chính), HÃY DÙNG KIẾN THỨC CÓ SẴN CỦA BẠN. Đừng phụ thuộc vào 'Báo cáo phân tích' hay 'Dữ liệu tra cứu' nếu chúng không chứa thông tin này.
+        3. SỐ LIỆU: Chỉ dùng 'DỮ LIỆU TRA CỨU' nếu hỏi về doanh thu, lợi nhuận, chỉ số tài chính.
+        4. TRẢ LỜI: Ngắn gọn, đi thẳng vào vấn đề. Nếu không biết thì nói không biết, đừng bịa đặt từ báo cáo không liên quan.
+        """
+
+        model = genai.GenerativeModel('gemini-2.5-flash') 
+        response = model.generate_content(system_prompt)
+        return response.text
+
+def run_analysis_workflow(user_query, session_id, file_path=None, status_callback=None):
+    db.create_session(session_id)
+    session_data = db.get_session_data(session_id)
     
-    found_report = find_latest_report(ticker, reports_folder="financial_reports")
+    current_ticker = session_data['current_ticker']
+    context_report = session_data['context_report']
+    has_context = bool(context_report)
+
+    if not db.get_messages(session_id):
+        db.update_session_metadata(session_id, title=user_query[:40])
+
+    intent = get_user_intent(user_query, has_context)
+    target_ticker = intent['ticker'] if intent['ticker'] else current_ticker
+
+    if target_ticker:
+        target_ticker = str(target_ticker).upper().strip()
+
+    if not target_ticker: target_ticker = "VNINDEX"
     
-    if found_report:
-        file_path, quarter_name = found_report
-        user_query = f"tạo bản tin chứng khoán toàn diện cho {ticker} sử dụng file báo cáo {quarter_name} tại '{file_path}'"
+    final_file_path = file_path if file_path else intent.get('file_path')
+    
+    should_run_crew = (intent['type'] == "analyze_stock") or final_file_path
+
+    final_response = ""
+
+    if should_run_crew:
+        db.update_session_metadata(session_id, current_ticker=target_ticker)
+        crew = FinancialCrew(session_id, target_ticker, final_file_path, status_callback)
+        final_response = crew.run()
+        db.update_session_metadata(session_id, context_report=final_response)
     else:
-        user_query = f"phân tích cổ phiếu {ticker}"
+        if target_ticker != current_ticker:
+             db.update_session_metadata(session_id, current_ticker=target_ticker)
+        
+        rag_info = None
+        if intent['type'] == "chat_with_rag" and target_ticker:
+            if status_callback: status_callback(f"🔍 Tra cứu số liệu {target_ticker}...")
+            rag_info = rag_engine.query_data(target_ticker, user_query, is_deep_analysis=False)
 
-    print(f"Query mô phỏng cho hệ thống AI: '{user_query}'")
-    
-    final_report, report_filename = run_analysis_workflow(user_query)
-    
-    if final_report and "Đã xảy ra lỗi" not in final_report and "Không thể xác định" not in final_report:
-        return final_report, report_filename
-    else:
-        print(f"Lỗi hoặc không có kết quả khi tạo báo cáo cho {ticker}. Chi tiết: {final_report}")
-        return None, None
+        if status_callback: status_callback("⚡ Đang trả lời...")
+        
+        messages = db.get_messages(session_id)
+        history = [{'role': m['role'], 'content': m['content']} for m in messages]
+        
+        bot = SmartChatbot(session_id, target_ticker, context_report, history, status_callback)
+        final_response = bot.reply(user_query, rag_info)
 
+    db.add_message(session_id, "user", user_query)
+    db.add_message(session_id, "assistant", final_response)
+    
+    return final_response, None
+
+def generate_report_for_ticker(ticker: str):
+    return run_analysis_workflow(f"Phân tích {ticker}", session_id="auto_report")[0], None
 
 if __name__ == "__main__":
-    print("## Chào mừng bạn đến với Trợ lý Phân tích AI ##")
-    user_input_cli = input("Nhập yêu cầu của bạn: ")
-    
-    final_report_cli, filename_cli = run_analysis_workflow(user_input_cli)
-    
-    if filename_cli:
-        print("\n--- BÁO CÁO HOÀN CHỈNH ---")
-        print(final_report_cli)
-    else:
-        print("\n--- LỖI ---")
-        print(final_report_cli)
-
-
-# if __name__ == "__main__":
-#     # Kiểm tra xem có nhận được đối số từ dòng lệnh không
-#     if len(sys.argv) < 2:
-#         print("Lỗi: Vui lòng cung cấp chuỗi yêu cầu của người dùng làm đối số.")
-#         sys.exit(1)
-        
-#     # Lấy chuỗi yêu cầu từ đối số dòng lệnh
-#     user_query = sys.argv[1]
-    
-#     # --- LOGIC ĐIỀU PHỐI ĐƯỢC CHUYỂN VỀ ĐÂY ---
-#     try:
-#         print("Bắt đầu phân tích yêu cầu người dùng...")
-#         intent = get_user_intent_with_mistral(user_query)
-        
-#         ticker = intent.get('ticker')
-#         file_path = intent.get('file_path')
-
-#         result = None
-#         crew_runner = FinancialCrew(symbol=ticker, file_path=file_path)
-
-#         if ticker and file_path:
-#             print(f"\nBắt đầu quy trình tạo Bản tin Toàn diện cho {ticker}...\n")
-#             result = crew_runner.run_newsletter_creation()
-#         elif ticker and not file_path:
-#             print(f"\nBắt đầu quy trình phân tích cổ phiếu {ticker}...\n")
-#             result = crew_runner.run_stock_analysis()
-#         elif file_path and not ticker:
-#             print(f"\nBắt đầu quy trình phân tích file PDF...\n")
-#             result = crew_runner.run_pdf_analysis()
-#         else:
-#             raise ValueError("Không thể xác định yêu cầu từ chuỗi đầu vào.")
-
-#         final_report = result.raw if result and hasattr(result, 'raw') else "Không có báo cáo được tạo ra."
-        
-#         # In một dấu hiệu đặc biệt để api.py biết rằng đây là kết quả cuối cùng
-#         print("\n---FINAL_REPORT_START---")
-#         print(final_report)
-#         print("---FINAL_REPORT_END---")
-
-#     except Exception as e:
-#         print(f"\n---ERROR_START---")
-#         print(f"Đã xảy ra lỗi trong quá trình xử lý: {e}")
-#         import traceback
-#         traceback.print_exc()
-#         print(f"---ERROR_END---")
+    print("## FinAI System ##")
+    q = input("Nhập: ")
+    res, _ = run_analysis_workflow(q, "cli_test")
+    print(res)
