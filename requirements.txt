@@ -3,7 +3,7 @@ crewai-tools
 python-dotenv
 langchain-google-genai
 mistralai
-vnstock
+vnstock==3.2.6
 vnai==2.1.9
 pandas
 numpy

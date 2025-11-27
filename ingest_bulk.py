@@ -17,19 +17,21 @@ try:
 except LookupError:
     nltk.download('punkt_tab')
 
-from llama_index.core import VectorStoreIndex, Document
+from llama_index.core import VectorStoreIndex, Document, Settings
 from llama_index.embeddings.gemini import GeminiEmbedding
 from llama_index.llms.gemini import Gemini
 
+from key_manager import key_manager
+from tools.ocr_tool import MistralOCRTool 
+
+# Tắt log rác
 os.environ["GRPC_VERBOSITY"] = "ERROR"
 os.environ["GLOG_minloglevel"] = "2"
-
-from key_manager import key_manager
-
+logging.getLogger('llama_index').setLevel(logging.WARNING)
 
 REPORTS_DIR = "financial_reports"
 PERSIST_DIR = "./storage_rag"
-MAX_WORKERS = 8  
+MAX_WORKERS = 2
 
 print_lock = threading.Lock()
 
@@ -38,6 +40,10 @@ def safe_print(msg):
         print(msg)
 
 def get_ticker_from_filename(filename):
+    """
+    Lấy mã ticker từ tên file. 
+    Ví dụ: 'ACB-Q3.pdf' -> 'ACB'
+    """
     try:
         base_name = filename.split('.')[0] 
         ticker = base_name.split('-')[0].strip().upper()
@@ -49,34 +55,61 @@ def get_ticker_from_filename(filename):
 
 def ingest_worker(file_info):
     filename, file_path = file_info
+    
     ticker = get_ticker_from_filename(filename)
-
     if not ticker:
-        safe_print(f"⚠️ Bỏ qua: {filename}")
+        safe_print(f"⚠️ [Bỏ qua] Không tìm thấy mã cổ phiếu trong tên file: {filename}")
         return
 
     try:
-        api_key = key_manager.get_next_key()
+        gemini_api_key = key_manager.get_next_key()
     except Exception as e:
-        safe_print(f"❌ Hết key: {e}")
+        safe_print(f"❌ Hết Google API key: {e}")
         return
 
+    ocr_tool = MistralOCRTool()
+
     try:
+        base_name = os.path.splitext(filename)[0]
+        txt_filename = f"{base_name}.ocr_text.txt"
+        txt_path = os.path.join(REPORTS_DIR, txt_filename)
+        
+        text_content = ""
+
+        if os.path.exists(txt_path):
+            safe_print(f"ℹ️ [Cache] Đã có file text cho {ticker}, bỏ qua OCR.")
+            with open(txt_path, "r", encoding="utf-8") as f:
+                text_content = f.read()
+        else:
+            safe_print(f"📖 [OCR] Đang xử lý file PDF: {filename}...")
+            ocr_tool._run(file_path)
+            
+            if os.path.exists(txt_path):
+                with open(txt_path, "r", encoding="utf-8") as f:
+                    text_content = f.read()
+            else:
+                safe_print(f"❌ [Lỗi OCR] Không tạo được file text cho {filename}")
+                return
+
+        if not text_content:
+            safe_print(f"⚠️ [Cảnh báo] Nội dung rỗng sau khi OCR: {filename}")
+            return
+
+        safe_print(f"⚙️ [Embedding] Đang vector hóa {ticker} (Dùng key ...{gemini_api_key[-4:]})...")
+
         embed_model = GeminiEmbedding(
             model_name="models/text-embedding-004", 
-            api_key=api_key
+            api_key=gemini_api_key
         )
         llm = Gemini(
             model_name="models/gemini-2.5-pro", 
-            api_key=api_key
+            api_key=gemini_api_key
         )
-
-        with open(file_path, "r", encoding="utf-8") as f:
-            text_content = f.read()
         
-        if not text_content:
-            safe_print(f"⚠️ File rỗng: {filename}")
-            return
+        Settings.llm = llm
+        Settings.embed_model = embed_model
+        Settings.chunk_size = 4096
+        Settings.chunk_overlap = 512
 
         doc = Document(text=text_content, metadata={"ticker": ticker, "source": filename})
         
@@ -92,29 +125,30 @@ def ingest_worker(file_info):
             
         index.storage_context.persist(persist_dir=ticker_persist_dir)
         
-        safe_print(f"✅ [Key ...{api_key[-4:]}] Đã xong: {ticker}")
+        safe_print(f"✅ [Hoàn tất] Đã nạp thành công: {ticker}")
 
     except Exception as e:
-        safe_print(f"❌ Lỗi {ticker}: {e}")
+        safe_print(f"❌ [Lỗi] Xử lý {ticker} thất bại: {e}")
 
 def run_parallel_ingestion():
     if not os.path.exists(REPORTS_DIR):
-        print(f"Không tìm thấy thư mục {REPORTS_DIR}")
+        print(f"❌ Không tìm thấy thư mục {REPORTS_DIR}")
         return
 
     all_files = os.listdir(REPORTS_DIR)
-    text_files = [f for f in all_files if f.endswith('.ocr_text.txt')]
+    pdf_files = [f for f in all_files if f.lower().endswith('.pdf')]
     
-    if not text_files:
-        print("❌ Không tìm thấy file .ocr_text.txt nào.")
+    if not pdf_files:
+        print("❌ Không tìm thấy file .pdf nào trong thư mục financial_reports.")
         return
 
     work_items = []
-    for f in text_files:
+    for f in pdf_files:
         path = os.path.join(REPORTS_DIR, f)
         work_items.append((f, path))
 
-    print(f"🚀 Bắt đầu nạp {len(work_items)} file với {MAX_WORKERS} luồng...")
+    print(f"🚀 Tìm thấy {len(work_items)} file PDF. Bắt đầu xử lý với {MAX_WORKERS} luồng...")
+    print(f"⚠️ Lưu ý: Đảm bảo bạn đã cấu hình MISTRAL_API_KEY trong file .env")
     
     start_time = time.time()
 
@@ -122,7 +156,7 @@ def run_parallel_ingestion():
         executor.map(ingest_worker, work_items)
 
     end_time = time.time()
-    print(f"\n🎉 HOÀN TẤT! Thời gian: {end_time - start_time:.2f}s")
+    print(f"\n🎉 HOÀN TẤT TOÀN BỘ! Tổng thời gian: {end_time - start_time:.2f}s")
 
 if __name__ == "__main__":
     run_parallel_ingestion()

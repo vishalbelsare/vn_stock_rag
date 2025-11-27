@@ -64,8 +64,16 @@ def subscribe_newsletter():
     data = request.json
     email = data.get('email')
     ticker = data.get('ticker')
+    
     if email and ticker:
-        return jsonify({"status": "success", "message": f"Đã đăng ký nhận tin {ticker} cho {email}"})
+        try:
+            db.add_user(email, ticker) 
+            print(f"✅ Đã lưu vào DB: {email} - {ticker}")            
+            return jsonify({"status": "success", "message": f"Đã đăng ký nhận tin {ticker} cho {email}"})
+        except Exception as e:
+            print(f"❌ Lỗi lưu DB: {e}")
+            return jsonify({"error": "Lỗi hệ thống khi lưu dữ liệu"}), 500
+            
     return jsonify({"error": "Thiếu thông tin"}), 400
 
 @socketio.on('connect')

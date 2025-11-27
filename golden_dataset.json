@@ -1,0 +1,152 @@
+[
+    {
+        "id": "CTG_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của VietinBank (CTG) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "17.175.718 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số I: Thu nhập lãi thuần - Quý III Năm nay: 17.175.718"
+    },
+    {
+        "id": "CTG_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế TNDN của VietinBank (CTG) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "8.512.463 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế TNDN - Quý III Năm nay: 8.512.463"
+    },
+    {
+        "id": "CTG_2025_Q3_03",
+        "query": "Tổng tài sản của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.761.550.938 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, TỔNG TÀI SẢN CÓ - Tại ngày 30/09/2025: 2.761.550.938"
+    },
+    {
+        "id": "CTG_2025_Q3_04",
+        "query": "Tổng nợ phải trả của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.591.669.938 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, TỔNG NỢ PHẢI TRẢ - Tại ngày 30/09/2025: 2.591.669.938"
+    },
+    {
+        "id": "CTG_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VietinBank (CTG) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "85.022.836 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Kỳ này: 85.022.836"
+    },
+    {
+        "id": "BCM_2025_Q3_01",
+        "query": "Doanh thu bán hàng và cung cấp dịch vụ của Becamex (BCM) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "851.829.440.858 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh tổng hợp, Mã số 01: Doanh thu bán hàng và cung cấp dịch vụ - Quý này: 851.829.440.858"
+    },
+    {
+        "id": "BCM_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Becamex (BCM) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "236.726.284.587 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh tổng hợp, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp - Quý này: 236.726.284.587"
+    },
+    {
+        "id": "BCM_2025_Q3_03",
+        "query": "Tổng cộng tài sản của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "50.321.178.875.075 VND",
+        "ground_truth_context": "Bảng cân đối kế toán tổng hợp, Mã số 270: TỔNG CỘNG TÀI SẢN - Số cuối kỳ: 50.321.178.875.075"
+    },
+    {
+        "id": "BCM_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "34.694.406.192.723 VND",
+        "ground_truth_context": "Bảng cân đối kế toán tổng hợp, Mã số 300: NỢ PHẢI TRẢ - Số cuối kỳ: 34.694.406.192.723"
+    },
+    {
+        "id": "BCM_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Becamex (BCM) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "-398.631.979.587 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ tổng hợp, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Năm nay: (398.631.979.587)"
+    },
+    {
+        "id": "ACB_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "8.279.694 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số I: Thu nhập lãi thuần - Quý III Năm 2025: 8.279.694"
+    },
+    {
+        "id": "ACB_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "4.280.589 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế - Quý III Năm 2025: 4.280.589"
+    },
+    {
+        "id": "ACB_2025_Q3_03",
+        "query": "Tổng tài sản của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "948.549.176 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, TỔNG TÀI SẢN - 30.9.2025: 948.549.176"
+    },
+    {
+        "id": "ACB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "857.133.676 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, TỔNG NỢ PHẢI TRẢ - 30.9.2025: 857.133.676"
+    },
+    {
+        "id": "ACB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Ngân hàng Á Châu (ACB) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "-21.190.910 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: LƯU CHUYỂN TIỀN THUẦN TỪ HOẠT ĐỘNG KINH DOANH - Năm 2025: (21.190.910)"
+    },
+    {
+        "id": "DGC_2025_Q3_01",
+        "query": "Doanh thu bán hàng và cung cấp dịch vụ của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.818.109.455.903 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 01: Doanh thu bán hàng và cung cấp dịch vụ - Quý III 2025: 2.818.109.455.903"
+    },
+    {
+        "id": "DGC_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "751.640.144.097 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp - Quý III 2025: 751.640.144.097"
+    },
+    {
+        "id": "DGC_2025_Q3_03",
+        "query": "Tổng tài sản của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "19.424.382.428.034 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG TÀI SẢN - Số cuối quý: 19.424.382.428.034"
+    },
+    {
+        "id": "DGC_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.413.453.381.832 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ - Số cuối quý: 3.413.453.381.832"
+    },
+    {
+        "id": "DGC_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Hóa chất Đức Giang (DGC) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "1.250.154.428.225 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Lũy kế từ đầu năm đến cuối quý này: 1.250.154.428.225"
+    },
+    {
+        "id": "BID_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của BIDV (BID) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "15.172.618 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số I: Thu nhập lãi thuần - Kỳ này: 15.172.618"
+    },
+    {
+        "id": "BID_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của BIDV (BID) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "6.086.910 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế - Kỳ này: 6.086.910"
+    },
+    {
+        "id": "BID_2025_Q3_03",
+        "query": "Tổng tài sản của BIDV (BID) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.071.970.196 triệu VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, TỔNG TÀI SẢN CÓ - 30/09/2025: 3.071.970.196"
+    },
+    {
+        "id": "BID_2025_Q3_04",
+        "query": "Tiền gửi của khách hàng tại BIDV (BID) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.087.181.421 triệu VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số III (Mục B): Tiền gửi của khách hàng - 30/09/2025: 2.087.181.421"
+    },
+    {
+        "id": "BID_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV (BID) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "111.840.462 triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Kỳ này: 111.840.462"
+    }
+]

@@ -1,0 +1,1414 @@
+# BÁO CÁO TÀI CHÍNH HỢP NHẤT QUÝ III NĂM 2025 
+
+CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH (REE)
+
+BẢNG CẢN ĐỐI KẾ TOÁN HỢP NHẤT Ngày 30 tháng 09 năm 2025
+
+|  Mă
+số | TÀI SẢN | Thuyết
+minh | Số cuối kỳ | Số đầu năm  |
+| --- | --- | --- | --- | --- |
+|  100 | A - TÀI SẢN NGẮN HẠN |  | 12.359.235.870.047 | 11.285.775.224.595  |
+|  110 | I. Tiền và các khoản tương đương tiền |  | 3.356.120.292.119 | 5.635.908.856.765  |
+|  111 | 1.Tiền | 4 | 333.163.499.527 | 274.412.751.197  |
+|  112 | 2. Các khoản tương đương tiền |  | 3.022.956.792.592 | 5.361.496.105.568  |
+|  120 | II. Các khoản đầu tư tài chính ngắn hạn |  | 3.650.601.171.553 | 1.060.073.372.989  |
+|  121 | 1. Chứng khoán kinh doanh | 12.1 | 1.181.295.023.351 | 733.142.581.787  |
+|  122 | 2. Dự phòng giảm giá chứng khoán kinh doanh | 12.1 | (563.851.798) | (823.208.798)  |
+|  123 | 3. Đầu tư nắm giữ đến ngày đáo hạn |  | 2.469.870.000.000 | 327.754.000.000  |
+|  130 | III. Các khoản phải thu ngắn hạn |  | 3.801.027.090.768 | 3.129.681.988.376  |
+|  131 | 1. Phải thu ngắn hạn của khách hàng |  | 2.449.510.536.247 | 2.611.501.498.723  |
+|  132 | 2. Trả trước cho người bán ngắn hạn |  | 453.740.492.621 | 243.554.086.604  |
+|  134 | 3. Phải thu theo tiến độ hợp đồng xây dựng |  | 845.390.400.792 | 416.672.074.333  |
+|  136 | 4. Phải thu ngắn hạn khác | 5 | 543.218.456.103 | 326.543.621.266  |
+|  137 | 5. Dự phòng phải thu ngắn hạn khó đòi |  | (490.832.794.995) | (468.589.292.550)  |
+|  140 | IV. Hàng tồn kho | 7 | 1.291.160.053.507 | 1.276.815.964.044  |
+|  141 | 1. Hàng tồn kho |  | 1.387.241.086.117 | 1.379.188.278.200  |
+|  149 | 2. Dự phòng giảm giá hàng tồn kho |  | (96.081.032.610) | (102.372.314.156)  |
+|  150 | V. Tài sản ngắn hạn khác |  | 260.327.262.100 | 183.295.042.421  |
+|  151 | 1. Chi phí trả trước ngắn hạn |  | 24.487.300.439 | 14.228.949.938  |
+|  152 | 2. Thuế giá trị gia tăng được khấu trừ |  | 210.932.558.940 | 155.706.486.002  |
+|  153 | 3. Thuế và các khoản phải thu Nhà Nước |  | 24.907.402.721 | 13.359.606.481  |
+|  200 | B - TÀI SẢN DÀI HẠN |  | 25.906.761.167.467 | 25.076.564.658.982  |
+|  210 | I- Các khoản phải thu dài hạn |  | 105.833.033.764 | 36.440.426.781  |
+|  212 | 1. Trả trước cho người bán dài hạn |  | 835.800.000 | -  |
+|  215 | 2. Phải thu về cho vay dài hạn |  | 72.924.300.000 | -  |
+|  216 | 3. Phải thu dài hạn khác | 5 | 32.072.933.764 | 36.440.426.781  |
+|  220 | II. Tài sản cố định |  | 14.386.472.451.373 | 13.961.348.221.477  |
+|  221 | 1. Tài sản cố định hữu hình | 8 | 14.317.156.409.754 | 13.890.331.971.058  |
+|  222 | - Nguyên giá |  | 23.717.924.232.012 | 22.462.780.188.998  |
+|  223 | - Giá trị hao mòn lũy kế |  | (9.400.767.822.258) | (8.572.448.217.940)  |
+
+BẢNG CẦN ĐỐI KẾ TOÁN HỢP NHẤT ( tiếp theo ) Ngày 30 tháng 09 năm 2025
+
+|  Mã | TÀI SẢN | Thuyết | Sổ cuối kỳ | Sổ đầu năm  |
+| --- | --- | --- | --- | --- |
+|  227 |  | minh |  |   |
+|  228 | 2. Tài sản cố định vô hình | 9 | 69.316.041.619 | 71.016.250.419  |
+|  228 | - Nguyên giá |  | 97.552.859.411 | 95.384.900.227  |
+|  229 | - Giá trị hao mòn lũy kế |  | (28.236.817.792) | (24.368.649.808)  |
+|  230 | III. Bất động sản đầu tư | 11 | 2.406.474.652.815 | 2.542.405.763.957  |
+|  231 | 1. Nguyên giá |  | 3.865.638.713.833 | 3.858.506.064.506  |
+|  232 | 2. Giá trị hao mòn lũy kế |  | (1.459.164.061.018) | (1.316.100.300.549)  |
+|  240 | IV. Tài sản dở dang dài hạn |  | 1.826.317.799.711 | 1.452.578.743.086  |
+|  242 | 1. Chi phí xây dựng cơ bản dở dang | 10 | 1.826.317.799.711 | 1.452.578.743.086  |
+|  250 | V. Đầu tư tài chính dài hạn | 12 | 6.310.253.706.829 | 6.198.537.115.816  |
+|  252 | 1. Đầu tư vào công ty liên kết, liên doanh | 12.3 | 6.044.403.795.225 | 5.932.687.204.212  |
+|  253 | 2. Đầu tư góp vốn vào đơn vị khác | 12.2 | 265.849.911.604 | 265.849.911.604  |
+|  260 | VI. Tài sản dài hạn khác |  | 871.409.522.975 | 885.254.387.865  |
+|  261 | 1. Chi phí trả trước dài hạn |  | 352.815.625.142 | 357.349.937.409  |
+|  262 | 2. Tài sản thuế thu nhập hoãn lại |  | 82.921.405.702 | 76.103.197.992  |
+|  263 | 3. Thiết bị, vật tư, phụ tùng thay thế dài hạn |  | 7.838.919.619 | 9.249.017.074  |
+|  269 | 4. Lợi thế thương mại |  | 427.833.572.512 | 442.552.235.390  |
+|  270 | TỔNG CỘNG TÀI SẢN |  | 38.265.997.037.514 | 36.362.339.883.577  |
+|  Mã | NGUỒN VỐN | Thuyết |  |   |
+|  300 | A - NƠ PHẢI TRẢ |  | 14.100.981.703.005 | 13.907.555.789.461  |
+|  310 | I. Nợ ngắn hạn |  | 4.276.976.052.607 | 4.070.052.841.712  |
+|  311 | 1. Phải trả người bán ngắn hạn |  | 845.005.195.080 | 724.470.552.917  |
+|  312 | 2. Người mua trả tiền trước ngắn hạn |  | 1.021.839.037.503 | 998.575.490.194  |
+|  313 | 3. Thuế và các khoản phải nộp Nhà nước | 13 | 335.326.528.752 | 170.638.219.929  |
+|  314 | 4. Phải trả người lao động |  | 24.898.281.228 | 59.977.929.884  |
+|  315 | 5. Chi phí phải trả ngắn hạn | 14 | 646.309.329.341 | 645.493.649.691  |
+|  318 | 6. Doanh thu chưa thực hiện ngắn hạn |  | 16.827.357.182 | 4.628.851.103  |
+|  319 | 7. Phải trả ngắn hạn khác | 15 | 98.351.174.444 | 181.603.203.070  |
+|  320 | 8.Vay và nợ thuê tài chính ngắn hạn | 16 | 1.264.555.282.263 | 1.254.303.152.582  |
+|  321 | 9. Dự phòng phải trả ngắn hạn |  | 10.750.546.886 | 23.109.698.971  |
+|  322 | 10. Quỹ khen thưởng phúc lợi |  | 13.113.319.928 | 7.252.093.371  |
+|  330 | II. Nợ dài hạn |  | 9.824.005.650.398 | 9.837.502.947.749  |
+|  336 | 1.Doanh thu chưa thực hiện |  | 34.090.911 | 136.363.638  |
+|  337 | 2. Phải trả dài hạn khác | 15 | 502.061.376.737 | 460.361.037.907  |
+|  338 | 3. Vay và nợ dài hạn | 16 | 9.081.408.054.107 | 9.142.740.044.801  |
+|  341 | 4. Thuế thu nhập hoãn lại phải trả |  | 188.943.201.015 | 188.943.201.015  |
+|  342 | 5. Dự phòng phải trả dài hạn |  | 51.558.927.628 | 45.322.300.388  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+B01-DN/HN
+
+BẢNG CÂN ĐỐI KẾ TOÁN HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+ĐVT: VND
+
+|  Mã số | NGUỒN VỐN | Thuyết minh | Số cuối kỳ | Số đầu năm  |
+| --- | --- | --- | --- | --- |
+|  400 | B - VỐN CHỦ SỞ HỮU | 17 | 24.165.015.334.509 | 22.454.784.094.116  |
+|  410 | I. Vốn chủ sở hữu |  | 24.165.015.334.509 | 22.454.784.094.116  |
+|  411 | 1. Vốn cổ phần đã phát hành |  | 5.416.581.390.000 | 4.710.134.000.000  |
+|  411a | - Cổ phiếu phổ thông có quyền biểu quyết |  | 5.416.581.390.000 | 4.710.134.000.000  |
+|  412 | 2. Thặng dư vốn cổ phần |  | 1.012.946.230.624 | 1.012.946.230.624  |
+|  418 | 3. Quỹ đầu tư phát triển |  | 415.591.264.689 | 415.591.264.689  |
+|  421 | 4. Lợi nhuận sau thuế chưa phân phối |  | 13.481.307.176.488 | 12.761.421.317.915  |
+|  421a | - LNST chưa phân phối lũy kế đến cuối kỳ trước |  | 11.572.176.296.068 | 10.768.035.465.266  |
+|  421b | - LNST chưa phân phối kỳ này |  | 1.909.130.880.420 | 1.993.385.852.649  |
+|  429 | 5. Lợi ích cổ đông không kiểm soát |  | 3.838.589.272.708 | 3.554.691.280.888  |
+|  440 | TỔNG CỘNG NGUỒN VỐN |  | 38.265.997.037.514 | 36.362.339.883.577  |
+
+Phạm Thị Uyên Phương Người lập
+
+Hồ Trần Diệu Lạnh Kế toán trưởng
+
+Ashok Gopachandran Chương Giám đốc
+
+Ngày 30 tháng 10 năm 2025
+
+3
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+BÁO CÁO KẾT QUẢ HOẠT ĐỘNG KINH DOANH HỢP NHẤT Quý III kết thúc Ngày 30 tháng 09 năm 2025
+
+|  Mã | Diễn giải | Thuyết minh | Quý III |  | Lũy kế từ đầu năm đến cuối quý này |   |
+| --- | --- | --- | --- | --- | --- | --- |
+|   |  |  | Năm nay | Năm trước | Năm nay | Năm trước  |
+|  01 | 1. Doanh thu bán hàng và cung cấp dịch vụ | 18 | 2.555.163.684.559 | 2.031.363.520.580 | 7.144.980.939.803 | 6.058.452.553.593  |
+|  02 | 2. Các khoản giảm trừ doanh thu |  | (3.001.351.578) | (1.939.532.938) | (10.947.546.856) | (8.408.471.841)  |
+|  10 | 3. Doanh thu thuần về bán hàng và cung cấp dịch vụ | 18.1 | 2.552.162.332.981 | 2.029.423.987.642 | 7.134.033.392.947 | 6.050.044.081.752  |
+|  11 | 4. Giá vốn hàng bán và dịch vụ cung cấp |  | (1.620.172.166.882) | (1.341.809.177.613) | (4.398.401.173.551) | (3.941.081.685.759)  |
+|  20 | 5. Lợi nhuận gộp về bán hàng và cung cấp dịch vụ |  | 931.990.166.099 | 687.614.810.029 | 2.735.632.219.396 | 2.108.962.395.993  |
+|  21 | 6. Doanh thu hoạt động tài chính | 18.2 | 101.765.887.253 | 62.616.197.585 | 331.450.288.392 | 222.571.556.997  |
+|  22 | 7. Chi phí tài chính | 19 | (184.462.283.981) | (185.252.307.207) | (576.302.440.861) | (611.097.651.629)  |
+|  23 | Trong đó: Chi phí lãi vay |  | (179.003.224.880) | (180.657.147.299) | (517.488.089.385) | (556.832.780.911)  |
+|  24 | 8. Lợi nhuận từ công ty liên doanh, liên kết |  | 242.594.356.684 | 207.066.167.835 | 605.511.317.347 | 440.899.037.807  |
+|  25 | 9. Chi phí bán hàng |  | (30.156.121.131) | (29.114.089.397) | (81.458.768.256) | (82.219.019.082)  |
+|  26 | 10. Chi phí quản lý doanh nghiệp |  | (125.170.439.843) | (109.606.176.398) | (354.664.031.756) | (380.026.889.455)  |
+|  30 | 11. Lợi nhuận thuần từ hoạt động kinh doanh |  | 936.561.565.081 | 633.324.602.447 | 2.660.168.584.262 | 1.699.089.430.631  |
+|  31 | 12. Thu nhập khác | 20 | 5.190.360.966 | 3.606.922.699 | 21.037.981.461 | 12.652.045.064  |
+|  32 | 13. Chi phí khác | 20 | (14.781.635.744) | (4.160.417.127) | (28.351.968.508) | (5.743.260.598)  |
+|  40 | 14. Lợi nhuận khác |  | (9.591.274.778) | (553.494.428) | (7.313.987.047) | 6.908.784.466  |
+|  50 | 15. Tổng lợi nhuận kế toán trước thuế |  | 926.970.290.303 | 632.771.108.019 | 2.652.854.597.215 | 1.705.998.215.097  |
+|  51 | 16. Chi phí thuế TNDN hiện hành | 21.1 | (102.486.518.874) | (69.202.369.563) | (278.824.415.035) | (185.013.121.130)  |
+|  52 | 17. Chi phí thuế TNDN hoãn lại | 21.1 | 328.466.580 | (2.053.946.464) | 6.729.496.550 | (6.986.407.801)  |
+|  60 | 18 Lợi nhuận sau thuế TNDN |  | 824.812.238.009 | 561.514.791.992 | 2.380.759.678.730 | 1.513.998.686.166  |
+|  61 | 18.1 Lợi nhuận sau thuế của cổ đông không kiểm soát |  | 150.585.128.195 | 81.669.171.368 | 471.628.798.310 | 198.907.574.421  |
+|  62 | 18.2 Lợi nhuận sau thuế của công ty mẹ |  | 674.227.109.814 | 479.845.620.624 | 1.909.130.880.420 | 1.315.091.111.745  |
+|  70 | 19. Lãi cơ bản trên cổ phiếu |  | 1.245 | 886 | 3.525 | 2.428  |
+
+Phạm Thị Uyên Phương Người lập
+
+Ngày 30 tháng 10 năm 2025
+
+Hồ Trần Diệu Lạnh Kế toán trường
+
+Rumachandran
+
+Tổng Điảng Giám đốc
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH 
+
+BÁO CÁO KÉT QUÁ HOẠT ĐỘNG KINH DOANH HỢP NHẤT
+Quý III kết thúc Ngày 30 tháng 09 năm 2025
+
+## Giải trình nguyên nhân biến động kết quả hoạt động kinh doanh hợp nhất Quý III/2025
+
+Lợi nhuận sau thuế (LNST) hợp nhất thuộc cổ đông công ty Mẹ Quý III năm 2025 đạt 674 tỷ đồng, tăng 194 tỷ đồng tương đương tăng $41 \%$ so với cùng kỳ năm 2024, chủ yếu là nhờ:
+
+- Mảng điện tăng 104 tỷ đồng so với quý III năm 2024 trong đó ảnh hưởng chính từ lợi nhuận các công ty thủy điện thuộc khu vực miền Trung : Công ty CP Thủy Điện Vĩnh Sơn Sông Hinh, Công ty CP Thủy Điện Sông Ba Hạ,....
+
+- Mảng Cơ điện lạnh cũng đã ghi nhận sự khởi sá́c, đồng hành cùng sự sôi động trở lại của thị trường đầu tư cơ sở hạ tầng trên cả nước, đóng góp tăng 31 tỷ đồng trong kết quả chung của công ty.
+- Mảng bất động sản cũng ghi nhận tăng so với cùng kỳ, kết quả từ việc ghi nhận lợi nhuận thoái một phần vốn trong công ty liên kết là Công ty CP địa ốc Sài Gòn.
+- Công ty liên kết Nước sạch Sông Đà với sản lượng nước sạch tiêu thụ cao hơn và việc điều chỉnh tăng giá bán cũng đóng góp tỷ trọng đáng kể vào số tăng của Mảng nước so với cùng kỳ năm trước
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+BÁO CÁO LƯU CHUYỂN TIỀN TẾ HỢP NHẢT Cho kỳ kể toán Quý III kết thúc Ngày 30 tháng 09 năm 2025
+
+|  Mă số | Chỉ tiêu | Thuyết minh | Từ ngày 01/01/2025 đến ngày 30/09/2025 | Từ ngày 01/01/2024 đến ngày 30/09/2024  |
+| --- | --- | --- | --- | --- |
+|  01 | I. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG KINH DOANH |  |  |   |
+|   | Lợi nhuận trước thuế Điều chỉnh cho các khoản: |  | 2.652.854.597.215 | 1.705.998.215.097  |
+|  02 | Khẩu hao và hao mòn (bao gồm phân bổ lợi thế thương mại) |  |  |   |
+|  03 | Các khoản dự phòng | 8,9,11 | 1.046.814.125.802 | 963.232.436.013  |
+|  04 | (Lãi) lỗ chênh lệch tỷ giá hối đoái do đánh giá lại các khoản mục tiền tệ có gốc ngoại tệ |  | 9.570.339.054 | 99.622.786.446  |
+|  05 | (Lãi) lỗ từ hoạt động đầu tư |  | 38.112.769.279 | 7.875.997.751  |
+|  06 | Chi phí lãi vay và phân bổ chi phí phát hành trái phiếu |  | (880.737.931.254) | (644.831.047.174)  |
+|  08 | Lợi nhuận từ hoạt động kinh doanh trước thay đổi vốn lưu động |  | 520.360.373.991 | 559.705.065.517  |
+|  09 | (Tăng) giảm các khoản phải thu |  | 3.386.974.274.087 | 2.691.603.453.650  |
+|  10 | (Tăng) giảm hàng tồn kho |  | (703.298.177.927) | 818.886.290.450  |
+|  11 | (Tăng) giảm các khoản phải trả (không kể lãi vay phải trả, thuế TNDN phải nộp) |  | (8.052.807.917) | 91.080.213.813  |
+|  12 | Tăng (giảm) chi phí trả trước |  | 170.997.214.061 | 152.539.835.704  |
+|  13 | (Tăng) giảm chứng khoán kinh doanh |  | (4.313.940.779) | (7.105.816.265)  |
+|  14 | Tiền lãi vay đã trả |  | (448.152.441.564) | (215.316.528.346)  |
+|  15 | Thuế thu nhập doanh nghiệp đã nộp |  | (558.302.210.747) | (594.043.171.337)  |
+|  17 | Tiền chi khác từ hoạt động kinh doanh |  | (188.474.168.191) | (144.613.064.752)  |
+|  20 | Lưu chuyển tiền thuần từ hoạt động kinh doanh |  | (12.929.240.392) | (7.384.739.002)  |
+|   | II. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG ĐẦU TƯ |  |  |   |
+|  21 | Tiền chi để mua sắm, xây dựng tài sản cố định và các tài sản dài hạn khác |  | (1.197.270.970.804) | (720.490.955.418)  |
+|  22 | Tiền thu từ thanh lý, nhượng bán TSCĐ và tài sản dài hạn khác |  | 17.161.012.865 | 4.221.775.537  |
+|  23 | Gửi tiền kỳ hạn vào các ngân hàng và cho vay |  | (2.548.730.300.000) | (109.400.000.000)  |
+|  24 | Thu tiền gửi kỳ hạn từ các ngân hàng và thu hồi cho vay |  | 333.690.000.000 | 338.225.000.000  |
+|  25 | Tiền chi đầu tư góp vốn vào đơn vị khác |  | (149.250.080.422) | (280.046.665.694)  |
+|  26 | Tiền thu hồi đầu tư góp vốn vào đơn vị khác |  | 108.836.121.950 | 143.209.844.437  |
+|  27 | Tiền thu lãi cho vay, cổ tức và lợi nhuận được chia |  | 616.027.430.551 | 955.250.159.236  |
+|  30 | Lưu chuyển tiền thuần từ hoạt động đầu tư |  | (2.819.536.785.860) | 330.969.158.098  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+BÁO CÁO LƯU CHUYỂN TIỀN TẾ HỢP NHẤT
+
+Báo ký kết toán Quý III kết thúc Ngày 30 tháng 09 năm 2025
+
+|  Mã số | Chỉ tiêu | Thuyết minh | Từ ngày 01/01/2025 đến ngày 30/09/2025 | Từ ngày 01/01/2024 đến ngày 30/09/2024  |
+| --- | --- | --- | --- | --- |
+|  31 | **III. LƯU CHUYỂN TIỀN TỪ HOẠT ĐỘNG TÀI CHÍNH** |  |  |   |
+|   | Tiền thu từ phát hành cổ phiếu, vốn góp của cổ đông không kiểm soát |  | 85.712.000.000 | 27.719.600.000  |
+|  33 | Tiền vay ngắn hạn, dài hạn nhận được |  | 1.888.648.356.639 | 3.022.134.589.403  |
+|  34 | Tiền chi trả nợ gốc vay |  | (2.244.805.361.155) | (3.220.638.812.760)  |
+|  36 | Cổ tức đã trả cho chủ sở hữu |  | (824.260.256.416) | (899.681.141.538)  |
+|  40 | Lưu chuyển thuần từ hoạt động tài chính |  | (1.094.705.260.932) | (1.070.465.764.895)  |
+|  50 | Lưu chuyển tiền thuần trong kỳ |  | (2.279.793.546.161) | 2.046.149.867.118  |
+|  60 | Tiền và tương đương tiền đầu kỳ |  | 5.635.908.856.765 | 3.022.796.235.406  |
+|  61 | Ảnh hưởng của thay đổi tỷ giá hối đoái quy đổi ngoại tệ |  | 4.981.515 | 23.461.259  |
+|  70 | Tiền và tương đương tiền cuối kỳ |  | 3.356.120.292.119 | 5.068.969.563.783  |
+
+Phạm Thị Uyên Phương
+
+Người lập
+
+Hồ Trần Diệu Lạnh
+
+Kế toán trưởng
+
+Tổng Giám đốc
+
+Ngày 30 tháng 10 năm 2025
+
+# 1. THÔNG TIN DOANH NGHIỆP 
+
+Công ty Cổ phần Cơ Điện Lạnh là một công ty cổ phần được thành lập tại Việt Nam theo Giấy Chứng nhận Đăng ký Kinh doanh số 1506/GP-UB ngày 25 tháng 12 năm 1993 do Ủy ban Nhân dân Thành phố Hồ Chí Minh cấp và theo giấy chứng nhận đăng ký kinh doanh số 0300741143 do Sở Tài Chính TP. Hồ Chí Minh - Phòng đăng ký kinh doanh cấp được điều chỉnh mới nhất vào ngày 14 tháng 07 năm 2025. Cổ phiếu của công ty đã được niêm yết tại Sở Giao dịch Chứng khoán Thành phố Hồ Chí Minh theo Giấy phép số 01/GPPH ngày 2 tháng 6 năm 2000 do Ủy ban Chứng khoán Nhà nước cấp.
+
+Nhóm Công ty bao gồm công ty mẹ, công ty con và các công ty liên kết như được trình bày ở thuyết minh số 12 của báo cáo này.
+
+Hoạt động chính của Nhóm công ty là dịch vụ cơ điện công trình (M\&E), sản xuất và lắp đặt các hệ thống điều hòa không khí, thiết bị máy tính, thiết bị viễn thông và đồ điện gia dụng, sở hữu và cho thuê cao ốc văn phòng; lắp đặt hệ thống cấp, thoát nước; khai thác xử lý và cung cấp nước; sản xuất điện; tư vấn, đấu giá bất động sản và đầu tư chiến lược ngành cơ sở hạ tầng; truyền tải và phân phối điện.
+
+Công ty có trụ sở chính tại số 364 Cộng Hòa, Phường Tân Bình, Thành phố Hồ Chí Minh, Việt Nam.
+
+## 2. CƠ SỞ TRÌNH BÀY
+
+### 2.1 Chuẩn mực và Chế độ kế toán áp dụng
+
+Các báo cáo tài chính hợp nhất của nhóm Công ty được trình bày bằng đồng Việt Nam ("VND") phù hợp với Hệ thống Kế toán và Chuẩn mực Kế toán Việt Nam ("CMKTVN") do Bộ Tài chính ban hành theo:
+
+- Quyết định số 149/2001/QĐ-BTC ngày 31 tháng 12 năm 2001 về việc ban hành bốn Chuẩn mực Kế toán Việt Nam (Đợt 1);
+- Quyết định số 165/2002/QĐ-BTC ngày 31 tháng 12 năm 2002 về việc ban hành sáu Chuẩn mực Kế toán Việt Nam (Đợt 2);
+- Quyết định số 234/2003/QĐ-BTC ngày 30 tháng 12 năm 2003 về việc ban hành sáu Chuẩn mực Kế toán Việt Nam (Đợt 3);
+- Quyết định số 12/2005/QĐ-BTC ngày 15 tháng 2 năm 2005 về việc ban hành sáu Chuẩn mực Kế toán Việt Nam (Đợt 4); và
+- Quyết định số 100/2005/QĐ-BTC ngày 28 tháng 12 năm 2005 về việc ban hành bốn Chuẩn mực Kế toán Việt Nam (Đợt 5).
+
+Và cập nhật một số nội dung chủ yếu theo Thông Tư số 200/2014/TT/BTC ngày 22/12/2014 của Bộ Tài Chính hướng dẫn Chế độ Kế toán Doanh ngiệp, Thông tư số 202/2014/TT/BTC ngày 22/12/2014 của Bộ Tài Chính hướng dẫn phương pháp lập và trình bày Báo cáo tài chính hợp nhất.
+
+### 2.2 Hình thức sổ kế toán áp dụng
+
+Hình thức sổ kế tóan áp dụng được đăng ký của nhóm Công ty là chứng từ ghi sổ
+
+2. CƠ SỞ TRÌNH BÀY (tiếp theo)
+
+# 2.3 Niên độ kế toán 
+
+Niên độ kế toán của nhóm Công ty bắt đầu từ ngày 1 tháng 1 và kết thúc vào ngày 31 tháng 12.
+
+### 2.4 Đơn vị tiền tệ sử dụng trong kế toán
+
+Báo cáo tài chính hợp nhất được trình bày bằng VND cũng là đơn vị tiền tệ sử dụng trong kế toán của Nhóm Công ty.
+
+### 2.5 Cơ sở hợp nhất
+
+Báo cáo tài chính hợp nhất bao gồm các báo cáo tài chính riêng của Công ty cổ phần Cơ Điện Lạnh và các công ty con ("Nhóm Công ty") vào Ngày 30 tháng 09 năm 2025. Các báo cáo tài chính của công ty con đã được lập cho cùng kỳ kế toán với Công ty theo các chính sách kế toán thống nhất với các chính sách kế toán của Công ty. Các bút toán điều chỉnh đã được thực hiện đối với bất kỳ chính sách kế toán nào có điểm khác biệt nhằm đảm bảo tính thống nhất giữa các công ty con và Công ty.
+Tất cả các số dư và các giao dịch nội bộ, kể cả các khoản lãi chưa thực hiện phát sinh từ các giao dịch nội bộ đã được loại trừ. Các khoản lỗ chưa thực hiện được loại trừ trên báo cáo tài chính hợp nhất, trừ trường hợp không thể thu hồi chi phí.
+Lợi ích của cổ đông không kiểm soát là phần lợi ích trong lãi hoặc lỗ và trong tài sản thuần của công ty con không được nắm giữ bởi Công ty và được trình bày ở mục riêng trên báo cáo kết quả kinh doanh hợp nhất và bảng cân đối kế toán hợp nhất.
+Công ty con được hợp nhất kể từ ngày Công ty nắm quyền kiểm soát và sẽ chấm dứt hợp nhất kể từ ngày Công ty không còn kiểm soát công ty con đó. Trong trường hợp Công ty không còn nắm quyền kiểm soát công ty con thì các báo cáo tài chính hợp nhất sẽ bao gồm cả kết quả hoạt động kinh doanh của giai đoạn thuộc năm báo cáo mà trong giai đoạn đó Công ty vẫn còn nắm quyền kiểm soát.
+
+## 3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU
+
+### 3.1 Tiền và các khoản tương đương tiền
+
+Tiền và các khoản tương đương tiền bao gồm tiền mặt tại quỹ, tiền gửi ngân hàng, các khoản đầu tư ngắn hạn có tính thanh khoản cao, có thời gian đáo hạn gốc ít hơn 3 tháng, có khả năng chuyển đổi dễ dàng thành các lượng tiền xác định và không có nhiều rủi ro trong chuyển đổi thành tiền.
+
+### 3.2 Các khoản phải thu
+
+Các khoản phải thu được trình bày trên báo cáo tài chính hợp nhất theo giá trị ghi sổ các khoản phải thu từ khách hàng và phải thu khác cùng với dự phòng được lập cho các khoản phải thu khó đòi.
+Dự phòng nợ phải thu khó đòi thể hiện phần giá trị dự kiến bị tổn thất do các khoản phải thu không được khách hàng thanh toán phát sinh đối với số dư các khoản phải thu tại thời điểm lập bảng cân đối kế toán.
+
+### 3.3 Hàng tồn kho
+
+Hàng tồn kho được ghi nhận theo giá thấp hơn giữa giá thành để đưa mỗi sản phẩm đến vị trí, điều kiện hiện tại và giá trị thuần có thể thực hiện được. Giá trị thuần có thể thực hiện được là giá bán ước tính trừ chi phí bán hàng ước tính và sau khi đã lập dự phòng cho hàng hư hỏng, lỗi thời và chậm luân chuyển.
+
+# 3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (tiếp theo) 
+
+Công ty áp dụng phương pháp kê khai thường xuyên để hạch toán hàng tồn kho với giá trị được xác định như sau:
+
+Nguyên vật liệu, hàng hóa
+
+- giá vốn thực tế theo phương pháp nhập trước xuất trước.
+
+Thành phẩm và sản phẩm dở dang
+
+- giá vốn nguyên vật liệu và lao động trực tiếp cộng chi phí sản xuất chung có liên quan được phân bổ dựa trên mức độ hoạt động bình thường.
+
+
+## Dự phòng cho hàng tồn kho
+
+Dự phòng cho hàng tồn kho được trích lập cho phần giá trị dự kiến bị tổn thất do giảm giá vật tư, thành phẩm, hàng hóa tồn kho thuộc quyền sở hữu của Công ty có thể xảy ra (giảm giá, kém phẩm chất, lỗi thời v.v..) dựa trên bằng chứng hợp lý về sự giảm giá trị vào thời điểm báo cáo. Sổ tăng hoặc giảm khoản dự phòng giảm giá hàng tồn kho được kết chuyển vào giá vốn hàng bán trên Báo cáo Kết quả hoạt động kinh doanh.
+
+## Bất động sản tồn kho
+
+Bất động sản được mua hoặc được xây dựng để bán trong quá trình hoạt động bình thường của Nhóm Công ty, không phải để cho thuê hoặc chờ tăng giá, được ghi nhận là bất động sản tồn kho theo giá thấp hơn giữa giá thành để đưa mỗi sản phẩm đến vị trí và điều kiện hiện tại và giá trị thuần có thể thực hiện được.
+
+### 3.4 Tài sản cố định hữu hình
+
+Tài sản cố định hữu hình được thể hiện theo nguyên giá trừ đi giá trị hao mòn lũy kế.
+Nguyên giá tài sản cố định hữu hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào hoạt động như dự kiến. Các chi phí mua sắm, nâng cấp và đổi mới tài sản cố định được ghi tăng nguyên giá của tài sản và chi phí bảo trì, sửa chữa được tính vào kết quả hoạt động kinh doanh. Khi tài sản được bán hay thanh lý, nguyên giá và giá trị hao mòn lũy kế được xóa sổ và bất kỳ các khoản lãi lỗ nào phát sinh do thanh lý tài sản đều được hạch toán vào kết quả hoạt động kinh doanh.
+
+### 3.5 Thuê tài sản
+
+Thuê tài sản được phân loại là thuê hoạt động nếu theo hợp đồng thuê tài sản bên cho thuê vẫn giữ phần lớn rủi ro và lợi ích gắn liền với quyền sở hữu tài sản. Tài sản theo hợp đồng thuê hoạt động được hạch toán vào tài sản cố định của Công ty trên bảng cân đối kế toán.
+
+### 3.6 Tài sản cố định vô hình
+
+Tài sản cố định vô hình được ghi nhận theo nguyên giá trừ đi giá trị khẩu trừ lũy kế.
+Nguyên giá tài sản cố định vô hình bao gồm giá mua và những chi phí có liên quan trực tiếp đến việc đưa tài sản vào sử dụng như dự kiến.
+
+Khi tài sản cố định vô hình được bán hay thanh lý, nguyên giá và giá trị khẩu trừ lũy kế được xóa sổ trên bảng cân đối kế toán giữa niên độ và các khoản lãi lỗ phát sinh do thanh lý tài sản được hạch toán vào kết quả hoạt động kinh doanh hợp nhất giữa niên độ
+
+## Quyền sử dụng đất
+
+Quyền sử dụng đất được phân bổ trong suốt thời gian còn lại của quyền sử dụng đất.
+
+# 3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (tiếp theo) 
+
+### 3.7 Khẩu hao và hao mòn
+
+Khẩu hao tài sản cố định hữu hình được trích theo phương pháp khẩu hao đường thẳng trong thời gian hữu dụng ước tính của các tài sản như sau:
+
+Nhà cửa và vật kiến trúc
+Máy móc, thiết bị
+Phương tiện vận tải
+Thiết bị văn phòng
+Quyền sử dụng đất
+Phần mềm vi tính
+Tài sản cố định khác
+
+5 - 50 năm
+$5-20$ năm
+$6-15$ năm
+3 - 5 năm
+$36-50$ năm
+$1-3$ năm
+4 năm
+
+### 3.8 Bất động sản đầu tư
+
+Bất động sản đầu tư bao gồm nhà cửa hoặc một phần nhà cửa hoặc cả hai và cơ sở hạ tầng được đầu tư nhằm mục đích thu tiền cho thuê hoặc tăng giá trị hoặc cả hai hơn là phục vụ cho mục đích sản xuất hoặc cung cấp hàng hóa, dịch vụ; nhằm mục đích hành chính hoặc kinh doanh trong quá trình hoạt động kinh doanh bình thường. Bất động sản đầu tư được ghi nhận theo nguyên giá trừ đi giá trị hao mòn lũy kế. Nguyên giá bao gồm chi phí phát sinh trực tiếp liên quan đến việc mua hoặc xây dựng bất động sản. Khẩu hao
+Khẩu hao bất động sản đầu tư được trích theo phương pháp khẩu hao đường thẳng trong suốt thời gian hữu dụng ước tính của bất động sản như sau:
+
+Nhà cửa và vật kiến trúc
+Máy móc, thiết bị phụ trợ
+Thiết bị văn phòng
+Bất động sản đầu tư khác
+$5-50$ năm
+$5-10$ năm
+$3-5$ năm
+2 năm
+
+### 3.9 Chi phí đi vay
+
+Chi phí đi vay liên quan trực tiếp đến việc xây dựng hoặc sản xuất bất kỳ tài sản đủ tiêu chuẩn được vốn hóa trong kỳ cần thiết để hoàn tất và đưa tài sản vào hoạt động theo đúng mục đích dự kiến. Chi phí đi vay khác được ghi nhận vào kết quả hoạt động kinh doanh trong năm khi phát sinh.
+
+### 3.10 Chi phí trả trước
+
+Chi phí trả trước bao gồm các chi phí trả trước ngắn hạn hoặc chi phí trả trước dài hạn trên bảng cân đối kế toán hợp nhất và được phân bổ trong khoảng thời gian trả trước hoặc thời gian các lợi ích kinh tế tương ứng được tạo ra từ các chi phí này.
+
+### 3.11 Hợp nhất kinh doanh, mua tài sản và lợi thế thương mại
+
+Tập đoàn mua các công ty con sở hữu tài sản và các hoạt động sản xuất kinh doanh. Tại thời điểm mua, Tập đoàn sẽ xác định việc mua công ty con có phải là giao dịch hợp nhất kinh doanh hay không. Giao dịch này được coi là hoạt động hợp nhất kinh doanh nếu công ty con có hoạt động sản xuất kinh doanh gắn liền với tài sản được mua.
+Nếu việc mua lại công ty con không phải là giao dịch hợp nhất kinh doanh, giao dịch đó được hạch toán như là một giao dịch mua một nhóm các tài sản và nợ phải trả. Giá phí mua được phân bổ vào các tài sản và nợ phải trả dựa trên giá trị hợp lý tương ứng của các tài sản và nợ phải trả, và không có lợi thế thương mại hay thuế thu nhập doanh nghiệp hoãn lại được ghi nhận.
+Hợp nhất kinh doanh được hạch toán theo phương pháp giá mua. Giá phí hợp nhất kinh doanh bao gồm giá trị hợp lý tại ngày diễn ra trao đổi của các tài sản đem trao đổi, các khoản nợ phải trả đã phát sinh hoặc đã thừa nhận và các công cụ vốn do bên mua phát hành để đổi lấy quyền kiểm soát bên bị mua và các chi phí liên quan trực tiếp đến việc hợp nhất kinh doanh. Tài sản đã mua, nợ phải
+
+# 3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (tiếp theo) 
+
+trả có thể xác định được và những khoản nợ tiềm tàng phải gánh chịu trong hợp nhất kinh doanh đều ghi nhận theo giá trị hợp lý tại ngày hợp nhất kinh doanh.
+
+Lợi thế thương mại phát sinh từ hợp nhất kinh doanh được ghi nhận ban đầu theo giá gốc, là phần chênh lệch giữa giá phí hợp nhất kinh doanh so với với phần sở hữu của bên mua trong giá trị hợp lý thuần của tài sản, nợ phải trả có thể xác định được và các khoản nợ tiềm tàng đã ghi nhận. Nếu giá phí hợp nhất kinh doanh nhỏ hơn phần sở hữu của bên mua trong giá trị hợp lý thuần của tài sản trong công ty con được mua thì khoản chênh lệch này được ghi nhận trực tiếp vào báo cáo kết quả hoạt động kinh doanh hợp nhất. Lợi thế thương mại được phân bổ tối đa mười (10) năm.
+
+### 3.12 Đầu tư vào công ty liên kết
+
+Đầu tư của Công ty vào công ty liên kết được phản ánh theo phương pháp vốn chủ sở hữu. Công ty liên kết là một đơn vị mà Công ty có ảnh hưởng đáng kể và đơn vị đó không phải là một công ty con hay một liên doanh.
+
+Các báo cáo tài chính của công ty liên kết được lập cho cùng năm tài chính với Công ty. Khi cần thiết, các điều chỉnh sẽ được thực hiện để đảm bảo các chính sách kế toán được áp dụng nhất quán với chính sách kế toán của Công ty.
+
+Tại ngày lập báo cáo số liệu của các công ty liên kết chưa được kiểm toán.
+
+### 3.13 Đầu tư vào công ty liên doanh
+
+Liên doanh là thỏa thuận bằng hợp đồng của hai hoặc nhiều bên để cùng thực hiện hoạt động kinh tế, mà hoạt động này được đồng kiểm soát bởi các bên góp vốn liên doanh. Các liên doanh được hợp nhất theo phương pháp vốn chủ sở hữu.
+
+### 3.14 Đầu tư chứng khoán và các khoản đầu tư khác
+
+Các khoản đầu tư được ghi nhận theo giá mua thực tế trừ đi khoản dự phòng thích hợp. Dự phòng được lập cho việc giảm giá trị của các khoản đầu tư cho phần chênh lệch giá mua thực tế cao hơn thị giá vào thời điểm cuối kỳ báo cáo theo hướng dẫn của Thông tư số 228/2009/TT-BTC do Bộ Tài Chính ban hành ngày 7 tháng 12 năm 2009 và thông tư số 89/2013/TT-BTC do Bộ Tài Chính ban hành ngày 28 tháng 6 năm 2013. Tăng hoặc giảm số dư tài khoản dự phòng được hạch toán vào chi phí tài chính trên báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ.
+
+### 3.15 Các khoản phải trả và trích trước
+
+Các khoản phải trả và trích trước được ghi nhận cho số tiền phải trả trong tương lai liên quan đến hàng hóa và dịch vụ đã nhận được không phụ thuộc vào việc Công ty đã nhận được hóa đơn của nhà cung cấp hay chưa.
+
+### 3.16 Các nghiệp vụ bằng ngoại tệ
+
+Các nghiệp vụ phát sinh bằng các đơn vị tiền tệ không phải là đơn vị tiền tệ ghi sổ kế toán của Nhóm Công ty (VND) được hạch toán theo tỷ giá giao dịch vào ngày phát sinh nghiệp vụ. Tại ngày kết thúc kỳ kế toán, các khoản mục tài sản và công nợ tiền tệ có gốc ngoại tệ được đánh lại theo như quy định của Thông Tư số 200/2014TT/BTC ngày 22/12/2014. Các khoản chênh lệch tỷ giá thực tế phát sinh trong kỳ và chênh lệch do đánh giá lại số dư tiền tệ có gốc ngoại tệ cuối kỳ được hạch toán vào kết quả hoạt động kinh doanh hợp nhất.
+
+# 3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (tiếp theo) 
+
+### 3.17 Cố phiếu quỹ
+
+Cố phiếu quỹ, công cụ vốn chủ sở hữu được công ty mua lại, trình bày trên phần nguồn vốn như một khoản giảm vốn chủ sở hữu, bằng với chi phí mua lại. Công ty không ghi nhận các khoản lãi (lỗ) khi mua, bán, phát hành hoặc hủy các công cụ vốn chủ sở hữu của mình.
+
+### 3.18 Phân chia lợi nhuận
+
+Lợi nhuận thuần sau thuế thu nhập doanh nghiệp có thể được chia cho các cố đông sau khi được đại hội đồng cổ đông phê duyệt và sau khi đã trích lập các quỹ theo Điều lệ Công ty và các quy định của pháp luật Việt Nam.
+
+## $>$ Quỹ đầu tư phát triển
+
+Quỹ đầu tư phát triển kinh doanh được trích lập từ lợi nhuận thuần sau thuế thu nhập doanh nghiệp của Nhóm Công ty theo đề xuất của Hội đồng Quản trị và được các cổ đông phê duyệt tại đại hội đồng cổ đông thường niên. Quỹ này được trích lập nhằm mở rộng hoạt động kinh doanh hoặc đầu tư chiều sâu của Công ty.
+
+## $>$ Quỹ khen thưởng và phúc lợi
+
+Quỹ khen thưởng và phúc lợi của Nhóm Công ty được thực hiện theo đề xuất của Hội đồng Quản trị và được các cổ đông phê duyệt tại đại hội đồng cổ đông thường niên. Quỹ này được trích lập nhằm khen thưởng và khuyến khích, đãi ngộ vật chất, đem lại phúc lợi chung và nâng cao đời sống vật chất và tinh thần cho công nhân viên và được trình bày như một khoản phải trả trên bảng cân đối kế toán hợp nhất.
+
+### 3.19 Ghi nhận doanh thu
+
+Doanh thu được ghi nhận trên Báo cáo kết quả hoạt động kinh doanh khi Nhóm Công ty có khả năng nhận được các lợi ích kinh tế có thể xác định được một cách chắc chắn. Các điều kiện ghi nhận cụ thể sau đây cũng phải được đáp ứng trước khi ghi nhận doanh thu:
+
+## Doanh thu bán hàng
+
+Doanh thu bán hàng được ghi nhận khi các rủi ro trọng yếu và các quyền sở hữu hàng hóa đã được chuyển sang người mua.
+
+## Doanh thu cung cấp dịch vụ
+
+Doanh thu được ghi nhận khi cung cấp dịch vụ.
+Doanh thu từ hợp đồng cung cấp và lắp đặt
+Khi kết quả thực hiện hợp đồng xây dựng có thể được ước tính một cách đáng tin cậy và được xác nhận bởi khách hàng, thì doanh thu và chi phí liên quan đến hợp đồng được ghi nhận tương ứng với phần công việc đã hoàn thành được khách hàng xác nhận vào ngày kết thúc kỳ kế toán.
+
+Các khoản tăng giảm khối lượng xây lắp, các khoản thu bồi thường và các khoản thu khác chỉ được hạch toán vào doanh thu khi đã được thống nhất với khách hàng.
+
+Khi kết quả thực hiện hợp đồng xây dựng không thể được ước tính một cách đáng tin cậy, thì doanh thu chỉ được ghi nhận tương đương với chi phí của hợp đồng đã phát sinh mà việc thu hồi là tương đối chắc chắn. Chi phí của hợp đồng chỉ được ghi nhận là chi phí trong năm khi các chi phí này đã phát sinh.
+
+# CÔNG TY CÓ PHẢN CƠ ĐIỆN LẠNH 
+
+3. CÁC CHÍNH SÁCH KẾ TOÁN CHỦ YẾU (tiếp theo)
+
+Doanh thu từ hoạt động cho thuê văn phòng
+Doanh thu từ hoạt động cho thuê văn phòng được ghi nhận theo phương pháp đường thẳng trong suốt thời hạn cho thuê theo quy định của hợp đồng thuê.
+
+Doanh thu từ các hợp đồng hợp tác kinh doanh (Hợp đồng HTKD)
+Doanh thu được ghi nhận khi Hợp đồng HTKD công bố chia lợi nhuận cho các bên tham gia Hợp đồng HTKD.
+
+Thu nhập từ hoạt động đầu tư
+Thu nhập từ hoạt động đầu tư được ghi nhận khi các khoản đầu tư được bán. Thu nhập từ hoạt động đầu tư cũng bao gồm cổ tức nhận được từ các khoản đầu tư và các khoản thu nhập này được ghi nhận khi cổ tức được công bố.
+
+Tiền lãi
+Doanh thu được ghi nhận khi tiền lãi phát sinh trên cơ sở dồn tích (có tính đến lợi tức mà tài sản đem lại) trừ khi khả năng thu hồi tiền lãi không chắc chắn.
+
+### 3.20 Thuế
+
+## Thuế thu nhập hiện hành
+
+Tài sản thuế thu nhập và thuế thu nhập phải nộp cho kỳ hiện hành và các kỳ trước được xác định bằng giá trị dự kiến phải nộp cho (hoặc được thu hồi từ) cơ quan thuế, sử dụng các mức thuế suất và các luật thuế có hiệu lực đến ngày kết thúc kỳ kế toán.
+
+## Thuế TNDN hoãn lại
+
+Thuế thu nhập hoãn lại được xác định cho các khoản chênh lệch tạm thời tại ngày kết thúc kỳ kế toán giữa cơ sở tính thuế thu nhập của các tài sản và nợ phải trả và giá trị ghi sổ của chúng cho mục đích báo cáo tài chính.
+
+Thuế thu nhập hoãn lại phải trả được ghi nhận cho tất cả các khoản chênh lệch tạm thời chịu thuế, ngoại trừ:
+
+- Thuế thu nhập hoãn lại phải trả phát sinh từ ghi nhận ban đầu của một tài sản hay nợ phải trả từ một giao dịch mà giao dịch này không có ảnh hưởng đến lợi nhuận kế toán hoặc lợi nhuận tính thuế thu nhập (hoặc lỗ tính thuế) tại thời điểm phát sinh giao dịch.
+- Các chênh lệch tạm thời chịu thuế gắn liền với các khoản đầu tư vào công ty con, chi nhánh, công ty liên kết và các khoản vốn góp liên doanh khi có khả năng kiểm soát thời gian hoàn nhập khoản chênh lệch tạm thời và chắc chắn khoản chênh lệch tạm thời sẽ không được hoàn nhập trong tương lai có thể dự đoán.
+Tài sản thuế thu nhập hoãn lại được ghi nhận cho tất cả các chênh lệch tạm thời được khấu trừ, giá trị được khấu trừ chuyển sang các kỳ sau của các khoản lỗ tính thuế và các khoản ưu đãi thuế chưa sử dụng khi chắc chắn trong tương lai sẽ có lợi nhuận tính thuế để sử dụng những chênh lệch tạm thời được khấu trừ, các khoản lỗ tính thuế và các ưu đãi thuế chưa sử dụng này, ngoại trừ :
+- Tài sản thuế hoãn lại phát sinh từ ghi nhận ban đầu của một tài sản hoặc nợ phải trả từ một giao dịch mà giao dịch này không có ảnh hưởng đến lợi nhuận kế toán hoặc lợi nhuận tính thuế thu nhập (hoặc lỗ tính thuế) tại thời điểm phát sinh giao dịch;
+- Tất cả các chênh lệch tạm thời được khấu trừ phát sinh từ các khoản đầu tư vào các công ty con, chi nhánh, công ty liên kết và các khoản vốn góp liên doanh chỉ được ghi nhận khi chắc chắn là
+- chênh lệch tạm thời sẽ được hoàn nhập trong tương lai có thể dự đoán được và có lợi nhuận chịu thuế để sử dụng được khoản chênh lệch tạm thời đó.
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH 
+
+THUYÊT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo)
+Ngày 30 tháng 09 năm 2025
+
+### 3.20 Thuế ( tiếp theo)
+
+Giá trị ghi sổ của tài sản thuế thu nhập doanh nghiệp hoãn lại được xem xét lại vào ngày kết thúc kỳ kế toán và được ghi giảm đến mức bảo đảm chắc chắn có đủ lợi nhuận tính thuế cho phép lợi ích của một phần hoặc toàn bộ tài sản thuế thu nhập hoãn lại được sử dụng. Các tài sản thuế thu nhập doanh nghiệp hoãn lại chưa ghi nhận trước đây được xem xét lại vào ngày kết thúc kỳ kế toán và được ghi nhận khi chắc chắn có đủ lợi nhuận tính thuế để có thể sử dụng các tài sản thuế thu nhập hoãn lại chưa ghi nhận này.
+
+Tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả được xác định theo thuế suất dự tính sẽ áp dụng cho kỳ tài sản được thu hồi hay nợ phải trả được thanh toán, dựa trên các mức thuế suất và luật thuế có hiệu lực vào ngày kết thúc kỳ kế toán.
+
+Thuế thu nhập hoãn lại được ghi nhận vào báo cáo kết quả hoạt động kinh doanh ngoại trừ trường hợp thuế thu nhập phát sinh liên quan đến một khoản mục được ghi thẳng vào vốn chủ sở hữu, trong trường hợp này, thuế thu nhập hoãn lại cũng được ghi nhận trực tiếp vào vốn chủ sở hữu.
+
+Nhóm Công ty chỉ bù trừ các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả khi các đơn vị nộp thuế có quyền hợp pháp được bù trừ giữa tài sản thuế thu nhập hiện hành với thuế thu nhập hiện hành phải nộp và các tài sản thuế thu nhập hoãn lại và thuế thu nhập hoãn lại phải trả liên quan đến thuế thu nhập doanh nghiệp của cùng một đơn vị nộp thuế và được quản lý bởi cùng một cơ quan thuế và đơn vị nộp thuế dự định thanh toán thuế thu nhập hiện hành phải trả và tài sản thuế thu nhập hiện hành trên cơ sở thuần.
+
+### 3.21 Lãi trên cổ phiếu
+
+Lãi cơ bản trên cổ phiếu được tính bằng cách chia phần lợi nhuận sau thuế thuộc về cổ đông của Công ty trước khi trích quỹ khen thưởng, phúc lợi cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ, không bao gồm số cổ phiếu được mua bởi Nhóm Công ty mà đang được giữ như là cổ phiếu ngân quỹ.
+
+Lãi suy giảm trên cổ phiếu được xác định bằng cách chia lợi nhuận sau thuế thuộc về cổ đông của Công ty trước khi trích quỹ khen thưởng, phúc lợi cho số lượng bình quân gia quyền của số cổ phiếu phổ thông đang lưu hành trong kỳ, loại trừ các cổ phiếu phổ thông được Nhóm Công ty mua lại và được ghi nhận là cổ phiếu ngân quỹ cộng số lượng bình quân gia quyền của các cổ phiếu sẽ được phát hành cho việc chuyển đổi tất cả các cổ phiếu phổ thông tiềm năng có tác động suy giảm.
+
+### 3.22 Thông tin theo bộ phận
+
+Một bộ phận là một cấu phần có thể xác định riêng biệt của Nhóm Công ty tham gia vào việc cung cấp các sản phẩm hoặc dịch vụ liên quan (bộ phận được chia theo hoạt động kinh doanh). Mỗi một bộ phận này chịu rủi ro và thu được lợi ích khác biệt so với các bộ phận khác.
+
+### 3.23 Các bên liên quan
+
+Các bên được coi là bên liên quan của Nhóm Công ty nếu một bên có khả năng, trực tiếp hoặc gián tiếp, kiểm soát bên kia hoặc gây ảnh hưởng đáng kể tới bên kia trong việc ra các quyết định tài chính và hoạt động, hoặc khi Nhóm Công ty và bên kia cùng chịu sự kiểm soát chung hoặc ảnh hưởng đáng kể chung. Các bên liên quan có thể là các công ty hoặc các cá nhân, bao gồm các thành viên gia đình thân cận của các cá nhân được coi là liên quan.
+
+4. TIỀN
+
+Tiền mặt
+Tiền gửi ngân hàng
+Các khoản tương đương tiền (*)
+TỔNG CỘNG
+(*) Các khoản tương đương tiền thể hiện khoản tiền gửi ngân hàng và tổ chức tài chính ngắn hạn có thời hạn gốc dưới ba tháng và hưởng lãi suất bình quân khoảng từ 3,5\%/năm đến 6,5\%/năm
+5. CÁC KHOẢN PHẢI THU KHÁC
+
+A/ Ngắn hạn
+
+Phải thu lãi tiền gửi
+Cổ tức phải thu
+Tạm ứng nhân viên
+Tạm ứng đầu tư dự án
+Hợp đồng hợp tác kinh doanh (BCC)
+Phải thu khác
+TỔNG CỘNG
+B/ Dài hạn
+
+Ký quỹ, ký cược
+TỔNG CỘNG
+7. HÀNG TỒN KHO
+
+Hàng hóa tồn kho
+Nguyên vật liệu tồn kho
+Công cụ dụng cụ tồn kho
+Chi phí sản xuất kinh doanh dở dang
+Hàng mua đang đi đường
+Dự phòng giảm giá hàng tồn kho
+GIÁ TRỊ THUẦN
+
+| Ngày 30 tháng 09 |  |
+| :--: | :--: |
+| nãm 2025 |  |
+| 4.752 .033 .455 |  |
+| 328.411 .466 .072 |  |
+| 3.022 .956 .792 .592 |  |
+| 3.356 .120 .292 .119 | 5.635 .908 .856 .765 |
+
+
+| Ngày 30 tháng 09 |  |
+| :--: | :--: |
+| nãm 2025 |  |
+| 30.678 .556 .126 |  |
+| 104.206 .855 .741 |  |
+| 15.373 .829 .003 |  |
+| 131.404 .535 .191 |  |
+| 160.754 .706 .360 |  |
+| 100.799 .973 .682 |  |
+| 543.218 .456 .103 | 326.543 .621 .266 |
+
+Ngày 30 tháng 09
+năm 2025
+32.072 .933 .764
+32.072 .933 .764
+
+## ĐVT: VND
+
+Ngày 31 tháng 12
+năm 2024
+14.189.524.593
+36.147.415.829
+30.263.210.330
+50.536.995.222
+160.754.706.360
+34.651.768.932
+326.543.621.266
+
+ĐVT: VND
+Ngày 31 tháng 12
+năm 2024
+36.440 .426 .781
+36.440 .426 .781
+
+ĐVT: VND
+Ngày 31 tháng 12
+năm 2024
+129.375.214.368
+295.617.132.589
+6.444.393.954
+934.987.776.011
+12.763.761.278
+(102.372.314.156)
+1.276 .815 .964 .044
+
+# CÔNG TY CÓ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+## 8. TÀI SẢN CỔ ĐỊNH HỮU HÌNH
+
+|   | Nhà cửa. vật kiến trúc | Máy móc thiết bị | Phương tiện vận tải | Thiết bị văn phòng | TSCĐ khác | ĐVT: VND  |
+| --- | --- | --- | --- | --- | --- | --- |
+|  Nguyên giá |  |  |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 11.895.094.280.980 | 10.040.629.042.169 | 459.613.135.994 | 36.369.726.936 | 31.074.002.919 | 22.462.780.188.998  |
+|  - Mua trong kỳ | 37.875.046.320 | 24.206.582.792 | 6.868.628.289 | 754.767.099 | 278.000.000 | 69.983.024.500  |
+|  - Đầu tư XDCB hoàn thành | 217.473.327.297 | 688.648.519.840 | 11.668.272.667 | - | - | 917.790.119.804  |
+|  - Tăng do hợp nhất | 279.521.128.503 | 34.912.531.080 | - | - | - | 314.433.659.583  |
+|  - Thanh lý | (246.095.619) | (27.742.859.430) | (1.390.372.754) | - | - | (29.379.327.803)  |
+|  - Giảm khác | (1.213.616.843) | (10.996.345.639) | (4.233.869.545) | (1.239.601.043) | - | (17.683.433.070)  |
+|  Vào ngày 30 tháng 09 năm 2025 | 12.428.504.070.638 | 10.749.657.470.812 | 472.525.794.651 | 35.884.892.992 | 31.352.002.919 | 23.717.924.232.012  |
+|  Giá trị hao mòn luỹ kế |  |  |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 4.397.118.901.936 | 3.930.562.590.226 | 214.663.233.615 | 23.860.441.398 | 6.243.050.765 | 8.572.448.217.940  |
+|  - Khẩu hao trong kỳ | 432.287.152.655 | 385.816.229.040 | 24.485.785.908 | 1.803.187.844 | 1.714.498.101 | 846.106.853.548  |
+|  - Thanh lý | - | (8.237.907.392) | (1.390.372.754) | - | - | (9.628.280.146)  |
+|  - Giảm khác | (362.243.369) | (2.323.255.127) | (4.233.869.545) | (1.239.601.043) | - | (8.158.969.084)  |
+|  Vào ngày 30 tháng 09 năm 2025 | 4.829.043.811.222 | 4.305.817.656.747 | 233.524.777.224 | 24.424.028.199 | 7.957.548.866 | 9.400.767.822.258  |
+|  Giá trị còn lại |  |  |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 7.497.975.379.044 | 6.110.066.451.943 | 244.949.902.379 | 12.509.285.538 | 24.830.952.154 | 13.890.331.971.058  |
+|  Vào ngày 30 tháng 09 năm 2025 | 7.599.460.259.416 | 6.443.839.814.065 | 239.001.017.427 | 11.460.864.793 | 23.394.454.053 | 14.317.156.409.754  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHỈNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+B09-DN/HN
+
+## 9. TÀI SẢN CỔ ĐỊNH VÔ HÌNH
+
+|   | Quyền sử
+dụng đất | Phần mềm | ĐVT: VND  |
+| --- | --- | --- | --- |
+|  **Nguyên giả** |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 73.685.019.392 | 21.699.880.835 | 95.384.900.227  |
+|  - Mua trong năm |  | 232.959.184 | 232.959.184  |
+|  - Đầu tư XDCB hoàn thành |  | 1.935.000.000 | 1.935.000.000  |
+|  Vào ngày 30 tháng 09 năm 2025 | 73.685.019.392 | 23.867.840.019 | 97.552.859.411  |
+|  **Giá trị hao mòn lũy kế** |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 11.903.994.462 | 12.464.655.346 | 24.368.649.808  |
+|  - Khẩu hao trong kỳ | 594.779.553 | 3.273.388.431 | 3.868.167.984  |
+|  Vào ngày 30 tháng 09 năm 2025 | 12.498.774.015 | 15.738.043.777 | 28.236.817.792  |
+|  **Giá trị còn lại** |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 61.781.024.930 | 9.235.225.489 | 71.016.250.419  |
+|  Vào ngày 30 tháng 09 năm 2025 | 61.186.245.377 | 8.129.796.242 | 69.316.041.619  |
+
+## 10. CHI PHÍ XÂY DỰNG CƠ BẢN DỞ DANG
+
+|   |  | ĐVT: VND  |
+| --- | --- | --- |
+|   | Ngày 30 tháng 09 năm 2025 | Ngày 31 tháng 12 năm 2024  |
+|  Chi phí dự án văn phòng cho thuê | 279.923.583.436 | 241.636.580.784  |
+|  Dự án nhà máy điện gió | 885.819.611.188 | 128.477.206.376  |
+|  Dự án thủy điện | 605.858.942.390 | 1.033.569.464.000  |
+|  Khác | 54.715.662.697 | 48.895.491.926  |
+|  **TỔNG CỘNG** | 1.826.317.799.711 | 1.452.578.743.086  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỌP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+1. BẤT ĐỘNG SẢN ĐẦU TƯ
+
+|   | Nhà cửa & vật kiến trúc | Máy móc & thiết bị | Khác | ĐVT: VND Tổng cộng  |
+| --- | --- | --- | --- | --- |
+|  Nguyên giá |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 2.793.722.467.652 | 1.064.237.143.853 | 546.453.001 | 3.858.506.064.506  |
+|  Tăng trong kỳ | 5.724.043.891 | 1.408.605.436 |  | 7.132.649.327  |
+|  Vào ngày 30 tháng 09 năm 2025 | 2.799.446.511.543 | 1.065.645.749.289 | 546.453.001 | 3.865.638.713.833  |
+|  Giá trị hao mòn lũy kế |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 790.798.412.052 | 524.755.435.496 | 546.453.001 | 1.316.100.300.549  |
+|  Khẩu hao trong kỳ | 80.507.213.059 | 62.556.547.410 | - | 143.063.760.469  |
+|  Vào ngày 30 tháng 09 năm 2025 | 871.305.625.111 | 587.311.982.906 | 546.453.001 | 1.459.164.061.018  |
+|  Giá trị còn lại |  |  |  |   |
+|  Vào ngày 31 tháng 12 năm 2024 | 2.002.924.055.600 | 539.481.708.357 | - | 2.542.405.763.957  |
+|  Vào ngày 30 tháng 09 năm 2025 | 1.928.140.886.432 | 478.333.766.383 | - | 2.406.474.652.815  |
+
+1. CÁC KHOẢN ĐẦU TƯ
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND Ngày 31 tháng 12 năm 2024  |
+| --- | --- | --- |
+|  Đầu tư ngân hạn |  |   |
+|  Chứng khoán kinh doanh (thuyết minh 12.1) | 1.181.295.023.351 | 733.142.581.787  |
+|  Dự phòng giảm giá chứng khoán kinh doanh | (563.851.798) | (823.208.798)  |
+|  Đầu tư nắm giữ đến ngày đáo hạn | 2.469.870.000.000 | 327.754.000.000  |
+|  Giá trị còn lại của các khoản đầu tư ngân hạn | 3.650.601.171.553 | 1.060.073.372.989  |
+|  Đầu tư dài hạn |  |   |
+|  Đầu tư vào các công ty liên kết (thuyết minh 12.3) | 6.044.403.795.225 | 5.932.687.204.212  |
+|  Đầu tư góp vốn vào đơn vị khác (thuyết minh 12.2) | 265.849.911.604 | 265.849.911.604  |
+|  Giá trị còn lại của các khoản đầu tư dài hạn | 6.310.253.706.829 | 6.198.537.115.816  |
+|  TỔNG CỘNG | 9.960.854.878.382 | 7.258.610.488.805  |
+
+# 12.1 Chứng khoán kinh doanh
+
+|  Tên Công ty | Ngày 30 tháng 09 năm 2025 |  | Ngày 31 tháng 12 năm 2024 |   |
+| --- | --- | --- | --- | --- |
+|   | Giá trị đầu tư | Dự phòng | Giá trị đầu tư | Dự phòng  |
+|  Ngân hàng TMCP Quốc Tế | 696.212 .625 .000 | - | 696.212 .625 .000 | -  |
+|  Các khoản đầu tư khác | 485.082 .398 .351 | (563.851.798) | 36.929 .956 .787 | (823.208.798)  |
+|  TỔNG CỘNG | 1.181.295.023.351 | (563.851.798) | 733.142.581.787 | (823.208.798)  |
+
+### 12.2 Đầu tư góp vốn vào đơn vị khác
+
+|  Tên Công ty | Ngày 30 tháng 09 năm 2025 |  | Ngày 31 tháng 12 năm 2024 |   |
+| --- | --- | --- | --- | --- |
+|   | Giá trị đầu tư | Dự phòng | Giá trị đầu tư | Dự phòng  |
+|  Công Ty CP Nhiệt Điện Hải Phòng | 11.960 .300 .000 | - | 11.960 .300 .000 | -  |
+|  Công ty CP Thủy Điện Miền Nam | 203.778 .854 .375 | - | 203.778 .854 .375 | -  |
+|  Các khoản đầu tư dài hạn khác | 50.110 .757 .229 | - | 50.110 .757 .229 | -  |
+|  TỔNG CỘNG | 265.849.911.604 | - | 265.849.911.604 | -  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+### 12.3 Đầu tư vào các công ty liên kết (*)
+
+Tên công ty
+
+|   | Ngày 30 tháng 09 năm 2025 |  | Ngày 31 tháng 12 năm 2024 |   |
+| --- | --- | --- | --- | --- |
+|   | Tỷ lệ sở hữu(%) | Giá trị đầu tư (VND) | Giá trị đầu tư (VND) | Hoạt động kinh doanh  |
+|  Công ty liên kết |  |  |  |   |
+|  1. Công ty CP Cơ Điện Đoàn Nhất | 31,82 | 38.020.590.617 | 37.025.180.230 | Cơ điện  |
+|  2. Công ty Cổ Phần Tổng Công ty CP Địa Ốc Sài Gòn | 21,84 | 305.793.376.139 | 277.691.003.656 | Bất động sản  |
+|  3. Công ty CP Thủy Điện Thác Mơ | 42,63 | 742.910.173.296 | 679.592.208.810 | Thủy điện  |
+|  4. Công ty CP Thủy Điện Srok Phu Miêng | 34,30 | 192.313.059.649 | 204.240.899.180 | Thủy điện  |
+|  5. Công ty CP Thủy Điện Sông Ba Hạ | 25,76 | 522.074.802.896 | 485.206.372.001 | Thủy điện  |
+|  6. Công ty CP Thủy Điện Bình Điền | 25,47 | 156.227.701.756 | 138.569.177.548 | Thủy điện  |
+|  7. Công ty CP Thủy Điện Miền Trung | 24,25 | 692.221.729.422 | 700.744.758.894 | Thủy điện  |
+|  8. Công ty CP Thủy Điện Sử Pán 2 | 28,88 | 137.035.139.106 | 122.635.516.675 | Thủy điện  |
+|  9. Công ty CP Nhiệt điện Ninh Bình | - | - | 68.534.457.666 | Nhiệt điện  |
+|  10. Công ty CP Nhiệt điện Phả Lại | 20,12 | 914.534.144.609 | 917.719.350.876 | Nhiệt điện  |
+|  11. Công ty CP BOO Nước Thủ Đức | 42,07 | 290.872.361.282 | 310.296.321.948 | Sản xuất  |
+|  12. Công ty CP Đầu tư & Kinh doanh Nước Sạch Sài Gòn | 40,00 | 488.862.978.244 | 469.538.322.825 | Sản xuất  |
+|  13. Công ty CP Nước Sạch Sông Đà | 35,95 | 882.342.790.101 | 843.860.313.680 | Sản xuất  |
+|  14. Công ty CP Đầu Tư Nước Tân Hiệp | 32,00 | 167.462.491.861 | 161.552.932.191 | Sản xuất  |
+|  15. Công ty CP Cấp Thoát Nước Khánh Hòa | 43,88 | 289.536.616.038 | 288.235.607.345 | SX,Cung cấp nước  |
+|  16. Công ty CP Đầu tư & Xây Dựng Cấp Thoát Nước Suối Dầu | 20,00 | 37.722.440.645 | 37.234.095.707 | SX,Cung cấp nước  |
+|  17. Công ty CP Cấp Nước Thủ Đức | 44,17 | 106.528.717.456 | 108.096.337.717 | Cung cấp nước  |
+|  18. Công ty CP Cấp Nước Gia Định | 20,05 | 36.424.281.307 | 37.746.679.142 | Cung cấp nước  |
+|  19. Công ty CP Cấp Nước Nhà Bè | 20,02 | 43.520.400.801 | 44.167.668.121 | Cung cấp nước  |
+|  TỔNG CỘNG |  | 6.044.403.795.225 | 5.932.687.204.212 |   |
+
+(*) Tại ngày lập báo cáo số liệu của các công ty liên kết chưa được kiểm toán.
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH 
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo)
+Ngày 30 tháng 09 năm 2025
+12.4 Đầu tư của công ty mẹ vào các công ty con
+
+## Tên công ty
+
+1. Công ty CP Dịch Vụ \& Kỹ Thuật Cơ Điện Lạnh R.E.E ( REE ME )
+2. Công ty CP Điện Máy R.E.E
+3. Công ty TNHH Sản Xuất \& Dịch Vụ REEPRO
+4. Công ty TNHH Bất Động Sản REE
+5. Công ty CP Bất Động Sản Song Mai
+6. Công ty CP Bất Động Sản Tân Hải
+7. Công ty CP Bất Động Sản REE New City
+8. Công ty TNHH Quản Lý \& Khai Thác Bất Động Sản R.E.E
+9. Công ty TNHH Năng Lượng REE
+10. Công Ty CP Thủy Điện Thác Bà
+11. Công ty CP Thủy Điện Vĩnh Sơn Sông Hinh
+12. Công ty TNHH MTV Tư vấn và Dịch vụ Kỹ thuật VSH
+13. Công Ty CP Thủy Điện Mường Hum
+14. Công Ty CP Thủy Điện Thác Bà 2
+15. Công ty CP Phát triển Điện Đông Dương
+16. Công Ty CP Thủy Điện Trà Khúc 2
+17. Công ty Cổ Phần Điện Gió Duyên Hải
+18. Công Ty CP Phong Điện Thuận Bình
+19. Công ty TNHH Điện Gió REE Trà Vinh
+20. Công ty TNHH REE SE Holdings
+21. Công ty CP Năng Lượng Mặt Trời R.E.E
+22. Công ty TNHH Điện Mặt Trời Tân Bình
+23. Công ty TNHH REE SE Ánh Dương
+24. Công ty TNHH REE SE Hướng Dương
+25. Công ty CP Điện Mặt Trời Thái Bình Dương
+26. Công ty TNHH REE SE Thái Dương
+27. Công Ty CP Hạ Tầng Điện Nước EWACO
+28. Công Ty CP Phát Triển Điện Trà Vinh
+29. Công Ty CP GE Tây Nguyên
+30. Công ty TNHH Thương mại, Dịch vụ Xây Dựng Tín Hiệu Xanh
+31. Công ty TNHH Nước Sạch REE
+32. Công ty TNHH TK Cộng
+33. Công ty TNHH REE Digital
+
+## Tỷ lệ sở hữu (\%)
+
+90,91
+99,99
+99,99
+100,00
+73,99
+99,99
+99,99
+100,00
+100,00
+79,84
+35,60
+99,99
+99,99
+70,00
+50,00
+100,00
+100,00
+99,99
+70,00
+50,00
+100,00
+100,00
+99,99
+70,00
+50,00
+100,00
+100,00
+99,99
+70,00
+50,00
+100,00
+100,00
+100,00
+
+## Tỷ lệ sở hữu (\%) Địa điểm
+
+90,91 TP.HCM - Việt Nam
+99,99 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+73,99 TP.HCM - Việt Nam
+99,99 TP.HCM - Việt Nam
+99,99 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+100,00 TP.HCM - Việt Nam
+
+Nhóm Ngành nghề
+kinh doanh
+Cơ điện lạnh
+Cơ điện lạnh
+Cơ điện lạnh
+Bất động sản
+Bất động sản
+Bất động sản
+Bất động sản
+Dịch vụ quản lý văn phòng
+Điện
+Thủy điện
+Thủy điện
+Cung cấp dịch vụ
+Thủy điện
+Thủy điện
+Thủy điện
+Thủy điện
+Thủy điện
+Điện gió
+Điện gió
+Điện gió
+Điện gió
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Điện mặt trời
+Cung cấp điện
+Cung cấp điện
+Cung cấp điện
+Cung cấp điện
+Cung cấp điện
+Cơ sở hạ tầng điện
+Nước
+Thiết bị ngành nước
+Công nghệ
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BẢO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+## 13. THUẾ VÀ CÁC KHOẢN PHẢI NỘP NHÀ NƯỚC
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND  |
+| --- | --- | --- |
+|  Thuế thu nhập doanh nghiệp | 196.425.959.296 | 108.102.072.812  |
+|  Thuế giá trị gia tăng | 58.792.676.746 | 23.257.418.029  |
+|  Thuế thu nhập cá nhân | 7.461.151.809 | 5.958.862.363  |
+|  Thuế, phí tài nguyên-môi trường | 71.124.885.320 | 28.300.464.336  |
+|  Các loại phí và thuế khác | 1.521.855.581 | 5.019.402.389  |
+|  **TỔNG CỘNG** | **335.326.528.752** | **170.638.219.929**  |
+
+## 14. CHI PHÍ PHẢI TRẢ
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND  |
+| --- | --- | --- |
+|  Giá vốn dịch vụ cung cấp thiết bị và lắp đặt | 422.379.144.154 | 371.560.055.070  |
+|  Chi phí lãi vay | 61.981.914.608 | 102.796.035.970  |
+|  Chi phí khuyến mãi | 9.872.744.615 | 6.734.267.349  |
+|  Các khoản khác | 152.075.525.964 | 164.403.291.302  |
+|  **TỔNG CỘNG** | **646.309.329.341** | **645.493.649.691**  |
+
+## 15. CÁC KHOẢN PHẢI TRẢ KHÁC
+
+### A/ Ngắn hạn
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND  |
+| --- | --- | --- |
+|  Phải trả mua chứng khoán | 2.246.059.000 | 2.246.059.000  |
+|  Cổ tức, lãi trái phiếu phải trả | 64.590.291.231 | 149.908.594.583  |
+|  Các khoản phải trả, phải nộp khác | 31.514.824.213 | 29.448.549.487  |
+|  **TỔNG CỘNG** | **98.351.174.444** | **181.603.203.070**  |
+
+### B/ Dài hạn
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND  |
+| --- | --- | --- |
+|  Nhận cọc, ký quỹ, ký cược | 300.327.179.561 | 258.626.840.731  |
+|  Các khoản phải trả, phải nộp khác | 201.734.197.176 | 201.734.197.176  |
+|  **TỔNG CỘNG** | **502.061.376.737** | **460.361.037.907**  |
+
+## 16. VAY VÀ NỢ THUẾ TÀI CHÍNH
+
+### A/ Ngắn hạn
+
+|   | Ngày 30 tháng 09 năm 2025 | ĐVT: VND  |
+| --- | --- | --- |
+|  Vay ngắn hạn | 665.238.832.045 | 404.386.986.768  |
+|  Vay dài hạn đến hạn phải trả | 599.316.450.218 | 849.916.165.814  |
+|  **TỔNG CỘNG** | **1.264.555.282.263** | **1.254.303.152.582**  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+B/ Dài hạn
+
+|   | Ngày 30 tháng 09 năm 2025 | Ngày 31 tháng 12 năm 2024  |
+| --- | --- | --- |
+|  Vay dài hạn (**) | 6.775.854.620.723 | 6.840.058.896.023  |
+|  Trái phiếu (***) | 2.305.553.433.384 | 2.302.681.148.778  |
+|  TỔNG CỘNG | 9.081.408.054.107 | 9.142.740.044.801  |
+
+(**) Chi tiết vay dài hạn như sau: Các khoản vay dài hạn từ ngân hàng vào ngày kết thúc kỳ báo cáo chịu lãi suất VND tương ứng từ 5,7% đến 7,63%. Chi tiết thể hiện như sau :
+
+|  Khoản tín dụng số | Ngày 30 tháng 09 năm 2025 (VND) | Ngày đến hạn | Mô tả tài sản thế chấp  |
+| --- | --- | --- | --- |
+|  Ngân hàng TNHH Một Thành Viên HSBC ( Việt Nam) |  |  |   |
+|  VNM160065/1CM | 159.477.484.658 | Ngày 26 tháng 11 năm 2027 | Toàn bộ máy móc và thiết bị là pin mặt trời hoặc các thiết bị khác có liên quan đến hệ thống điện mặt trời áp mái từ Công ty TNHH REE SE HOLDINGS và/hoặc các công ty con  |
+|  VNM163048CM | 691.412.571.727 | Ngày 13 tháng 01 năm 2030 | Quyền sử dụng đất, tòa nhà và khoản thu từ cho thuê tại tòa nhà Etown 6, số 364 Cộng Hòa, Phường Tân Bình, Thành phố Hồ Chí Minh. Quyền sử dụng đất, tòa nhà và khoản thu từ cho thuê tại Tòa nhà số 9 Đoàn Văn Bơ, Phường Xóm Chiểu, Tp. HCM, Tòa nhà 366 Nguyễn Trãi, Phường An Đông, Tp. HCM, Tòa nhà 61-63 Bà Hom, Phường Phú Lâm, Tp. HCM, Tòa nhà 180 Pasteur, Phường Sài Gòn, Tp. HCM  |
+|  Ngân hàng Thương Mại Cổ Phần Ngoại Thương Việt Nam |  |  |   |
+|  HĐTD021C16 | 224.645.734.748 | Ngày 02 tháng 02 năm 2028 | Quyền sử dụng đất và các tài sản bao gồm công trình trên đất, động sản và quyền tài sản thuộc dự án Trung Tâm thương mại cao ốc văn phòng Etown Central thuộc Song Mai, công ty con của Nhóm Công ty, tọa lạc tại Số 11 Đường Đoàn Văn Bơ, Phường Xóm Chiểu, Thành phố Hồ Chí Minh  |
+|  0146/2038/D-DA/01 | 195.943.566.337 | Từ ngày 19 tháng 01 năm 2029 đến ngày 02 tháng 08 năm 2029 | Một phần máy móc và thiết bị là các tấm pin mặt trời liên quan đến hệ thống điện mặt trời trên mái nhà của Công ty và các Công ty con; và thư cam kết của Công ty Cổ phần Cơ Điện Lạnh  |
+|  562/TBN-DN/21DH |  |  |   |
+|  0001/2138/D-DA/01 |  |  |   |
+|  0002/2138/D-DA/01 |  |  |   |
+|  Số 01/2017/HĐTD với hạn mức 500 tỷ VND | 193.228.998.000 | Ngày 13 tháng 07 năm 2030 | (i)  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHỈNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+|  Khoản tín dụng số | Ngày 30 tháng 09 năm 2025 (VND) | Ngày đến hạn  |
+| --- | --- | --- |
+|  Số 01/2015/HĐTD với hạn mức 700 tỷ VND | 572.291.000.000 | Ngày 8 tháng 10 năm 2030  |
+|  Số 01/2015/HĐTD với hạn mức 400 tỷ VND | 326.054.000.000 | Ngày 13 tháng 07 năm 2030  |
+|  Số 0094/2038/D-DA/01 | 907.140.557.250 | Ngày 20 tháng 09 năm 2033  |
+
+## Ngân hàng Thương Mại Cổ Phần Đầu Tư và Phát Triển Việt Nam
+
+|  Số 01/2015/HĐTD với hạn mức 850 tỷ VND | 528.652.000.000 | Ngày 08 tháng 10 năm 2030 | (i)  |
+| --- | --- | --- | --- |
+|  Số 01/2017/HĐTD HĐTD với hạn mức 600 tỷ VND | 300.053.000.000 | Ngày 08 tháng 10 năm 2030 | (i)  |
+|  Số 01/2024/HĐTD với hạn mức 818 tỷ đồng | 517.743.000.000 | Ngày 08 tháng 10 năm 2030 | (i)  |
+
+## Ngân hàng Phát triển Việt Nam
+
+|  78.078.990.989 số dư ngoại tệ 3.099.971,85 USD, lãi suất Phí dịch vụ 0,75% và phí quản lý 0,2% | Ngày 01 tháng 06 năm 2035 | Một phần tài sản cố định hữu hình tại Nhà máy Thủy điện Sông Hinh (ii)  |
+| --- | --- | --- |
+|  08/2015/HĐTDĐT-NHPT | 94.783.000.000 | Ngày 20 tháng 10 năm 2027  |
+|  01/2024/HĐTDĐT-NHPT | 192.074.000.000 | Ngày 25 tháng 12 năm 2037  |
+
+## Ngân hàng TNHH MTV Shinhan Việt Nam
+
+|  SHBVN/CMC/122022/HDTD/T HACBA2 | 408.172.661.535 | Ngày 25 tháng 11 năm 2034 | Toàn bộ khoản phải thu phát sinh từ các thứa đất; toàn bộ tài sản thuộc dự án Thủy Điện Thác Bà 2; khoản phải thu phát sinh theo Hợp đồng mua bán điện của dự án Thủy Điện Thác Bà 2; hợp đồng Bảo lãnh của Công ty Cổ phần Thủy điện Thác Bà và Công ty Cổ phần Tư vấn Xây dựng Điện 2  |
+| --- | --- | --- | --- |
+|  SHBVN/CMC/032023/HDTD/T HACBA-MAC | 75.000.000.000 | Ngày 06 tháng 09 năm 2031 | 05 Giấy chứng nhận quyền sử dụng đất số BA 609476; BA 609478; BA 609479; BA 609480; BA 609481 và Toàn bộ máy móc thiết bị hình thành từ Dự Án "Nâng cấp thiết bị tổ máy - Nhà máy Thủy điện Thác Bà"  |
+|  Hợp đồng ngày 02/11/2024 | 19.849.534.485 | Ngày 29 tháng 11 năm 2036 | Thế chấp quyền thuê và sử dụng đất tại xã Sơn Hạ, tỉnh Quảng Ngãi  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BẢO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025
+
+|   | Ngày 30 tháng 09 | Ngày đến hạn | Mô tả tài sản thế chấp  |
+| --- | --- | --- | --- |
+|  Khoản tín dụng số | năm 2025 (VND) |  |   |
+|  Công ty Tài chính Cổ phần Điện lực |  |  |   |
+|  01/2014/HDCVL/TCDL-TBW/Phu lac (EUR) | 220.060.963.743
+(5ổ dư ngoại tệ :
+6.944.176,83 EUR, lãi
+suất cổ định 1,25%) | Ngày 30 tháng 12 năm 2027 | Toàn bộ tài sản của Nhà máy Điện gió Phú Lạc thuộc Thuận Bình, công ty con của Công ty, tọa lạc tại thôn Lạc Trị, xã Liên Hương, tỉnh Lâm Đồng  |
+|  Ngân hàng Thương Mại Cổ Phần Quốc tế Việt Nam |  |  |   |
+|  0000521.23 ngày 20/11/2023 | 857.156.000.000 | Ngày 22 tháng 11 năm 2031 | Toàn bộ tài sản của Nhà máy Điện gió Phú lạc giai đoạn 2 tại thôn thôn Lạc Trị, xã Liên Hương, tỉnh Lâm Đồng và Nhà máy Điện gió Lợi Hải 2 tại thôn Ấn Đạt, xã Thuận Bắc, tỉnh Khánh Hòa  |
+|  Số 309691224 với hạn mức 440 tỷ đồng | 286.000.000.000 | Ngày 30 tháng 06 năm 2029 | Thế chấp bằng 15.000.000 cổ phiếu VSH do Công ty TNHH Năng Lượng REE sở hữu để đảm bảo toàn bộ nghĩa vụ nợ của VSH tại VIB  |
+|  Số 1072138.25 ngày 26/7/2025 | 527.354.007.469 | Ngày 12 tháng 08 năm 2037 | Toàn bộ tài sản của Nhà máy Điện gió Duyên Hải, khoản phải thu theo HĐ mua bán điện  |
+|  TỔNG CỘNG | 7.375.171.070.941 |  |   |
+|  Trong đó: |  |  |   |
+
+Vay dài hạn đến hạn trả : 599.316.450.218
+
+(i) Những khoản vay này nhằm mục đích thanh toán chi phí đầu tư xây dựng Dự án Thủy điện Thượng Kon Tum, theo thỏa thuận tài trợ dự án số 01/2015/TTDA và 01/2017/TTDA giữa Công ty và các ngân hàng thương mại bao gồm BIDV - Chi nhánh Bình Định, Vietcombank - Chi nhánh Kon Tum và Vietcombank - Chi nhánh Gia Lai, trong đó, BIDV - Chi nhánh Bình Định giữ vai trò là ngân hàng đầu mối và đại lý nhận tài sản đảm bảo, bao gồm toàn bộ quyền sử dụng đất, máy móc thiết bị, phương tiện vận tải và các tài sản hình thành trong tương lai của Dự án Thủy điện Thượng Kon Tum.
+
+(ii) Đây là khoản vay để đầu tư xây dựng Nhà máy Thủy điện Sông Hinh từ nguồn vốn hỗ trợ phát triển chính thức của Quỹ Phát triển Bắc Âu ("NDF"). Vào ngày 22 tháng 11 năm 2005, Công ty đã nhận bàn giao khoản vay này từ Tổng Công ty Điện lực Việt Nam khi thực hiện cổ phần hoá thông qua hợp đồng tín dụng số 01/TDNN với Chi nhánh Quỹ hỗ trợ Phát triển Phú Yên (nay là Ngân hàng Phát triển Việt Nam - Chi nhánh Nam Trung Bộ). Các khoản vay này không lãi suất và chịu chi phí quản lý vốn vay 0,2%/năm và phí dịch vụ 0,75%/năm.
+
+(***) Trái phiếu :
+
+Vào ngày 28 tháng 01 năm 2019 Công ty đã phát hành 2.318 trái phiếu có kỳ hạn 10 năm (REE-BOND2029) với tổng giá trị 2.318 tỷ VND (mệnh giá 1 tỷ đồng/ trái phiếu). Đây là Trái phiếu không chuyển đổi, không kèm chứng quyền và được bảo lãnh thanh toán bởi Credit Guarantee and Investment Facility (CGIF) – Một quỹ tín thác của Ngân hàng phát triển Châu Á ("CGIF").
+
+Tổng số tiền thu được từ đợt phát hành này được sử dụng để (1) phát triển các dự án bất động sản văn phòng cho thuê trên quỹ đất hiện hữu (khu văn phòng Etown) ở Thành phố Hồ Chí Minh; (2) thanh toán tiền sử dụng đất, mua đất, phát triển thêm quỹ đất nhưng không dung cho mục đích phát triển quỹ đất ở khu đô thị mới Thủ Thiêm, Phường Thủ Đức, Thành Phố Hồ Chí Minh.
+
+Các trái phiếu này được đảm bảo bằng 38.365.168 cổ phiếu Công ty CP Thủy Điện Thác Bà và 32.000.000 cổ phiếu Công ty CP Thủy Điện Sông Ba Hạ và 24.932.630 cổ phiếu Công Ty Cổ Phần Thủy Điện Mường Hum thuộc sở hữu của Công Ty TNHH Năng Lượng REE (công ty con 100% vốn của REE).
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LANH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Ngày 30 tháng 09 năm 2025 17 - VỐN CHỦ SỞ HỮU
+
+Tình hình tăng giảm nguồn vốn chủ sở hữu
+
+|   | Vốn góp | Thặng dư vốn cổ phần | Cổ phiếu ngân quỹ | Quỹ đầu tư phát triển | ĐVT: VND
+Lợi nhuận sau thuế chưa phân phối  |
+| --- | --- | --- | --- | --- | --- |
+|  Năm trước |  |  |  |  |   |
+|  Ngày 31 tháng 12 năm 2023 | 4.097.142.600.000 | 1.050.489.310.786 | (47.622.230.162) | 415.591.264.689 | 11.802.464.925.759  |
+|  Cổ tức bằng cổ phiếu | 612.991 .400 .000 | - | - | - | (612.991.400.000)  |
+|  Lợi nhuận trong kỳ | - | - | - | - | 1.993.385.852.649  |
+|  Tăng ( giảm ) khác | - | - | - | - | (5.690.900.797)  |
+|  Bán cổ phiếu quỹ | - | (37.543.080.162) | 47.622.230.162 | - | -  |
+|  Cổ tức bằng tiền | - | - | - | - | (408.706.345.000)  |
+|  Phân phối quỹ | - | - | - | - | (7.040.814.696)  |
+|  Ngày 31 tháng 12 năm 2024 | 4.710.134.000.000 | 1.012.946.230.624 | - | 415.591.264.689 | 12.761.421.317.915  |
+|  Năm nay |  |  |  |  |   |
+|  Ngày 31 tháng 12 năm 2024 | 4.710.134.000.000 | 1.012.946.230.624 | - | 415.591.264.689 | 12.761.421.317.915  |
+|  Cổ tức bằng cổ phiếu | 706.447.390.000 | - | - | - | (706.447.390.000)  |
+|  Lợi nhuận trong kỳ | - | - | - | - | 1.909.130.880.420  |
+|  Tăng ( giảm ) khác | - | - | - | - | 1.970.123.597  |
+|  Cổ tức bằng tiền | - | - | - | - | (471.013.400.000)  |
+|  Phân phối quỹ | - | - | - | - | (13.754.355.444)  |
+|  Ngày 30 tháng 09 năm 2025 | 5.416.581.390.000 | 1.012.946.230.624 | - | 415.591.264.689 | 13.481.307.176.488  |
+
+Theo Nghị Quyết của Đại Hội Cổ Đông số 02/2025/ĐHĐCĐ-NQ ngày 01 tháng 04 năm 2025, Đại Hội Đồng Cổ Đông của công ty đã thông qua việc chia cổ tức $25 \%$ cho năm 2024 từ nguồn lợi nhuận sau thuế chưa phân phối, trong đó chi trả cổ tức $10 \%$ bằng tiền và $15 \%$ bằng cổ phiếu. Đại Hội Đồng Cổ Đông ngày 01/04/2025 đã quyết định việc thanh toán cổ tức $10 \%$ bằng tiền năm 2024 cho cổ đông có tên trong danh sách tại ngày chốt danh sách cổ đông 28/02/2025 sẽ nhận cổ tức bằng tiền $10 \%$ tương đương với số tiền 471.013 .400 .000 VNĐ vào ngày 04/04/2025. Theo công văn số 2859/UBCK-QLCB ngày 26/06/2025 của Ủy Ban Chứng Khoán Nhà Nước đã chấp thuận kết quả phát hành 70.644.739 cổ phiếu để trả cổ tức 2024 của REE. Ngày 14/07/2025, công ty đã nhận giấy chứng nhận đăng ký kinh doanh thay đổi lần thứ 35 tăng vốn điều lệ tương ứng với lượng cổ phiếu đã phát hành là 706.447 .390 .000 VNĐ, năng giá trị vốn cổ phần tại ngày 14/07/2025 là 5.416.581.390.000 VNĐ.
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Quý III Ngày 30 tháng 09 năm 2025
+
+# 18. DOANH THU 
+
+18.1 Doanh thu bán hàng và cung cấp dịch vụ
+
+Tổng doanh thu
+Trong đó:
+Doanh thu cơ điện lạnh
+Doanh thu bất động sản
+Doanh thu hạ tầng điện, nước
+Các khoản giảm trừ doanh thu
+Chiết khấu thương mại
+Doanh thu thuần
+
+## 18.2 Doanh thu hoạt động tài chính
+
+Lãi tiền gửi
+Cổ tức lợi nhuận được chia
+Lãi từ bán, thanh lý các khoản đầu tư
+Lãi chênh lệch tỷ giá hối đoái
+Doanh thu tài chính khác
+TỔNG CỘNG
+
+## 19. CHI PHÍ TÀI CHÍNH
+
+Chi phí lãi vay và phân bổ chi phí phát hành trái phiếu Lỗ chênh lệch tỷ giá
+Dự phòng (hoàn nhập) giảm giá đầu tư
+Lỗ từ bán, thanh lý các khoản đầu tư
+Chi phí tài chính khác
+TỔNG CỘNG
+
+## 20. THU NHẬP VÀ CHI PHÍ KHÁC
+
+Thu nhập khác
+Thu thanh lý tài sản
+Thu nhập khác
+Chi phí khác
+Chi thanh lý tài sản
+Chi phí khác
+
+Quý III năm 2025
+2.555.163.684.559
+972.701 .333 .446
+298.492.142.482
+1.283.970.208.631
+(3.001.351.578)
+2.552.162.332.981
+
+Quý III năm 2024
+67.002.051.887
+17.324.835.000
+16.841.860.703
+515.841 .472
+81.298 .191
+101.765.887.253
+
+Quý III năm 2024
+11.735.877.005
+3.228 .407 .371
+10.151 .813
+4.565.179.927
+62.616.197.585
+
+## ĐVT: VND
+
+Quý III năm 2024
+179.960.653.082
+3.968 .549 .745
+(259.357.000)
+10.776 .805
+781.661 .349
+184.462.283.981
+
+Quý III năm 2024
+181.614.575.501
+1.968.191.908
+(205.132.778)
+32.839 .096
+1.841.833.480
+185.252.307.207
+
+ĐVT: VND
+Quý III năm 2024
+3.606.922.699
+726.541 .826
+2.880.380.873
+4.160.417.127
+3.057.386.031
+1.103.031.096
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Quý III Ngày 30 tháng 09 năm 2025
+
+# 21. THUẾ THU NHẬP DOANH NGHIỆP 
+
+### 21.1 Chi phí thuế TNDN
+
+|  |  | ĐVT: VND |
+| :--: | :--: | :--: |
+|  | Quý III năm 2025 | Quý III năm 2024 |
+| Chi phí thuế TNDN hiện hành | 102.486.518.874 | 69.202.369.563 |
+| Chi phí thuế TNDN hoãn lại | (328.466.580) | 2.053.946.464 |
+| TỔNG CỘNG | 102.158.052.294 | 71.256.316.027 |
+
+### 21.2 Thuế TNDN hiện hành
+
+Thuế TNDN hiện hành phải trả được xác định dựa trên thu nhập chịu thuế của kỳ hiện tại. Thu nhập chịu thuế khác với thu nhập được báo cáo trong báo cáo kết quả sản xuất kinh doanh vì thu nhập chịu thuế không bao gồm các khoản mục thu nhập chịu thuế hay chi phí được khấu trừ cho mục đích tính thuế trong các năm khác và cũng không bao gồm các khoản mục không phải chịu thuế hay không được khấu trừ cho mục đích tính thuế. Thuế TNDN hiện hành phải trả của Nhóm Công ty được tính theo thuế suất đã ban hành đến ngày kết thúc kỳ kế toán.
+
+## 22. NGHIỆP VỤ VỚI CÁC BÊN LIÊN QUAN
+
+Các nghiệp vụ với các công ty có liên quan bao gồm tất cả các nghiệp vụ được thực hiện với các công ty mà Nhóm Công ty có mối liên kết thông qua quan hệ đầu tư, nhận đầu tư hoặc thông qua một nhà đầu tư chung và do đó sẽ là thành viên của cùng một Nhóm công ty.
+Các nghiệp vụ chủ yếu với các bên liên quan trong kỳ như sau:
+
+## Các bên liên quan
+
+Công ty Cổ phần Cơ điện Đoàn Nhất
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+Công ty liên kết
+
+
+THUYẾT MINH BÁO CÁO TẢI CHÍNH HỢP NHẢT (tiếp theo)
+Quý III Ngày 30 tháng 09 năm 2025
+Vào Ngày 30 tháng 09 năm 2025, các khoản phải thu và phải trả các bên liên quan được thể hiện như sau :
+
+Người mua trả tiền trước:
+Các bên liên quan
+Mối quan hệ Nội dung nghiệp vụ
+Số tiền
+Công Ty CP BOO Nước Thủ Đức
+Công ty liên kết Tạm ứng dịch vụ tư vấn
+1.300.000.000
+
+Phải thu khách hàng :
+VND
+Các bên liên quan
+Mối quan hệ Nội dung nghiệp vụ
+Số tiền
+Công ty Cổ phần Cơ điện Đoàn Nhất
+Công ty liên kết Doanh thu bán hàng
+25.877.687.552
+
+Phải thu khác:
+VND
+Các bên liên quan
+Mối quan hệ Nội dung nghiệp vụ
+Số tiền
+Công Ty CP Thủy Điện Sông Ba Hạ
+Công ty liên kết Thu nhập cổ tức
+32.000.000.000
+Công Ty CP BOO Nước Thủ Đức
+Công ty liên kết Thu nhập cổ tức
+65.727.368.000
+
+Công Ty CP Cấp Nước Thủ Đức
+Công ty liên kết Thu nhập cổ tức
+4.194.022.240
+
+Thu nhập của các thành viên của Hội đồng Quản trị và Ban Giám đốc:
+VND
+Quý III năm 2025
+Quý III năm 2024
+Thù lao Hội Đồng Quản Trị
+Bà Nguyễn Thị Mai Thanh
+Chủ tịch
+2.820.000.000
+2.820.000.000
+1.260.000.000
+1.260.000.000
+
+Ông Alain Cany
+Phó chủ tịch
+510.000.000
+510.000.000
+Ông Đỗ Lê Hùng
+Thành Viên
+450.000.000
+450.000.000
+Ông Mark Andrew Hutchinson
+Thành Viên
+300.000.000
+300.000.000
+Bà Hsu Hai Yeh
+Thành Viên
+300.000.000
+300.000.000
+Thu nhập của Ban Giám đốc
+9.374.700.000
+3.570.000.000
+Ông Lê Nguyễn Minh Quang
+Tổng Giám Đốc
+( bổ nhiệm ngày 01 tháng 07 năm 2024
+Từ nhiệm ngày 22 tháng 11 năm 2024)
+Ông Ashok Ramachanran
+Tổng Giám Đốc
+2.749.700.000
+-
+(bổ nhiệm ngày 09 tháng 04 năm 2025)
+Ông Nguyễn Ngọc Thái Bình
+Phó Tổng
+Giám Đốc
+755.000.000
+660.000.000
+Ông Nguyễn Quang Quyền
+Phó Tổng
+Giám Đốc
+5.870.000.000
+660.000.000
+Tổng Cộng
+12.194.700.000
+6.390.000.000
+
+# CÔNG TY CÓ PHẦN CƠ ĐIỆN LẠNH 
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo)
+Quý III Ngày 30 tháng 09 năm 2025
+
+## 23. BÁO CÁO BỘ PHẬN
+
+Nhằm phục vụ công tác quản lý, Nhóm Công ty được tổ chức theo các đơn vị kinh doanh dựa trên các sản phẩm và dịch vụ và bao gồm bốn bộ phận báo cáo theo hoạt động như sau:
+Cơ điện lạnh
+Bất động sản
+Hạ tầng điện
+Hạ tầng nước
+Kết quả hoạt động kinh doanh của các bộ phận được quản lý riêng biệt nhằm phục vụ cho việc ra quyết định, phân bổ nguồn lực và đánh giá thành tích. Thành tích của các bộ phận được đánh giá dựa trên kết quả lãi lỗ mà trên một số khía cạnh, như được trình bày trong bảng dưới đây, được đo lường khác với kết quả hoạt động kinh doanh trong báo cáo kết quả hoạt động kinh doanh hợp nhất.
+
+# CÔNG TY CÓ PHÂN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Quý III Ngày 30 tháng 09 năm 2025 23. BÁO CÁO BỘ PHẬN (tiếp theo)
+
+Kết quả bộ phận Quý III năm 2025 kết thúc Ngày 30 tháng 09 năm 2025 như sau:
+
+|   | Cơ điện lạnh | Bất động sản | Hạ tầng điện | Hạ tầng nước | Hợp nhất  |
+| --- | --- | --- | --- | --- | --- |
+|  Doanh thu |  |  |  |  |   |
+|  Tổng doanh thu của bộ phận | 1.038 .587 .575 .127 | 348.802 .386 .565 | 1.269 .279 .019 .500 | 19.962 .950 .845 | 2.676 .631 .932 .037  |
+|  Doanh thu giữa các bộ phận | (68.887.593.259) | (50.310.244.083) | (5.024.944.554) | (246.817.160) | (124.469.599.056)  |
+|  TỔNG CỘNG | 969.699.981.868 | 298.492.142.482 | 1.264 .254 .074 .946 | 19.716 .133 .685 | 2.552 .162 .332 .981  |
+|  Kết quả bộ phận |  |  |  |  |   |
+|  Lợi nhuận sau thuế của bộ phận | 74.279.323.425 | 155.465.011.733 | 495.922.456.693 | 91.629.851.222 | 817.296.643.073  |
+|  Lợi nhuận (lỗ) sau thuế không phân bổ |  |  |  |  | 7.515 .594 .936  |
+|  Tổng lợi nhuận sau thuế |  |  |  |  | 824.812.238.009  |
+|  Trong đó : |  |  |  |  |   |
+|  Công ty mẹ |  |  |  |  |   |
+|  Lợi nhuận sau thuế của bộ phận | 68.154.054.212 | 145.823.568.453 | 361.446.334.904 | 91.287.557.309 | 666.711.514.878  |
+|  Lợi nhuận (lỗ) sau thuế không phân bổ |  |  |  |  | 7.515 .594 .936  |
+|   |  |  |  |  | 674.227.109.814  |
+|  Lợi ích cổ đông không kiểm soát | 6.125.269.213 | 9.641.443.280 | 134.476.121.789 | 342.293.913 | 150.585.128.195  |
+
+Tài sản bộ phận và nợ bộ phận tại Ngày 30 tháng 09 năm 2025 như sau:
+
+|   | Cơ điện lạnh | Bất động sản | Hạ tầng điện | Hạ tầng nước | Hợp nhất  |
+| --- | --- | --- | --- | --- | --- |
+|  Tài sản của bộ phận | 2.982.747.282.249 | 4.126.987.803.127 | 24.218.837.015.981 | 2.795.289.795.896 | 34.123.861.897.253  |
+|  Tài sản không phân bổ |  |  |  |  | 4.142.135.140.261  |
+|  TỔNG TÀI SẢN |  |  |  |  | 38.265.997.037.514  |
+|  Nợ của bộ phận | 2.280.455.785.051 | 1.736.615.303.103 | 8.523.646.046.890 | 226.942.872.713 | 12.767.660.007.757  |
+|  Nợ không phân bổ |  |  |  |  | 1.333.321.695.248  |
+|  TỔNG NỢ |  |  |  |  | 14.100.981.703.005  |
+
+# CÔNG TY CÓ PHÂN CƠ ĐIỆN LẠNH
+
+THUYẾT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo) Quý III Ngày 30 tháng 09 năm 2025 23. BÁO CÁO BỘ PHẬN (tiếp theo)
+
+Kết quả bộ phận Quý III năm 2024 kết thúc ngày 30 tháng 09 năm 2024 như sau:
+
+|   | Cơ điện lạnh | Bất động sản | Hạ tầng điện | Hạ tầng nước | Hợp nhất  |
+| --- | --- | --- | --- | --- | --- |
+|  Doanh thu |  |  |  |  |   |
+|  Tổng doanh thu của bộ phận | 734.014.576.460 | 326.601.901.017 | 1.010.838.964.730 | 33.746.718.019 | 2.105.202.160.226  |
+|  Doanh thu giữa các bộ phận | (28.457.639.773) | (44.430.042.727) | (2.858.320.343) | (32.169.741) | (75.778.172.584)  |
+|  TỔNG CỘNG | 705.556.936.687 | 282.171.858.290 | 1.007.980.644.387 | 33.714.548.278 | 2.029.423.987.642  |
+|  Kết quả bộ phận |  |  |  |  |   |
+|  Lợi nhuận sau thuế của bộ phận | 40.598.765.577 | 117.454.082.183 | 327.526.108.663 | 73.193.053.925 | 558.772.010.348  |
+|  Lợi nhuận (lỗ) sau thuế không phân bổ |  |  |  |  | 2.742.781.644  |
+|  Tổng lợi nhuận sau thuế |  |  |  |  | 561.514.791.992  |
+|  Trong đó : |  |  |  |  |   |
+|  Công ty mẹ |  |  |  |  |   |
+|  Lợi nhuận sau thuế của bộ phận | 37.400.582.603 | 109.839.787.477 | 257.883.583.080 | 71.978.885.820 | 477.102.838.980  |
+|  Lợi nhuận (lỗ) sau thuế không phân bổ |  |  |  |  | 2.742.781.644  |
+|   |  |  |  |  | 479.845.620.624  |
+|  Lợi ích cố đông không kiểm soát | 3.198.182.974 | 7.614.294.706 | 69.642.525.583 | 1.214.168.105 | 81.669.171.368  |
+
+Tài sản bộ phận và nợ bộ phận tại ngày 30 tháng 09 năm 2024 như sau
+
+|   | Cơ điện lạnh | Bất động sản | Hạ tầng điện | Hạ tầng nước | Hợp nhất  |
+| --- | --- | --- | --- | --- | --- |
+|  Tài sản của bộ phận | 2.606.026.609.883 | 4.200.190.670.540 | 22.631.642.488.674 | 2.579.422.474.290 | 32.017.282.243.388  |
+|  Tài sản không phân bổ |  |  |  |  | 3.631.458.620.207  |
+|  TỔNG TÀI SẢN |  |  |  |  | 35.648.740.863.594  |
+|  Nợ của bộ phận | 2.219.541.942.577 | 1.788.477.189.922 | 8.474.932.750.041 | 45.257.888.879 | 12.528.209.771.419  |
+|  Nợ không phân bổ |  |  |  |  | 1.332.489.528.522  |
+|  TỔNG NỢ |  |  |  |  | 13.860.699.299.941  |
+
+# CÔNG TY CỔ PHẦN CƠ ĐIỆN LẠNH 
+
+THUYÊT MINH BÁO CÁO TÀI CHÍNH HỢP NHẤT (tiếp theo)
+Quý III Ngày 30 tháng 09 năm 2025
+
+## 24. CÁC SỐ LIỆU TƯƠNG ỨNG
+
+Một vài số liệu tương ứng trong các báo cáo tài chính của kỳ trước đã được phân loại lại cho phù hợp với hình thức trình bày của các báo cáo tài chính kỳ này.
+
+## 25. PHÊ DUYỆT PHÁT HÀNH BÁO CÁO TÀI CHÍNH HỢP NHẤT
+
+Các báo cáo tài chính hợp nhất vào Ngày 30 tháng 09 năm 2025 và Quý III năm 2025 kết thúc cùng ngày đã được Ban Tổng Giám Đốc Công ty phê duyệt để phát hành vào ngày 30 tháng 10 năm 2025.
+
+Phạm Thị Uyên Phương Người lập
+![img-0.jpeg](img-0.jpeg)
+
+Hồ Trần Diệu Lynh Kế toán trưởng
+![img-1.jpeg](img-1.jpeg)
+
+Tổng Giám đốc
+
+Ngày 30 tháng 10 năm 2025
+
