@@ -1,131 +1,147 @@
-# 📈 Trợ lý Phân tích Chứng khoán AI Toàn diện cho Thị trường Việt Nam
+# VnStock Multi-Agent RAG: Hệ thống Phân tích Đầu tư Thông minh
 
-Dự án này là một nền tảng phân tích đầu tư mạnh mẽ, sử dụng một đội ngũ AI Agents (xây dựng bằng `crewAI`) để tự động hóa hoàn toàn quy trình phân tích cổ phiếu đa chiều, đặc thù cho thị trường Việt Nam.
+> **Nền tảng phân tích chứng khoán chuyên sâu sử dụng kiến trúc Multi-Agent, tích hợp RAG (Retrieval-Augmented Generation) và Automation Pipeline.**
 
-Một chatbot tương tác và một luồng dịch vụ tự động, gửi báo cáo phân tích chuyên nghiệp đến người dùng qua email hàng ngày.
+![Architecture Diagram](https://raw.githubusercontent.com/meth04/vn_stock_rag/main/assets/pipeline.png)
 
-![Luồng hoạt động](https://raw.githubusercontent.com/meth04/vn_stock_rag/main/assets/pipeline.png)
+## 📖 Giới thiệu
 
-## ✨ Các tính năng chính
+**VnStock RAG** là giải pháp công nghệ tài chính (Fintech) tự động hóa quy trình nghiên cứu đầu tư. Thay vì phụ thuộc vào việc thu thập dữ liệu thủ công, hệ thống vận hành một tập hợp các **AI Agents** chuyên biệt, phối hợp để thực hiện:
+1.  Thu thập dữ liệu thời gian thực (Real-time Data).
+2.  Phân tích đa chiều (Vĩ mô, Kỹ thuật, Cơ bản).
+3.  Xử lý tài liệu tài chính phức tạp (Financial Report OCR & RAG).
+4.  Tổng hợp và xuất bản báo cáo khuyến nghị chuẩn mực.
 
-- **Hiểu Ngôn ngữ Tự nhiên:** Sử dụng **Google Gemini** để phân tích yêu cầu của người dùng, tự động nhận diện tác vụ cần thực hiện (phân tích cổ phiếu, tóm tắt báo cáo tài chính, hoặc phân tích toàn diện).
-- **Phân tích Đa chiều & Trực quan:**
-  - **Phân tích Vĩ mô & Ngành:** Tự động tìm kiếm, tổng hợp các tin tức vĩ mô, chính sách có ảnh hưởng đến thị trường.
-  - **Phân tích Kỹ thuật Trực quan:** Tự động tạo và nhúng **biểu đồ nến (candlestick)** 12 tháng (kèm SMA20, SMA50) vào báo cáo, cùng với phân tích chi tiết về xu hướng, chỉ báo (RSI, MACD) và các ngưỡng hỗ trợ/kháng cự.
-  - **Phân tích Cơ bản & Cạnh tranh:** Đánh giá sức khỏe tài chính (ROE), tự động tìm và tạo bảng so sánh với các đối thủ cạnh tranh trong ngành.
-  - **Phân tích Báo cáo Tài chính (PDF):** Cho phép người dùng tải lên file PDF, hệ thống sử dụng **Gemini 1.5 Pro** để OCR và tóm tắt các điểm chính, tự động lưu cache để tối ưu cho các lần phân tích sau.
-- **Tổng hợp & Đưa ra Khuyến nghị:** Một AI Agent "Tổng Biên tập" sẽ tổng hợp tất cả các báo cáo trên và đưa ra khuyến nghị cuối cùng: **MUA, BÁN, hoặc GIỮ** kèm theo luận điểm đầu tư rõ ràng.
-- **Dịch vụ Bản tin Tự động (Daily Newsletter Service):**
-  - **Lập lịch thông minh:** Một tiến trình chạy nền tự động kích hoạt vào 7 giờ sáng mỗi ngày.
-  - **Tạo báo cáo hàng loạt:** Tự động phân tích tất cả các mã cổ phiếu được người dùng đăng ký.
-  - **Xuất bản & Gửi Email:** Tự động chuyển đổi báo cáo phân tích (bao gồm cả biểu đồ) sang định dạng **PDF chuyên nghiệp** và gửi đến email của những người dùng tương ứng.
+Hệ thống bao gồm giao diện **Chatbot tương tác** và dịch vụ **Newsletter Automation** chạy nền (Background Scheduler).
 
-## 🛠️ Công nghệ sử dụng
+---
 
-- **Orchestration Framework:** [CrewAI](https://github.com/joaomdmoura/crewAI)
-- **Mô hình Ngôn ngữ (LLMs):** **Google Gemini 2.5** (Pro & Flash)
-- **Giao diện & Backend:** Flask & Flask-SocketIO
-- **Triển khai & Môi trường:** **Docker & Docker Compose**
-- **Nguồn dữ liệu:**
-  - [vnstock](https://github.com/thinh-vu/vnstock) (Dữ liệu tài chính & kỹ thuật)
-  - [Serper API](https://serper.dev/) (Tìm kiếm tin tức)
-- **Công cụ phụ trợ:** Matplotlib & Mplfinance (Vẽ biểu đồ), PDFKit (Xuất PDF), SQLite (Quản lý đăng ký).
-- **Ngôn ngữ:** Python 3.12+
+## ✨ Tính năng Kỹ thuật Nổi bật
 
-## 🤖 Đội ngũ AI Agents
+### 1. Xử lý Ngôn ngữ & Hiểu ý định người dùng (Intent Routing)
+- Sử dụng **Google Gemini** làm bộ não trung tâm để phân loại ý định người dùng (Intent Classification).
+- Tự động điều hướng yêu cầu: Chat hỏi đáp số liệu nhanh (RAG Query) hoặc Yêu cầu phân tích chuyên sâu (Full Analysis Workflow).
 
-Hệ thống được vận hành bởi một đội ngũ gồm 5 AI Agents chuyên biệt, mỗi agent đảm nhận một nhiệm vụ riêng biệt:
+### 2. Phân tích Đa lớp (Multi-layered Analysis)
+Hệ thống không chỉ tóm tắt văn bản mà thực hiện các tác vụ chuyên môn:
+- **Market Intelligence:** Quét và lọc tin tức vĩ mô, chính sách tiền tệ tác động đến ngành.
+- **Technical Analysis:** Tự động vẽ biểu đồ nến (Candlestick) tích hợp SMA20/50, tính toán RSI, MACD và xác định vùng kháng cự/hỗ trợ bằng Python (Matplotlib/Mplfinance).
+- **Fundamental Analysis:** Truy xuất dữ liệu tài chính (P/E, P/B, ROE) và so sánh tương quan với nhóm đối thủ cạnh tranh (Peer Comparison).
 
-- **1. Chuyên gia Phân tích Tin tức Thị trường:**
-  - **Nhiệm vụ:** Hoạt động như một nhà báo kinh tế, liên tục tìm kiếm và tóm tắt những tin tức vĩ mô, chính sách của chính phủ, và các sự kiện ngành quan trọng nhất đang tác động đến toàn bộ thị trường.
+### 3. RAG Engine cho Báo cáo Tài chính
+- **Ingestion Pipeline:** Tích hợp **MistralOCR** để số hóa các file PDF báo cáo tài chính (dạng ảnh/scan).
+- **Vector Store:** Lưu trữ dữ liệu vector để truy xuất chính xác các chỉ số tài chính phức tạp.
+- **Context-aware:** Giảm thiểu ảo giác (Hallucination) bằng cách buộc model trích dẫn nguồn dữ liệu gốc.
 
-- **2. Nhà phân tích Kỹ thuật (Chartist):**
-  - **Nhiệm vụ:** Lấy dữ liệu giá và khối lượng, sau đó **vẽ biểu đồ nến (candlestick)** trực quan. Đồng thời, tính toán và diễn giải các chỉ báo kỹ thuật quan trọng như RSI, MACD, và các ngưỡng Hỗ trợ/Kháng cự.
+### 4. Hệ thống Tự động hóa & Phân phối (Automation)
+- **Scheduler:** Tiến trình chạy nền (Cron job) tự động kích hoạt phân tích danh mục theo dõi vào 07:00 sáng hàng ngày.
+- **Reporting:** Tự động biên tập nội dung Markdown và render thành file PDF chuyên nghiệp.
+- **Delivery:** Gửi email đính kèm báo cáo tới danh sách người dùng đăng ký.
 
-- **3. Chuyên gia Phân tích Tài chính & Cạnh tranh:**
-  - **Nhiệm vụ:** Một nhà phân tích tài chính doanh nghiệp. Nó sẽ "soi" sức khỏe của công ty mục tiêu qua các chỉ số như ROE và tự động tìm kiếm các đối thủ cạnh tranh chính để so sánh, giúp người dùng có cái nhìn toàn cảnh về vị thế của công ty trong ngành.
+---
 
-- **4. Chuyên gia Phân tích Báo cáo Tài chính (PDF):**
-  - **Nhiệm vụ:**  Đọc hiểu file PDF. Khi người dùng tải lên một bản báo cáo tài chính, nó sẽ sử dụng công nghệ OCR của MistralOCR để "đọc" và chắt lọc những con số, thông tin cốt lõi về doanh thu, lợi nhuận, và dòng tiền.
+## 🏗️ Kiến trúc Hệ thống (System Architecture)
 
-- **5. Tổng biên tập Bản tin Chứng khoán:**
-  - **Nhiệm vụ:** Agent này nhận tất cả các báo cáo riêng lẻ từ 4 chuyên gia trên và tổng hợp chúng lại thành một **Bản tin Chứng khoán duy nhất**, liền mạch và chuyên nghiệp. Đảm bảo cấu trúc báo cáo đúng chuẩn, văn phong hấp dẫn, và là người đưa ra khuyến nghị đầu tư cuối cùng (MUA, BÁN, hoặc GIỮ).
+Dự án được xây dựng trên nền tảng **CrewAI**, quản lý luồng làm việc của 5 Agents chuyên biệt:
 
+| Agent (Tác nhân) | Vai trò & Nhiệm vụ Kỹ thuật |
+| :--- | :--- |
+| **Market Analyst** | Sử dụng `SerperDevTool` để thu thập tin tức, lọc nhiễu và đánh giá tác động vĩ mô (Sentiment Analysis). |
+| **Technical Analyst** | Gọi API `Vnstock` lấy dữ liệu OHLCV, sử dụng `ChartingTool` để visualize dữ liệu và đưa ra tín hiệu kỹ thuật. |
+| **Financial Competitor Analysis** | Tìm kiếm đối thủ cùng ngành và phân tích tin tức gần nhất sử dụng `SerperDevTool`. |
+| **Financial Analyst** | Truy xuất BCTC, tìm kiếm các thông tin quan trọng (Doanh thu quý, Nợ ngắn hạn, Nợ phải trả,...)|
+| **Report Editor** | Đóng vai trò Aggregator: Tổng hợp dữ liệu từ các luồng trên, kiểm tra tính nhất quán và biên soạn báo cáo cuối cùng. |
 
-## 🚀 Hướng dẫn Cài đặt và Chạy (Khuyến khích dùng Docker)
+---
 
-Sử dụng Docker là cách dễ dàng và đáng tin cậy nhất để chạy dự án này mà không cần lo lắng về môi trường hay cài đặt thủ công các dependency phức tạp (như `wkhtmltopdf`).
+## 🧪 Kiểm soát Chất lượng (Evaluation Pipeline)
+
+Khác với các dự án chatbot thông thường, VnStock RAG tích hợp quy trình đánh giá hiệu năng nghiêm ngặt (Evaluation-as-Code):
+
+1.  **Component-wise Evaluation:** Đánh giá riêng lẻ từng Agent bằng phương pháp **LLM-as-a-Judge** với bộ tiêu chí (Rubrics) tùy chỉnh.
+2.  **RAG Evaluation:** Sử dụng thư viện **Ragas** để đo lường các chỉ số:
+    *   *Faithfulness:* Độ trung thực của câu trả lời so với dữ liệu gốc.
+    *   *Context Recall:* Khả năng tìm kiếm thông tin trong tài liệu dài.
+    *   *Answer Correctness:* Độ chính xác so với Ground Truth.
+3.  **Monitoring Dashboard:** Tích hợp **Streamlit Dashboard** để trực quan hóa điểm số và truy vết lỗi (Debug) của hệ thống.
+
+---
+
+## 🛠️ Tech Stack
+
+*   **Core Framework:** `CrewAI`, `LangChain`, `LlamaIndex`.
+*   **LLM Provider:** Google Gemini (Flash 2.5 & Pro).
+*   **Vector & Embedding:** Gemini Embeddings (`text-embedding-004`).
+*   **OCR:** Mistral OCR.
+*   **Backend API:** Flask, Flask-SocketIO (WebSocket).
+*   **Data & Tools:** `vnstock`, `Serper`, `Matplotlib`, `PDFKit`.
+*   **Database:** SQLite.
+*   **Deployment:** Docker, Docker Compose.
+
+---
+
+## 🚀 Hướng dẫn Cài đặt & Triển khai
+
+Khuyến khích sử dụng **Docker** để đảm bảo môi trường đồng nhất và tránh xung đột thư viện hệ thống (như `wkhtmltopdf`).
 
 ### 1. Yêu cầu tiên quyết
+*   Docker Desktop đã được cài đặt.
+*   API Keys: Google AI Studio (Gemini), Serper.dev, Mistral AI.
 
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/) đã được cài đặt.
-- Một hoặc nhiều tài khoản Google với API Key cho Gemini. (Lý do nên có nhiều API key vì quá trình chạy agent tốn khá nhiều request)
-- Một tài khoản Serper.dev với API Key.
-- Một tài khoản Mistral với API Key cho MistralOCR.
+### 2. Cấu hình Môi trường
+Clone repository và tạo file cấu hình:
 
-### 2. Cài đặt và Chạy
-
-**a. Clone repository:**
 ```bash
 git clone https://github.com/meth04/vn_stock_rag.git
 cd vn_stock_rag
-```
-
-**b. Thiết lập API Keys và Cấu hình:**
-Tạo một file có tên là `.env`.
-```bash
-# Windows
-copy .env.example .env
-
-# macOS / Linux
 cp .env.example .env
 ```
-Cấu hình file `env.`:
 
-```bash
-# API Keys
-SERPER_API_KEY="your_serper_api_key"
-GOOGLE_API_KEY_1="your_google_gemini_api_key_1"
-GOOGLE_API_KEY_2="your_google_gemini_api_key_2"
-# ...thêm bao nhiêu key tùy ý...
-GOOGLE_API_KEY_6="your_google_gemini_api_key_6"
-MISTRAL_API_KEY="your_mistral_api_key" # (Tùy chọn, nếu muốn dùng Mistral OCR)
+Cập nhật các key trong file `.env`:
+```ini
+# AI Providers
+GOOGLE_API_KEY_1="your_key"
+GOOGLE_API_KEY_2="your_key"
+# ... (Khuyến nghị dùng nhiều key để load balancing)
+SERPER_API_KEY="your_key"
+MISTRAL_API_KEY="your_key"
 
-# Cấu hình gửi Email (sử dụng Gmail và Mật khẩu Ứng dụng)
+# Email Service (Gmail App Password)
 SMTP_HOST="smtp.gmail.com"
 SMTP_PORT=465
-SENDER_EMAIL="your_email@gmail.com" # gmail của bạn
-SMTP_PASSWORD="16chucai_matkhauungdung" # mật khẩu gmail app không phải mật khẩu gmail của bạn
+SENDER_EMAIL="your_email@gmail.com"
+SMTP_PASSWORD="your_app_password"
 ```
 
-**c. Download thư mục financial_reports và thêm vào thư mục gốc của dự án [URL](https://drive.google.com/drive/folders/1NBpK8iOS33Ngv4Hs1I4QlV4ZJmaDy_uZ?usp=sharing)**
+### 3. Chuẩn bị Dữ liệu
+*   Tải thư mục `financial_reports` chứa các file PDF BCTC (nếu có) vào thư mục gốc.
+*   Khởi tạo Database:
+    ```bash
+    python database_manager.py
+    ```
 
-**d. Khởi tạo Cơ sở dữ liệu (Chỉ chạy lần đầu):**
-Khởi tạo database.
-```bash
-python database_manager.py
-```
+### 4. Khởi chạy (Docker Compose)
+Chạy lệnh sau để build và start toàn bộ dịch vụ:
 
-**e. Build và Run bằng Docker Compose:**
-Mở Terminal trong thư mục gốc của dự án và chạy lệnh duy nhất:
 ```bash
 docker-compose up --build
 ```
-- Lần đầu tiên chạy, Docker sẽ build image, quá trình này có thể mất vài phút.
-- Bạn sẽ thấy log từ cả hai dịch vụ (Web API và Scheduler) được in xen kẽ trong terminal.
 
-### 3. Truy cập ứng dụng
-- **Giao diện Chatbot:** Mở trình duyệt web và truy cập địa chỉ: `http://localhost:8000`
-- **Tác vụ nền:** Dịch vụ Scheduler đang chạy âm thầm. Nó sẽ tự động phân tích và gửi email vào thời gian cố định trong ngày. 
+*Lưu ý: Quá trình build lần đầu có thể mất vài phút.*
 
-### 4. Dừng ứng dụng
-Trong terminal nơi bạn đã chạy `docker-compose up`, nhấn `Ctrl + C`. Để dọn dẹp hoàn toàn, chạy lệnh:
-```bash
-docker-compose down
-```
+### 5. Truy cập
+*   **Web Interface:** `http://localhost:8000`
+*   **Evaluation Dashboard (nếu chạy local):** `streamlit run dashboard.py`
 
-## 🔮 Hướng phát triển trong tương lai
+---
 
-- [ ] Xây dựng giao diện cho người dùng tự đăng ký/hủy đăng ký nhận bản tin email.
-- [ ] Tích hợp biểu đồ heatmap thị trường để cung cấp cái nhìn tổng quan hơn.
-- [ ] Thêm nhiều loại báo cáo hơn (ví dụ: báo cáo ngành, báo cáo chiến lược).
+## 🔮 Roadmap
+
+- [x] Tích hợp RAG với OCR cho báo cáo tài chính.
+- [x] Xây dựng hệ thống đánh giá tự động (Auto-Eval).
+- [ ] Phát triển giao diện quản lý danh mục đầu tư cá nhân hóa.
+- [ ] Tích hợp thêm Model Open Source (Llama 3, Qwen) để chạy Local.
+
+---
+
+**Disclaimer:** *Hệ thống này là công cụ hỗ trợ phân tích, không phải là lời khuyên đầu tư tài chính. Người dùng chịu trách nhiệm với các quyết định giao dịch của mình.*
