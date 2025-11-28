@@ -33,3 +33,4 @@ mplfinance
 pdfkit
 certifi
 ragas
+plotly
