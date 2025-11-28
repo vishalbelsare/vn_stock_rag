@@ -49,6 +49,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgtk-3-0 \
     libpango-1.0-0 \
     libcairo2 \
+    libgl1 \ 
+    libglib2.0-0 \
     && rm -rf /var/lib/apt/lists/*
 
 RUN set -e; \
@@ -83,5 +85,7 @@ COPY . /home/app
 RUN chown -R app:app /home/app
 
 USER app
+
+EXPOSE 8000 8501
 
 CMD ["python", "api.py"]

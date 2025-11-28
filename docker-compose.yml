@@ -1,41 +1,52 @@
-# docker-compose.yml
-
 version: '3.8'
 
 services:
   api:
-    build: .  
-    environment:
-      - name=value
-      - SSL_CERT_FILE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
-      - REQUESTS_CA_BUNDLE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
-    container_name: vn_stock_rag
-    command: python api.py  
-    ports:
-      - "8000:8000"  
+    build: .
     volumes:
       - ./reports:/home/app/reports
       - ./charts:/home/app/charts
       - ./uploads:/home/app/uploads
       - ./financial_reports:/home/app/financial_reports
-      - ./subscriptions.db:/home/app/subscriptions.db
+      - ./finai.db:/home/app/finai.db  
+      - ./storage_rag:/home/app/storage_rag
+      - ./evaluation_storage:/home/app/evaluation_storage
+    container_name: vn_stock_rag
+    command: python api.py
+    ports:
+      - "8000:8000"
     env_file:
-      - .env  
-    restart: unless-stopped 
+      - .env
+    restart: unless-stopped
 
   scheduler:
-    build: . 
+    build: .
     container_name: vn_stock_scheduler
-    command: python scheduler.py 
-    environment:
-      - SSL_CERT_FILE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
-      - REQUESTS_CA_BUNDLE=/usr/local/lib/python3.12/site-packages/certifi/cacert.pem
+    command: python scheduler.py
     volumes:
       - ./reports:/home/app/reports
       - ./charts:/home/app/charts
       - ./uploads:/home/app/uploads
       - ./financial_reports:/home/app/financial_reports
-      - ./subscriptions.db:/home/app/subscriptions.db
+      - ./finai.db:/home/app/finai.db
+      - ./storage_rag:/home/app/storage_rag
+      - ./evaluation_storage:/home/app/evaluation_storage
     env_file:
-      - .env 
+      - .env
+    restart: unless-stopped
+
+  dashboard:
+    build: .
+    container_name: vn_stock_dashboard
+    command: streamlit run dashboard.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./evaluation_storage:/home/app/evaluation_storage
+      - ./rag_evaluation_report.csv:/home/app/rag_evaluation_report.csv
+      - ./sub_agents_score_card.csv:/home/app/sub_agents_score_card.csv
+      - ./editor_faithfulness_report.csv:/home/app/editor_faithfulness_report.csv
+      - ./dashboard.py:/home/app/dashboard.py 
+    env_file:
+      - .env
     restart: unless-stopped
