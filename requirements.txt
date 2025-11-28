@@ -1,16 +1,21 @@
 crewai
 crewai-tools
+crewai[google-genai]
+datasets
 python-dotenv
 langchain-google-genai
 mistralai
 vnstock==3.2.6
 vnai==2.1.9
 pandas
+llama-index
+llama-index-core
+llama-index-llms-gemini
+llama-index-embeddings-gemini
 numpy
 streamlit
 streamlit-chat
 beautifulsoup4
-crewai[google-genai]
 google
 google-generativeai
 requests
@@ -27,3 +32,4 @@ matplotlib
 mplfinance
 pdfkit
 certifi
+ragas
