@@ -138,7 +138,6 @@ docker-compose up --build
 ## 🔮 Roadmap
 
 - [x] Tích hợp RAG với OCR cho báo cáo tài chính.
-- [x] Xây dựng hệ thống đánh giá tự động (Auto-Eval).
 - [ ] Phát triển giao diện quản lý danh mục đầu tư cá nhân hóa.
 - [ ] Tích hợp thêm Model Open Source (Llama 3, Qwen) để chạy Local.
 
