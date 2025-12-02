@@ -5,15 +5,15 @@ import glob
 import time
 from main import run_analysis_workflow
 
-TARGET_TICKERS = ["ACB", "BCM", "BID", "CTG", "DGC"]
+TARGET_TICKERS = ["TCB", "TPB", "VCB", "VHM", "VIB", "VIC", "VJC", "VNM", "VPB", "VRE"]
 
-print("🧹 Đang dọn dẹp log cũ trong evaluation_storage/...")
-files = glob.glob('evaluation_storage/*.json')
-for f in files:
-    try:
-        os.remove(f)
-    except:
-        pass
+# print("🧹 Đang dọn dẹp log cũ trong evaluation_storage/...")
+# files = glob.glob('evaluation_storage/*.json')
+# for f in files:
+#     try:
+#         os.remove(f)
+#     except:
+#         pass
 
 print(f"🚀 Bắt đầu chạy quy trình PHÂN TÍCH TỔNG HỢP cho {len(TARGET_TICKERS)} mã...")
 print("Lưu ý: Quá trình này sẽ mất khoảng 30-60 giây cho MỖI mã vì phải chạy Full Crew.")
@@ -33,6 +33,6 @@ for i, ticker in enumerate(TARGET_TICKERS):
         
     except Exception as e:
         print(f"❌ Lỗi khi chạy mã {ticker}: {e}")
-    time.sleep(20) 
+    time.sleep(60) 
 
 print("\n🎉 Hoàn tất! Bây giờ bạn hãy chạy 'python evaluate_sub_agents.py'")

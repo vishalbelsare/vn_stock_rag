@@ -148,5 +148,755 @@
         "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV (BID) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
         "ground_truth_answer": "111.840.462 triệu VND",
         "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Kỳ này: 111.840.462"
+    },
+    {
+        "id": "GVR_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của GVR trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "9.294.402.677.445 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10 - Doanh thu thuần bán hàng và cung cấp dịch vụ, Cột Quý III Năm 2025"
+    },
+    {
+        "id": "GVR_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của GVR trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.187.281.385.238 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60 - Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Quý III Năm 2025"
+    },
+    {
+        "id": "GVR_2025_Q3_03",
+        "query": "Tổng tài sản của GVR tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "84.839.406.230.403 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270 - TỔNG CỘNG TÀI SẢN, Cột 30/09/2025"
+    },
+    {
+        "id": "GVR_2025_Q3_04",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của GVR trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "4.348.387.841.590 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20 - Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột 09 tháng đầu năm 2025"
+    },
+    {
+        "id": "GVR_2025_Q3_05",
+        "query": "Tổng nợ phải trả của GVR tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "20.906.425.637.178 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300 - NỢ PHẢI TRẢ, Cột 30/09/2025"
+    },
+    {
+        "id": "FPT_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của FPT trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "17.204.521.225.302 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10 - Doanh thu thuần về bán hàng và cung cấp dịch vụ, Cột Năm 2025 - Quý III"
+    },
+    {
+        "id": "FPT_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của FPT trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.901.545.752.650 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60 - Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Năm 2025 - Quý III"
+    },
+    {
+        "id": "FPT_2025_Q3_03",
+        "query": "Tổng tài sản của FPT tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "82.738.304.930.449 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270 - TỔNG CỘNG TÀI SẢN, Cột 30/9/2025"
+    },
+    {
+        "id": "FPT_2025_Q3_04",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của FPT trong kỳ kế toán kết thúc ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "6.027.593.339.108 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20 - Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Lũy kế từ đầu năm đến cuối quý này Năm 2025"
+    },
+    {
+        "id": "FPT_2025_Q3_05",
+        "query": "Tổng nợ phải trả của FPT tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "39.907.781.019.976 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300 - NỢ PHẢI TRẢ, Cột 30/9/2025"
+    },
+    {
+        "id": "HPG_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của HPG trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "36.407.416.403.924 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10 - Doanh thu thuần về bán hàng và cung cấp dịch vụ, Cột Quý III năm 2025"
+    },
+    {
+        "id": "HPG_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của HPG trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.022.946.632.050 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60 - Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Quý III năm 2025"
+    },
+    {
+        "id": "HPG_2025_Q3_03",
+        "query": "Tổng cộng tài sản của HPG tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "246.171.338.287.652 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270 - TỔNG CỘNG TÀI SẢN, Cột 30/09/2025"
+    },
+    {
+        "id": "HPG_2025_Q3_04",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của HPG trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "8.801.561.079.151 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20 - Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Quý III năm 2025 (Lũy kế)"
+    },
+    {
+        "id": "HPG_2025_Q3_05",
+        "query": "Tổng nợ phải trả của HPG tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "118.655.326.188.383 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300 - NỢ PHẢI TRẢ, Cột 30/09/2025"
+    },
+    {
+        "id": "HDB_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của HDBank trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "7.763.322 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Chỉ tiêu: Thu nhập lãi thuần, Cột Quý 03 Kỳ này"
+    },
+    {
+        "id": "HDB_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của HDBank trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.798.817 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Chỉ tiêu: Lợi nhuận sau thuế, Cột Quý 03 Kỳ này"
+    },
+    {
+        "id": "HDB_2025_Q3_03",
+        "query": "Tổng tài sản của HDBank tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "781.937.368 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Chỉ tiêu: TỔNG TÀI SẢN, Cột Ngày 30 tháng 09 năm 2025"
+    },
+    {
+        "id": "HDB_2025_Q3_04",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của HDBank trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "26.715.443 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Chỉ tiêu: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Kỳ này"
+    },
+    {
+        "id": "HDB_2025_Q3_05",
+        "query": "Tổng nợ phải trả của HDBank tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "713.530.315 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Chỉ tiêu: TỔNG NỢ PHẢI TRẢ, Cột Ngày 30 tháng 09 năm 2025"
+    },
+    {
+        "id": "GAS_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của PV GAS trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "35.690.134.900.226 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10 - Doanh thu thuần về bán hàng và cung cấp dịch vụ, Cột Quý III Năm nay"
+    },
+    {
+        "id": "GAS_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của PV GAS trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.612.819.725.552 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60 - Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Quý III Năm nay"
+    },
+    {
+        "id": "GAS_2025_Q3_03",
+        "query": "Tổng cộng tài sản của PV GAS tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "93.864.613.349.663 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270 - TỔNG TÀI SẢN, Cột 30/09/2025"
+    },
+    {
+        "id": "GAS_2025_Q3_04",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của PV GAS trong kỳ kế toán kết thúc ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "12.549.166.835.674 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20 - Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Từ 01/01/2025 đến 30/09/2025"
+    },
+    {
+        "id": "GAS_2025_Q3_05",
+        "query": "Tổng nợ phải trả của PV GAS tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "27.487.308.376.982 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300 - NỢ PHẢI TRẢ, Cột 30/09/2025"
+    },
+    {
+        "id": "PLX_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Tập đoàn Xăng dầu Việt Nam (Petrolimex) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "45.879.991.666.145 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Năm nay: 45.879.991.666.145"
+    },
+    {
+        "id": "PLX_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Petrolimex trong Quý 3 năm 2025 đạt mức nào?",
+        "ground_truth_answer": "527.524.735.210 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp - Cột Năm nay: 527.524.735.210"
+    },
+    {
+        "id": "PLX_2025_Q3_03",
+        "query": "Tổng tài sản của Petrolimex tại thời điểm ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "56.278.860.629.059 VND",
+        "ground_truth_context": "Bảng cân đối kế toán giữa niên độ, Mã số 270: TỔNG CỘNG TÀI SẢN - Số cuối quý: 56.278.860.629.059"
+    },
+    {
+        "id": "PLX_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Petrolimex ghi nhận tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "33.705.732.847.845 VND",
+        "ground_truth_context": "Bảng cân đối kế toán giữa niên độ, Mã số 300: Nợ phải trả - Số cuối quý: 33.705.732.847.845"
+    },
+    {
+        "id": "PLX_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Petrolimex trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "-1.726.396.285.863 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ giữa niên độ, Mã số 20: Lưu chuyển thuần từ hoạt động kinh doanh - Cột Năm nay: -1.726.396.285.863"
+    },
+    {
+        "id": "MBB_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của Ngân hàng TMCP Quân đội (MB Bank) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "12.990.524 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số IV.1: Thu nhập lãi thuần - Cột Năm nay: 12.990.524"
+    },
+    {
+        "id": "MBB_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của MB Bank trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "5.800.441 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Chỉ tiêu: LỢI NHUẬN SAU THUẾ - Cột Năm nay: 5.800.441"
+    },
+    {
+        "id": "MBB_2025_Q3_03",
+        "query": "Tổng tài sản của MB Bank tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "1.328.560.306 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Chỉ tiêu: TỔNG TÀI SẢN - Cột 30/09/2025: 1.328.560.306"
+    },
+    {
+        "id": "MBB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của MB Bank tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "1.195.469.561 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Chỉ tiêu: TỔNG NỢ PHẢI TRẢ - Cột 30/09/2025: 1.195.469.561"
+    },
+    {
+        "id": "MBB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của MB Bank trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "11.921.585 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Chỉ tiêu: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Giai đoạn từ 01/01/2025 đến 30/09/2025: 11.921.585"
+    },
+    {
+        "id": "MSN_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Masan Group trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "7.516.547.767.123 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Quý III Từ 1/7/2025 đến 30/9/2025: 7.516.547.767.123"
+    },
+    {
+        "id": "MSN_2025_Q3_02",
+        "query": "Lợi nhuận kế toán trước thuế của Masan Group trong Quý 3 năm 2025 đạt bao nhiêu?",
+        "ground_truth_answer": "1.948.255.643.435 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 50: Lợi nhuận kế toán trước thuế - Cột Quý III Từ 1/7/2025 đến 30/9/2025: 1.948.255.643.435"
+    },
+    {
+        "id": "MSN_2025_Q3_03",
+        "query": "Tổng tài sản của Masan Group tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "31.885.003.427.281 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG TÀI SẢN - Cột 30/9/2025: 31.885.003.427.281"
+    },
+    {
+        "id": "MSN_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Masan Group ghi nhận vào ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "15.206.801.334.101 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ - Cột 30/9/2025: 15.206.801.334.101"
+    },
+    {
+        "id": "MSN_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Masan Group lũy kế 9 tháng năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "395.279.240.331 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ các hoạt động kinh doanh - Cột Lũy kế từ đầu kỳ Từ 1/1/2025 đến 30/9/2025: 395.279.240.331"
+    },
+    {
+        "id": "LPB_2025_Q3_01",
+        "query": "Cộng doanh thu hoạt động của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "430.396.894.089 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động, Mã số 20: Cộng doanh thu hoạt động - Cột Quý 3 Năm nay: 430.396.894.089"
+    },
+    {
+        "id": "LPB_2025_Q3_02",
+        "query": "Lợi nhuận kế toán sau thuế của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "7.260.000.000 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động, Mã số 200: Lợi nhuận kế toán sau thuế - Cột Quý 3 Năm nay: 7.260.000.000"
+    },
+    {
+        "id": "LPB_2025_Q3_03",
+        "query": "Tổng tài sản của Chứng khoán LPBank (LPB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "18.269.759.231.794 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính, Mã số 270: TỔNG CỘNG TÀI SẢN - Cột Số cuối kỳ: 18.269.759.231.794"
+    },
+    {
+        "id": "LPB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Chứng khoán LPBank (LPB) tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "13.929.866.808.983 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính, Mã số 300: NỢ PHẢI TRẢ - Cột Số cuối kỳ: 13.929.866.808.983"
+    },
+    {
+        "id": "LPB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Chứng khoán LPBank (LPB) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "-13.157.226.603.202 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ, Mã số 20: Lưu chuyển tiền thuần từ sử dụng vào hoạt động kinh doanh - Cột Lũy kế từ đầu năm đến cuối Quý 3 Năm nay: (13.157.226.603.202)"
+    },
+    {
+        "id": "MWG_2025_9M_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Thế Giới Di Động (MWG) trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "39.852.507.152.646 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Lũy kế từ đầu năm nay (9 tháng 2025): 39.852.507.152.646"
+    },
+    {
+        "id": "MWG_2025_9M_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Thế Giới Di Động trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "1.770.898.917.304 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp - Cột Lũy kế từ đầu năm nay (9 tháng 2025): 1.770.898.917.304"
+    },
+    {
+        "id": "MWG_2025_9M_03",
+        "query": "Tổng tài sản của Thế Giới Di Động tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "80.288.497.892.066 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG CỘNG TÀI SẢN - Cột Ngày 30 tháng 9 năm 2025: 80.288.497.892.066"
+    },
+    {
+        "id": "MWG_2025_9M_04",
+        "query": "Tổng nợ phải trả của Thế Giới Di Động tính đến ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "48.491.298.270.189 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ - Cột Ngày 30 tháng 9 năm 2025: 48.491.298.270.189"
+    },
+    {
+        "id": "MWG_2025_9M_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Thế Giới Di Động trong 9 tháng năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "6.708.012.370.123 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Cho kỳ kế toán chín tháng kết thúc ngày 30 tháng 9 năm 2025: 6.708.012.370.123"
+    },
+    {
+        "id": "SHB_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của Ngân hàng SHB trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "20.027.554 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mục I: Thu nhập lãi thuần, Cột Lũy kế từ đầu năm đến cuối Quý III Năm 2025."
+    },
+    {
+        "id": "SHB_2025_Q3_02",
+        "query": "Tổng tài sản của Ngân hàng SHB tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "852.622.538 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục TỔNG TÀI SẢN CÓ, Cột Số cuối kỳ."
+    },
+    {
+        "id": "SHB_2025_Q3_03",
+        "query": "Lợi nhuận sau thuế của Ngân hàng SHB lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "9.749.972 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số 13: Lợi nhuận sau thuế, Cột Lũy kế từ đầu năm đến cuối Quý III Năm 2025."
+    },
+    {
+        "id": "SHB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Ngân hàng SHB tính đến ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "786.861.281 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục Tổng Nợ phải trả, Cột Số cuối kỳ."
+    },
+    {
+        "id": "SHB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SHB trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "12.582.178 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 24: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Lũy kế từ đầu năm đến cuối Quý III Năm 2025."
+    },
+    {
+        "id": "SAB_2025_Q3_01",
+        "query": "Tổng tài sản của SABECO tại ngày 30 tháng 09 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "31.334.772.127.400 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG CỘNG TÀI SẢN, Cột 30/09/2025."
+    },
+    {
+        "id": "SAB_2025_Q3_02",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của SABECO trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "19.051.640.533.815 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ, Cột Kỳ 09 tháng kết thúc ngày 30/09/2025."
+    },
+    {
+        "id": "SAB_2025_Q3_03",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của SABECO lũy kế 9 tháng đầu năm 2025 đạt bao nhiêu?",
+        "ground_truth_answer": "3.454.036.518.339 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Kỳ 09 tháng kết thúc ngày 30/09/2025."
+    },
+    {
+        "id": "SAB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của SABECO tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "6.832.228.993.871 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ, Cột 30/09/2025."
+    },
+    {
+        "id": "SAB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SABECO trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.351.189.307.091 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Kỳ 09 tháng kết thúc ngày 30/09/2025."
+    },
+    {
+        "id": "SSB_2025_Q3_01",
+        "query": "Tổng tài sản của SeABank tại ngày 30 tháng 09 năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "380.808.411 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất giữa niên độ, Mục TỔNG TÀI SẢN CÓ, Cột 30.9.2025."
+    },
+    {
+        "id": "SSB_2025_Q3_02",
+        "query": "Thu nhập lãi thuần của SeABank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "7.251.968 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất giữa niên độ, Mục I: Thu nhập lãi thuần, Cột Lũy kế từ đầu năm đến cuối quý này Năm 2025."
+    },
+    {
+        "id": "SSB_2025_Q3_03",
+        "query": "Tổng nợ phải trả của SeABank tính đến ngày 30/09/2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "340.540.436 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất giữa niên độ, Mục TỔNG NỢ PHẢI TRẢ, Cột 30.9.2025."
+    },
+    {
+        "id": "SSB_2025_Q3_04",
+        "query": "Lợi nhuận sau thuế của SeABank lũy kế 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "5.405.250 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất giữa niên độ, Mã số XIII: Lợi nhuận sau thuế, Cột Lũy kế từ đầu năm đến cuối quý này Năm 2025."
+    },
+    {
+        "id": "SSB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SeABank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "17.749.528 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ, Mục I: LƯU CHUYỂN TIỀN THUẦN TỪ HOẠT ĐỘNG KINH DOANH, Cột Kỳ 9 tháng kết thúc ngày 30.9.2025."
+    },
+    {
+        "id": "SSI_2025_Q3_01",
+        "query": "Cộng doanh thu hoạt động của Chứng khoán SSI trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "9.328.977.087.703 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số 20: Cộng doanh thu hoạt động, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "SSI_2025_Q3_02",
+        "query": "Lợi nhuận kế toán sau thuế thu nhập doanh nghiệp của SSI lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.287.191.543.805 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số 200: IX. LỢI NHUẬN KẾ TOÁN SAU THUẾ TNDN, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "SSI_2025_Q3_03",
+        "query": "Tổng cộng tài sản của Chứng khoán SSI tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "100.711.847.158.732 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số 270: TỔNG CỘNG TÀI SẢN, Cột Số cuối kỳ."
+    },
+    {
+        "id": "SSI_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Chứng khoán SSI tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "69.456.381.325.815 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số 300: C. NỢ PHẢI TRẢ, Cột Số cuối kỳ."
+    },
+    {
+        "id": "SSI_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SSI trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "(22.812.063.060.929) VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 60: Lưu chuyển tiền thuần từ/ (sử dụng vào) hoạt động kinh doanh, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "STB_2025_Q3_01",
+        "query": "Tổng tài sản Có của Sacombank tại ngày 30 tháng 09 năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "848.942.045 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục Tổng tài sản Có, Cột Số cuối kỳ."
+    },
+    {
+        "id": "STB_2025_Q3_02",
+        "query": "Thu nhập lãi thuần của Sacombank lũy kế 9 tháng đầu năm 2025 trong báo cáo tài chính đạt mức nào?",
+        "ground_truth_answer": "21.322.616 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mục I: Thu nhập lãi thuần, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "STB_2025_Q3_03",
+        "query": "Lợi nhuận sau thuế của Sacombank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "8.691.573 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "STB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Sacombank tại thời điểm 30/09/2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "786.237.253 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục Tổng nợ phải trả, Cột Số cuối kỳ."
+    },
+    {
+        "id": "STB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Sacombank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?",
+        "ground_truth_answer": "34.871.233 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mục I: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Lũy kế từ đầu năm đến cuối quý này Năm nay."
+    },
+    {
+        "id": "VIB_2025_9M_01",
+        "query": "Thu nhập lãi thuần của VIB trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "11.878.529 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất giữa niên độ, Mã số 27: Thu nhập lãi thuần, Cột Cho giai đoạn tài chính chín tháng kết thúc ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VIB_2025_9M_02",
+        "query": "Lợi nhuận sau thuế của VIB trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "5.637.446 triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất giữa niên độ, Mã số 60: Lợi nhuận sau thuế, Cột Cho giai đoạn tài chính chín tháng kết thúc ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VIB_2025_Q3_03",
+        "query": "Tổng tài sản của VIB tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "543.559.670 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất giữa niên độ, Mục TỔNG TÀI SẢN, Cột 30/9/2025."
+    },
+    {
+        "id": "VIB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của VIB tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "498.299.905 triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất giữa niên độ, Mục TỔNG NỢ PHẢI TRẢ, Cột 30/9/2025."
+    },
+    {
+        "id": "VIB_2025_9M_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VIB trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "9.440.425 triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ, Chỉ tiêu: Lưu chuyển tiền thuần sử dụng vào hoạt động kinh doanh, Cột Cho giai đoạn tài chính chín tháng kết thúc ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "TCB_2025_9M_01",
+        "query": "Thu nhập lãi thuần của Techcombank (TCB) lũy kế 9 tháng năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "21.916.791 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số I: Thu nhập lãi thuần, Cột Lũy kế từ đầu năm đến cuối quý này (Năm nay)."
+    },
+    {
+        "id": "TCB_2025_9M_02",
+        "query": "Lợi nhuận sau thuế của Techcombank (TCB) lũy kế 9 tháng năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "4.836.935 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế, Cột Lũy kế từ đầu năm đến cuối quý này (Năm nay)."
+    },
+    {
+        "id": "TCB_2025_Q3_03",
+        "query": "Tổng tài sản của Techcombank (TCB) tính đến ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "1.129.570.458 triệu VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số A: TÀI SẢN (Tổng cộng), Cột 30/09/2025."
+    },
+    {
+        "id": "TCB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Techcombank (TCB) tính đến ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "950.139.865 triệu VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số B: NỢ PHẢI TRẢ VÀ VỐN CHỦ SỞ HỮU (Mục Tổng nợ phải trả), Cột 30/09/2025."
+    },
+    {
+        "id": "TCB_2025_9M_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Techcombank (TCB) trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "(1.958.525) triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: Lưu chuyển tiền thuần (cho)/từ hoạt động kinh doanh, Cột Lũy kế từ 01/01/2025 đến 30/09/2025."
+    },
+    {
+        "id": "VCB_2025_Q3_01",
+        "query": "Doanh thu hoạt động của VCB trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "646.234.453.170 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động giữa niên độ, Mã số 21: Cộng doanh thu hoạt động, Cột Quý - Năm nay."
+    },
+    {
+        "id": "VCB_2025_Q3_02",
+        "query": "Lợi nhuận kế toán sau thuế của VCB trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "237.990.997.537 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động giữa niên độ, Mã số 500: TỔNG LỢI NHUẬN KẾ TOÁN SAU THUẾ, Cột Quý - Năm nay."
+    },
+    {
+        "id": "VCB_2025_Q3_03",
+        "query": "Tổng tài sản của VCB tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "18.977.414.068.091 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính giữa niên độ, Mã số 270: TỔNG CỘNG TÀI SẢN, Cột Số cuối quý."
+    },
+    {
+        "id": "VCB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của VCB tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "14.071.347.705.364 VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính giữa niên độ, Mã số 300: C. NỢ PHẢI TRẢ, Cột Số cuối quý."
+    },
+    {
+        "id": "VCB_2025_9M_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VCB lũy kế 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "5.025.192.291.949 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ giữa niên độ, Mã số 60: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Lũy kế từ đầu năm đến cuối quý này."
+    },
+    {
+        "id": "VHM_2025_Q3_01",
+        "query": "Doanh thu thuần bán hàng và cung cấp dịch vụ của Vinhomes (VHM) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "16.419.972 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ, Mã số 10: Doanh thu thuần bán hàng và cung cấp dịch vụ, Cột Quý III năm 2025."
+    },
+    {
+        "id": "VHM_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của Vinhomes (VHM) trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "4.183.929 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất giữa niên độ, Mã số 60: Lợi nhuận sau thuế thu nhập doanh nghiệp, Cột Quý III năm 2025."
+    },
+    {
+        "id": "VHM_2025_Q3_03",
+        "query": "Tổng tài sản của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "768.264.553 triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất giữa niên độ, Mã số 270: TỔNG CỘNG TÀI SẢN, Cột Ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VHM_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "533.334.874 triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất giữa niên độ, Mã số 300: NỢ PHẢI TRẢ, Cột Ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VHM_2025_9M_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinhomes (VHM) trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "42.908.369 triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất giữa niên độ, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh, Cột Lũy kế 9 tháng đầu năm 2025."
+    },
+    {
+        "id": "VIC_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vingroup trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "39.135.103 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Quý III năm 2025."
+    },
+    {
+        "id": "VIC_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vingroup trong Quý 3 năm 2025 đạt mức nào?",
+        "ground_truth_answer": "3.025.338 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế TNDN - Cột Quý III năm 2025."
+    },
+    {
+        "id": "VIC_2025_Q3_03",
+        "query": "Tổng tài sản của Tập đoàn Vingroup tại thời điểm 30/9/2025 là bao nhiêu?",
+        "ground_truth_answer": "1.087.870.325 triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG CỘNG TÀI SẢN - Cột Số cuối kỳ (30/9/2025)."
+    },
+    {
+        "id": "VIC_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Vingroup tính đến ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "925.966.426 triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ - Cột Số cuối kỳ (30/9/2025)."
+    },
+    {
+        "id": "VIC_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vingroup trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "78.689.311 triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Cho giai đoạn tài chính 9 tháng kết thúc ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VNM_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vinamilk trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "16.953.231.537.863 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Quý III kết thúc ngày 30/9/2025."
+    },
+    {
+        "id": "VNM_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của Vinamilk trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.510.532.743.203 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế TNDN - Cột Quý III kết thúc ngày 30/9/2025."
+    },
+    {
+        "id": "VNM_2025_Q3_03",
+        "query": "Tổng tài sản của Vinamilk tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "55.677.822.006.663 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG TÀI SẢN - Cột 30/9/2025."
+    },
+    {
+        "id": "VNM_2025_Q3_04",
+        "query": "Nợ phải trả của Vinamilk tại thời điểm 30/9/2025 chiếm bao nhiêu?",
+        "ground_truth_answer": "17.725.023.298.796 VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: NỢ PHẢI TRẢ - Cột 30/9/2025."
+    },
+    {
+        "id": "VNM_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinamilk trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "6.929.194.243.658 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Giai đoạn chín tháng kết thúc ngày 30/9/2025."
+    },
+    {
+        "id": "VJC_2025_Q3_01",
+        "query": "Doanh thu bán hàng và cung cấp dịch vụ của Vietjet trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "16.728.207.200.018 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh riêng, Mã số 01: Doanh thu bán hàng và cung cấp dịch vụ - Cột Quý III Năm nay."
+    },
+    {
+        "id": "VJC_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vietjet trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "314.347.658.210 VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh riêng, Mã số 60: Lợi nhuận sau thuế TNDN - Cột Quý III Năm nay."
+    },
+    {
+        "id": "VJC_2025_Q3_03",
+        "query": "Tổng tài sản của Vietjet tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "104.742.436.712.889 VND",
+        "ground_truth_context": "Bảng cân đối kế toán riêng, Mã số 270: TỔNG TÀI SẢN - Cột 30.09.2025."
+    },
+    {
+        "id": "VJC_2025_Q3_04",
+        "query": "Tổng nợ phải trả của Vietjet tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "92.326.551.739.665 VND",
+        "ground_truth_context": "Bảng cân đối kế toán riêng, Mã số 300: NỢ PHẢI TRẢ - Cột 30.09.2025."
+    },
+    {
+        "id": "VJC_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vietjet trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "364.628.135.139 VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ riêng, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Lũy kế từ đầu năm đến cuối quý Năm nay."
+    },
+    {
+        "id": "VPB_2025_Q3_01",
+        "query": "Tổng tài sản của VPBank tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "1.178.298.568 Triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục TỔNG TÀI SẢN - Cột Ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VPB_2025_Q3_02",
+        "query": "Thu nhập lãi và các khoản thu nhập tương tự của VPBank trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "26.165.798 Triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số 27: Thu nhập lãi và các khoản thu nhập tương tự - Cột Quý III Năm nay."
+    },
+    {
+        "id": "VPB_2025_Q3_03",
+        "query": "Tổng lợi nhuận trước thuế của VPBank trong Quý 3 năm 2025 đạt bao nhiêu?",
+        "ground_truth_answer": "9.166.297 Triệu đồng",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số 40: TỔNG LỢI NHUẬN TRƯỚC THUẾ - Cột Quý III Năm nay."
+    },
+    {
+        "id": "VPB_2025_Q3_04",
+        "query": "Tiền gửi của khách hàng tại VPBank vào ngày 30/9/2025 là bao nhiêu?",
+        "ground_truth_answer": "585.833.049 Triệu đồng",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mã số 20: Tiền gửi của khách hàng - Cột Ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VPB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VPBank trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "27.397.628 Triệu đồng",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Dòng 'Lưu chuyển tiền thuần từ hoạt động kinh doanh' (in đậm cuối phần hoạt động kinh doanh) - Cột Cho kỳ kế toán 9 tháng kết thúc ngày 30 tháng 9 năm 2025."
+    },
+    {
+        "id": "VRE_2025_Q3_01",
+        "query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vincom Retail trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "2.251.000 Triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 10: Doanh thu thuần về bán hàng và cung cấp dịch vụ - Cột Quý III năm 2025."
+    },
+    {
+        "id": "VRE_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vincom Retail trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "1.376.430 Triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động kinh doanh hợp nhất, Mã số 60: Lợi nhuận sau thuế TNDN - Cột Quý III năm 2025."
+    },
+    {
+        "id": "VRE_2025_Q3_03",
+        "query": "Tổng tài sản của Vincom Retail tại thời điểm 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "61.264.693 Triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 270: TỔNG CỘNG TÀI SẢN - Cột Tại 30/09/2025."
+    },
+    {
+        "id": "VRE_2025_Q3_04",
+        "query": "Nợ phải trả của Vincom Retail tại ngày 30/09/2025 là bao nhiêu?",
+        "ground_truth_answer": "15.554.965 Triệu VND",
+        "ground_truth_context": "Bảng cân đối kế toán hợp nhất, Mã số 300: C. NỢ PHẢI TRẢ - Cột Tại 30/09/2025."
+    },
+    {
+        "id": "VRE_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vincom Retail trong 9 tháng đầu năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "(947.653) Triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số 20: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Cho giai đoạn tài chính 9 tháng kết thúc ngày 30 tháng 09 năm 2025."
+    },
+    {
+        "id": "TPB_2025_Q3_01",
+        "query": "Thu nhập lãi thuần của TPBank trong Quý 3 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "3.237.619 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số I: Thu nhập lãi thuần - Cột Quý III Năm nay."
+    },
+    {
+        "id": "TPB_2025_Q3_02",
+        "query": "Lợi nhuận sau thuế của TPBank trong Quý 3 năm 2025 đạt mức nào?",
+        "ground_truth_answer": "1.520.640 triệu VND",
+        "ground_truth_context": "Báo cáo kết quả hoạt động hợp nhất, Mã số XIII: Lợi nhuận sau thuế - Cột Quý III Năm nay."
+    },
+    {
+        "id": "TPB_2025_Q3_03",
+        "query": "Tổng tài sản của TPBank tại ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "451.893.195 triệu VND",
+        "ground_truth_context": "Báo cáo tình hình tài chính hợp nhất, Mục A TÀI SẢN - Cột 30/09/2025."
+    },
+    {
+        "id": "TPB_2025_Q3_04",
+        "query": "Tổng nợ phải trả của TPBank tính đến ngày 30 tháng 9 năm 2025 là bao nhiêu?",
+        "ground_truth_answer": "411.899.955 triệu VND",
+        "ground_truth_context": "Thuyết minh báo cáo tài chính hợp nhất (Mục 39.1 Rủi ro tiền tệ), Bảng phân tích tài sản và nợ phải trả tiền tệ - Dòng TỔNG NỢ PHẢI TRẢ, Cột Tổng cộng."
+    },
+    {
+        "id": "TPB_2025_Q3_05",
+        "query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của TPBank trong 9 tháng đầu năm 2025 là dương hay âm và giá trị là bao nhiêu?",
+        "ground_truth_answer": "Âm (1.958.525) triệu VND",
+        "ground_truth_context": "Báo cáo lưu chuyển tiền tệ hợp nhất, Mã số I: Lưu chuyển tiền thuần từ hoạt động kinh doanh - Cột Từ 01/01/2025 đến 30/09/2025."
     }
 ]

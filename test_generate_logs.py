@@ -48,10 +48,10 @@ def detect_ticker_from_query(query):
     return matched_ticker
 
 files = glob.glob(os.path.join(LOG_DIR, '*.json'))
-for f in files: 
-    try: os.remove(f) 
-    except: pass
-print(f"🧹 Đã dọn dẹp log chat cũ trong {LOG_DIR}/.")
+# for f in files: 
+#     try: os.remove(f) 
+#     except: pass
+# print(f"🧹 Đã dọn dẹp log chat cũ trong {LOG_DIR}/.")
 
 try:
     with open(DATASET_FILE, 'r', encoding='utf-8') as f:
@@ -91,7 +91,7 @@ for i, item in enumerate(dataset):
                 
                 if len(newly_ingested_tickers) > 1:
                     print("⏳ Nghỉ 5s để bảo vệ API Key...")
-                    time.sleep(5)
+                    time.sleep(10)
             else:
                 print(f"ℹ️ [Session] Mã [{ticker}] đang được xử lý.")
         else:
@@ -110,7 +110,7 @@ for i, item in enumerate(dataset):
         if "NO_DATA" in response or "không tìm thấy" in response.lower():
             print("⚠️ CẢNH BÁO: Bot không trả lời được!")
             
-        time.sleep(5)
+        time.sleep(12)
             
     except Exception as e:
         print(f"❌ Lỗi hệ thống: {e}")
