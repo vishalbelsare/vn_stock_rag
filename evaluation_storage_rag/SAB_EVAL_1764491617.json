@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:33:37.774954",
+        "session_id": "TEST_AUTO_SAB_81",
+        "ticker": "SAB",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của SABECO trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của SABECO trong 9 tháng đầu năm 2025 là 19,051,640,533,815 VNĐ."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của SABECO trong 9 tháng đầu năm 2025 là 19,051,640,533,815 VNĐ."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của SABECO trong 9 tháng đầu năm 2025 là 19,051,640,533,815 VNĐ."
+    },
+    "ground_truth": null
+}

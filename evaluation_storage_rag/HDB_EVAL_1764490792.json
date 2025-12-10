@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:19:52.006733",
+        "session_id": "TEST_AUTO_HDB_44",
+        "ticker": "HDB",
+        "user_query": "Tổng nợ phải trả của HDBank tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của HDBank tại ngày 30/09/2025 là 713.530.315 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của HDBank tại ngày 30/09/2025 là 713.530.315 Triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của HDBank tại ngày 30/09/2025 là 713.530.315 Triệu đồng."
+    },
+    "ground_truth": null
+}

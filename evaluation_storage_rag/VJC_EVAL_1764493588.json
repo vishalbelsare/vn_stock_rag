@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:06:28.787623",
+        "session_id": "TEST_AUTO_UNKNOWN_44",
+        "ticker": "VJC",
+        "user_query": "Tổng nợ phải trả của Vietjet tại thời điểm 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Vietjet tại thời điểm 30/09/2025 là 92.326.551.739.665 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Vietjet tại thời điểm 30/09/2025 là 92.326.551.739.665 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Vietjet tại thời điểm 30/09/2025 là 92.326.551.739.665 VND."
+    },
+    "ground_truth": null
+}

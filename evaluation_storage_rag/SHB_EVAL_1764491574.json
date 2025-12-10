@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:32:54.500036",
+        "session_id": "TEST_AUTO_SHB_79",
+        "ticker": "SHB",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SHB trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SHB trong 9 tháng đầu năm 2025 là 12.582 .178 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SHB trong 9 tháng đầu năm 2025 là 12.582 .178 Triệu đồng."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SHB trong 9 tháng đầu năm 2025 là 12.582.178 triệu đồng."
+    },
+    "ground_truth": null
+}

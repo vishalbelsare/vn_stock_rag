@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:12:47.965939",
+        "session_id": "TEST_AUTO_GVR_25",
+        "ticker": "GVR",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của GVR trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của GVR trong Quý 3 năm 2025 là 9.294.402.677.445 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của GVR trong Quý 3 năm 2025 là 9.294.402.677.445 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của GVR trong Quý 3 năm 2025 là 9.294.402.677.445 VND."
+    },
+    "ground_truth": null
+}

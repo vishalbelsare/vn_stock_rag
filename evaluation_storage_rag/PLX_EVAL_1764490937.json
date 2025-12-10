@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:22:17.712245",
+        "session_id": "TEST_AUTO_UNKNOWN_50",
+        "ticker": "PLX",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Tập đoàn Xăng dầu Việt Nam (Petrolimex) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Tập đoàn Xăng dầu Việt Nam trong Quý 3 năm 2025 là 45.879.991.666.145 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Tập đoàn Xăng dầu Việt Nam trong Quý 3 năm 2025 là 45.879.991.666.145 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Tập đoàn Xăng dầu Việt Nam (Petrolimex) trong Quý 3 năm 2025 là 45.879.991.666.145 VND."
+    },
+    "ground_truth": null
+}

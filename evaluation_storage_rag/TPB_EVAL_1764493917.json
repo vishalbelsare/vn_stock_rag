@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:11:57.668197",
+        "session_id": "TEST_AUTO_TPB_59",
+        "ticker": "TPB",
+        "user_query": "Tổng nợ phải trả của TPBank tính đến ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của TPBank tính đến ngày 30 tháng 9 năm 2025 là 411.899.955 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của TPBank tính đến ngày 30 tháng 9 năm 2025 là 411.899.955 Triệu VND."
+        ],
+        "answer": "Tổng nợ phải trả của TPBank tính đến ngày 30 tháng 9 năm 2025 là 411.899.955 Triệu VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:52:04.528364",
+        "session_id": "TEST_AUTO_UNKNOWN_8",
+        "ticker": "STB",
+        "user_query": "Lợi nhuận sau thuế của Sacombank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế của Sacombank trong 9 tháng đầu năm 2025 là 8,691,573 triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế của Sacombank trong 9 tháng đầu năm 2025 là 8,691,573 triệu VND."
+        ],
+        "answer": "Lợi nhuận sau thuế của Sacombank trong 9 tháng đầu năm 2025 là 8,691,573 triệu VND."
+    },
+    "ground_truth": null
+}

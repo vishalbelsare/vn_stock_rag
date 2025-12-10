@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:17:16.476941",
+        "session_id": "TEST_AUTO_HPG_37",
+        "ticker": "HPG",
+        "user_query": "Tổng cộng tài sản của HPG tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng cộng tài sản của HPG tại ngày 30/09/2025 là 246.171.338.287.652 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng cộng tài sản của HPG tại ngày 30/09/2025 là 246.171.338.287.652 VND."
+        ],
+        "answer": "Tổng tài sản của HPG tại ngày 30/09/2025 là 246.171.338.287.652 VND."
+    },
+    "ground_truth": null
+}

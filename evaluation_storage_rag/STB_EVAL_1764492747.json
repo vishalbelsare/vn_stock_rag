@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:52:27.634949",
+        "session_id": "TEST_AUTO_UNKNOWN_9",
+        "ticker": "STB",
+        "user_query": "Tổng nợ phải trả của Sacombank tại thời điểm 30/09/2025 trong báo cáo tài chính là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Sacombank tại thời điểm 30/09/2025 là 786,237,253 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Sacombank tại thời điểm 30/09/2025 là 786,237,253 triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của Sacombank tại thời điểm 30/09/2025 là 786,237,253 triệu đồng."
+    },
+    "ground_truth": null
+}

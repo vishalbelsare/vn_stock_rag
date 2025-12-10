@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:02:45.701578",
+        "session_id": "TEST_AUTO_UNKNOWN_34",
+        "ticker": "VIC",
+        "user_query": "Tổng nợ phải trả của Vingroup tính đến ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Vingroup tính đến ngày 30 tháng 9 năm 2025 là 925.966.426 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Vingroup tính đến ngày 30 tháng 9 năm 2025 là 925.966.426 Triệu VND."
+        ],
+        "answer": "Tổng nợ phải trả của Vingroup tính đến ngày 30 tháng 9 năm 2025 là 925.966.426 Triệu VND."
+    },
+    "ground_truth": null
+}

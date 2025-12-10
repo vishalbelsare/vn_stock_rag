@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:24:34.952527",
+        "session_id": "TEST_AUTO_UNKNOWN_56",
+        "ticker": "MBB",
+        "user_query": "Lợi nhuận sau thuế của MB Bank trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế của MB Bank trong Quý 3 năm 2025 là 5.800.441 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế của MB Bank trong Quý 3 năm 2025 là 5.800.441 triệu đồng."
+        ],
+        "answer": "Lợi nhuận sau thuế của MB Bank trong Quý 3 năm 2025 là 5.800.441 triệu đồng."
+    },
+    "ground_truth": null
+}

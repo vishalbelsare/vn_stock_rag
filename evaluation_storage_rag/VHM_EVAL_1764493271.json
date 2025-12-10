@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:01:11.161943",
+        "session_id": "TEST_AUTO_VHM_30",
+        "ticker": "VHM",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinhomes (VHM) trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinhomes (VHM) trong 9 tháng đầu năm 2025 là 42.908.369 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinhomes (VHM) trong 9 tháng đầu năm 2025 là 42.908.369 Triệu VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Vinhomes (VHM) trong 9 tháng đầu năm 2025 là 42.908.369 Triệu VND."
+    },
+    "ground_truth": null
+}

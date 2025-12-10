@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:56:23.649994",
+        "session_id": "TEST_AUTO_TCB_18",
+        "ticker": "TCB",
+        "user_query": "Tổng tài sản của Techcombank (TCB) tính đến ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Techcombank (TCB) tính đến ngày 30/09/2025 là 1.129.570.458 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Techcombank (TCB) tính đến ngày 30/09/2025 là 1.129.570.458 triệu đồng."
+        ],
+        "answer": "Tổng tài sản của Techcombank (TCB) tính đến ngày 30/09/2025 là 1.129.570.458 triệu đồng."
+    },
+    "ground_truth": null
+}

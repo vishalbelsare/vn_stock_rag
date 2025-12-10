@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:31:52.750388",
+        "session_id": "TEST_AUTO_SHB_76",
+        "ticker": "SHB",
+        "user_query": "Tổng tài sản của Ngân hàng SHB tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Ngân hàng SHB tại ngày 30 tháng 09 năm 2025 là 852.622 .538 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Ngân hàng SHB tại ngày 30 tháng 09 năm 2025 là 852.622 .538 Triệu đồng."
+        ],
+        "answer": "Tổng tài sản của Ngân hàng SHB tại ngày 30 tháng 09 năm 2025 là 852.622.538 triệu đồng."
+    },
+    "ground_truth": null
+}

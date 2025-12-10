@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:34:24.504611",
+        "session_id": "TEST_AUTO_SAB_83",
+        "ticker": "SAB",
+        "user_query": "Tổng nợ phải trả của SABECO tại thời điểm 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của SABECO tại thời điểm 30/09/2025 là 6,832,228,993,871 VNĐ."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của SABECO tại thời điểm 30/09/2025 là 6,832,228,993,871 VNĐ."
+        ],
+        "answer": "Tổng nợ phải trả của SABECO tại thời điểm 30/09/2025 là 6,832,228,993,871 VNĐ."
+    },
+    "ground_truth": null
+}

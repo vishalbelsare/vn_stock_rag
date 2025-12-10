@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:35:33.344545",
+        "session_id": "TEST_AUTO_UNKNOWN_86",
+        "ticker": "SSB",
+        "user_query": "Thu nhập lãi thuần của SeABank trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của SeABank trong 9 tháng đầu năm 2025 là 7.251.968 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của SeABank trong 9 tháng đầu năm 2025 là 7.251.968 Triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của SeABank trong 9 tháng đầu năm 2025 là 7.251.968 Triệu đồng."
+    },
+    "ground_truth": null
+}

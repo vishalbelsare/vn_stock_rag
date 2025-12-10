@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:55:38.328347",
+        "session_id": "TEST_AUTO_TCB_16",
+        "ticker": "TCB",
+        "user_query": "Thu nhập lãi thuần của Techcombank (TCB) lũy kế 9 tháng năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của Techcombank (TCB) lũy kế 9 tháng năm 2025 là 27.367.112 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của Techcombank (TCB) lũy kế 9 tháng năm 2025 là 27.367.112 triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của Techcombank (TCB) lũy kế 9 tháng năm 2025 là 27.367.112 triệu đồng."
+    },
+    "ground_truth": null
+}

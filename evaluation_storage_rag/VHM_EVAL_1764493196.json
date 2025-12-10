@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:59:56.765750",
+        "session_id": "TEST_AUTO_VHM_27",
+        "ticker": "VHM",
+        "user_query": "Lợi nhuận sau thuế của Vinhomes (VHM) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế của Vinhomes (VHM) trong Quý 3 năm 2025 là 4.435.641 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế của Vinhomes (VHM) trong Quý 3 năm 2025 là 4.435.641 Triệu VND."
+        ],
+        "answer": "Lợi nhuận sau thuế của Vinhomes (VHM) trong Quý 3 năm 2025 là 4.435.641 Triệu VND."
+    },
+    "ground_truth": null
+}

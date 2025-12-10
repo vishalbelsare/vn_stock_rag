@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:16:55.804347",
+        "session_id": "TEST_AUTO_HPG_36",
+        "ticker": "HPG",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của HPG trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của HPG trong Quý 3 năm 2025 là 4.012.252.316.723 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của HPG trong Quý 3 năm 2025 là 4.012.252.316.723 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của HPG trong Quý 3 năm 2025 là 4.012.252.316.723 VND."
+    },
+    "ground_truth": null
+}

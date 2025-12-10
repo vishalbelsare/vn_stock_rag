@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:57:33.873386",
+        "session_id": "TEST_AUTO_VCB_21",
+        "ticker": "VCB",
+        "user_query": "Doanh thu hoạt động của VCB trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu hoạt động của VCB trong Quý 3 năm 2025 là 646.234.453.170 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu hoạt động của VCB trong Quý 3 năm 2025 là 646.234.453.170 VND."
+        ],
+        "answer": "Doanh thu hoạt động của VCB trong Quý 3 năm 2025 là 646.234.453.170 VND."
+    },
+    "ground_truth": null
+}

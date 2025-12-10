@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:21:04.172492",
+        "session_id": "TEST_AUTO_GAS_47",
+        "ticker": "GAS",
+        "user_query": "Tổng cộng tài sản của PV GAS tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng cộng tài sản của PV GAS tại ngày 30/09/2025 là 93.864.613.349.663 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng cộng tài sản của PV GAS tại ngày 30/09/2025 là 93.864.613.349.663 VND."
+        ],
+        "answer": "Tổng cộng tài sản của PV GAS tại ngày 30/09/2025 là 93.864.613.349.663 VND."
+    },
+    "ground_truth": null
+}

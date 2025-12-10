@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:51:16.224110",
+        "session_id": "TEST_AUTO_UNKNOWN_6",
+        "ticker": "STB",
+        "user_query": "Tổng tài sản của Sacombank trong báo cáo tài chính tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Sacombank trong báo cáo tài chính tại ngày 30 tháng 09 năm 2025 là 848,942,045 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Sacombank trong báo cáo tài chính tại ngày 30 tháng 09 năm 2025 là 848,942,045 triệu đồng."
+        ],
+        "answer": "Tổng tài sản của Sacombank tại ngày 30 tháng 09 năm 2025 là 848,942,045 triệu đồng."
+    },
+    "ground_truth": null
+}

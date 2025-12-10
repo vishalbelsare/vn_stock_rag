@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:07:15.046262",
+        "session_id": "TEST_AUTO_ACB_10",
+        "ticker": "ACB",
+        "user_query": "Thu nhập lãi thuần của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là 6.769.710 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là 6.769.710 Triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của Ngân hàng Á Châu (ACB) trong Quý 3 năm 2025 là 6.769.710 Triệu đồng."
+    },
+    "ground_truth": null
+}

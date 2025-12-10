@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:12:19.297068",
+        "session_id": "TEST_AUTO_TPB_60",
+        "ticker": "TPB",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của TPBank trong 9 tháng đầu năm 2025 là dương hay âm và giá trị là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của TPBank trong 9 tháng đầu năm 2025 là âm, với giá trị là (1.958.525) Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của TPBank trong 9 tháng đầu năm 2025 là âm, với giá trị là (1.958.525) Triệu VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của TPBank trong 9 tháng đầu năm 2025 là âm, với giá trị là (1.958.525) Triệu VND."
+    },
+    "ground_truth": null
+}

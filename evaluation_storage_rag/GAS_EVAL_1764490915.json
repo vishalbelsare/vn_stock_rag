@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:21:55.306739",
+        "session_id": "TEST_AUTO_GAS_49",
+        "ticker": "GAS",
+        "user_query": "Tổng nợ phải trả của PV GAS tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của PV GAS tại ngày 30/09/2025 là 27.487.308.376.982."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của PV GAS tại ngày 30/09/2025 là 27.487.308.376.982."
+        ],
+        "answer": "Tổng nợ phải trả của PV GAS tại ngày 30/09/2025 là 27.487.308.376.982 VND."
+    },
+    "ground_truth": null
+}

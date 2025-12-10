@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:08:54.044850",
+        "session_id": "TEST_AUTO_UNKNOWN_51",
+        "ticker": "VRE",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vincom Retail trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vincom Retail trong Quý III năm 2025 là 2.251.000 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vincom Retail trong Quý III năm 2025 là 2.251.000 Triệu VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vincom Retail trong Quý 3 năm 2025 là 2.251.000 Triệu VND."
+    },
+    "ground_truth": null
+}

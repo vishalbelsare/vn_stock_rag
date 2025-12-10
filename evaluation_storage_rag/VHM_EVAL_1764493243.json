@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:00:43.511447",
+        "session_id": "TEST_AUTO_VHM_29",
+        "ticker": "VHM",
+        "user_query": "Tổng nợ phải trả của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là 533.334.874 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là 533.334.874 Triệu VND."
+        ],
+        "answer": "Tổng nợ phải trả của Vinhomes (VHM) tại ngày 30 tháng 9 năm 2025 là 533.334.874 Triệu VND."
+    },
+    "ground_truth": null
+}

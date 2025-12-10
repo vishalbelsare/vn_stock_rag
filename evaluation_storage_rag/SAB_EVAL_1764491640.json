@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:34:00.418535",
+        "session_id": "TEST_AUTO_SAB_82",
+        "ticker": "SAB",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của SABECO lũy kế 9 tháng đầu năm 2025 đạt bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của SABECO lũy kế 9 tháng đầu năm 2025 đạt 1,403,724,992,261 VNĐ."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của SABECO lũy kế 9 tháng đầu năm 2025 đạt 1,403,724,992,261 VNĐ."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của SABECO lũy kế 9 tháng đầu năm 2025 đạt 1,403,724,992,261 VNĐ."
+    },
+    "ground_truth": null
+}

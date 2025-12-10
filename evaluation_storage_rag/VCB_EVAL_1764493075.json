@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:57:55.369742",
+        "session_id": "TEST_AUTO_VCB_22",
+        "ticker": "VCB",
+        "user_query": "Lợi nhuận kế toán sau thuế của VCB trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận kế toán sau thuế của VCB trong Quý 3 năm 2025 là 237.990.997.537."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận kế toán sau thuế của VCB trong Quý 3 năm 2025 là 237.990.997.537."
+        ],
+        "answer": "Lợi nhuận kế toán sau thuế của VCB trong Quý 3 năm 2025 là 237.990.997.537."
+    },
+    "ground_truth": null
+}

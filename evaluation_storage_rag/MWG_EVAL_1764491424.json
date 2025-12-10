@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:30:24.500265",
+        "session_id": "TEST_AUTO_UNKNOWN_72",
+        "ticker": "MWG",
+        "user_query": "Tổng tài sản của Thế Giới Di Động tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Thế Giới Di Động tại ngày 30 tháng 09 năm 2025 là 80.288.497.892.066 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Thế Giới Di Động tại ngày 30 tháng 09 năm 2025 là 80.288.497.892.066 VND."
+        ],
+        "answer": "Tổng tài sản của Thế Giới Di Động tại ngày 30 tháng 09 năm 2025 là 80.288.497.892.066 VND."
+    },
+    "ground_truth": null
+}

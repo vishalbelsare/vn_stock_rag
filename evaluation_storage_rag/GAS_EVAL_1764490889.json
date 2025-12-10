@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:21:29.762294",
+        "session_id": "TEST_AUTO_GAS_48",
+        "ticker": "GAS",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của PV GAS trong kỳ kế toán kết thúc ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của PV GAS trong kỳ kế toán kết thúc ngày 30/09/2025 là 12.549.166.835.674."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của PV GAS trong kỳ kế toán kết thúc ngày 30/09/2025 là 12.549.166.835.674."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của PV GAS trong kỳ kế toán kết thúc ngày 30/09/2025 là 12.549.166.835.674 VND."
+    },
+    "ground_truth": null
+}

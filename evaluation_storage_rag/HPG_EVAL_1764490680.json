@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:18:00.702852",
+        "session_id": "TEST_AUTO_HPG_39",
+        "ticker": "HPG",
+        "user_query": "Tổng nợ phải trả của HPG tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của HPG tại ngày 30/09/2025 là 118.655.326.188.383 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của HPG tại ngày 30/09/2025 là 118.655.326.188.383 VND."
+        ],
+        "answer": "Tổng nợ phải trả của HPG tại ngày 30/09/2025 là 118.655.326.188.383 VND."
+    },
+    "ground_truth": null
+}

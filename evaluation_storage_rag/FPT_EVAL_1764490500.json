@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:15:00.252104",
+        "session_id": "TEST_AUTO_FPT_31",
+        "ticker": "FPT",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của FPT trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của FPT trong Quý 3 năm 2025 là 2.901.545.752.650 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của FPT trong Quý 3 năm 2025 là 2.901.545.752.650 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của FPT trong Quý 3 năm 2025 là 2.901.545.752.650 VND."
+    },
+    "ground_truth": null
+}

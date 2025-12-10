@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:10:06.811035",
+        "session_id": "TEST_AUTO_DGC_18",
+        "ticker": "DGC",
+        "user_query": "Tổng nợ phải trả của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 3.413.453.381.832 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 3.413.453.381.832 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 3.413.453.381.832 VND."
+    },
+    "ground_truth": null
+}

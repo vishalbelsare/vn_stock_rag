@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:06:31.021314",
+        "session_id": "TEST_AUTO_BCM_8",
+        "ticker": "BCM",
+        "user_query": "Tổng nợ phải trả của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là 34.694.406.192.723."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là 34.694.406.192.723."
+        ],
+        "answer": "Tổng nợ phải trả của Becamex (BCM) tại ngày 30 tháng 09 năm 2025 là 34.694.406.192.723."
+    },
+    "ground_truth": null
+}

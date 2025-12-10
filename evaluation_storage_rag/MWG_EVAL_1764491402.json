@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:30:02.252288",
+        "session_id": "TEST_AUTO_UNKNOWN_71",
+        "ticker": "MWG",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Thế Giới Di Động trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế TNDN của Thế Giới Di Động trong 9 tháng đầu năm 2025 là 4.989.028.523.571 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế TNDN của Thế Giới Di Động trong 9 tháng đầu năm 2025 là 4.989.028.523.571 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế TNDN của Thế Giới Di Động trong 9 tháng đầu năm 2025 là 4.989.028.523.571 VND."
+    },
+    "ground_truth": null
+}

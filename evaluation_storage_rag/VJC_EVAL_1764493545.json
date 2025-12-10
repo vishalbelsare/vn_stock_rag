@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:05:45.196663",
+        "session_id": "TEST_AUTO_UNKNOWN_42",
+        "ticker": "VJC",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vietjet trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vietjet trong Quý 3 năm 2025 là 314.347.658.210 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vietjet trong Quý 3 năm 2025 là 314.347.658.210 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vietjet trong Quý 3 năm 2025 là 314.347.658.210 VND."
+    },
+    "ground_truth": null
+}

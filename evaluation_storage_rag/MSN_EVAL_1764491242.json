@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:27:22.220740",
+        "session_id": "TEST_AUTO_UNKNOWN_63",
+        "ticker": "MSN",
+        "user_query": "Tổng nợ phải trả của Masan Group ghi nhận vào ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Masan Group ghi nhận vào ngày 30 tháng 09 năm 2025 là 15.206.801.334.101 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Masan Group ghi nhận vào ngày 30 tháng 09 năm 2025 là 15.206.801.334.101 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Masan Group ghi nhận vào ngày 30 tháng 09 năm 2025 là 15.206.801.334.101 VND."
+    },
+    "ground_truth": null
+}

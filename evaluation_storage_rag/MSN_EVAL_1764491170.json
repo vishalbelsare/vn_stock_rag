@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:26:10.541598",
+        "session_id": "TEST_AUTO_UNKNOWN_60",
+        "ticker": "MSN",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Masan Group trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Masan Group trong Quý 3 năm 2025 là 7.516.547.767.123 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Masan Group trong Quý 3 năm 2025 là 7.516.547.767.123 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Masan Group trong Quý 3 năm 2025 là 7.516.547.767.123 VND."
+    },
+    "ground_truth": null
+}

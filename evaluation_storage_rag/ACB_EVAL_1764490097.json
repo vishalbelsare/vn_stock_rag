@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:08:17.769540",
+        "session_id": "TEST_AUTO_ACB_13",
+        "ticker": "ACB",
+        "user_query": "Tổng nợ phải trả của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 857.133.676 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 857.133.676 Triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 857.133.676 Triệu đồng."
+    },
+    "ground_truth": null
+}

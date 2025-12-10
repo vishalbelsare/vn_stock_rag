@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:27:44.751976",
+        "session_id": "TEST_AUTO_UNKNOWN_64",
+        "ticker": "MSN",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Masan Group lũy kế 9 tháng năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ các hoạt động kinh doanh của Masan Group lũy kế 9 tháng năm 2025 là 5.994.755.821.181 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ các hoạt động kinh doanh của Masan Group lũy kế 9 tháng năm 2025 là 5.994.755.821.181 VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Masan Group lũy kế 9 tháng năm 2025 là 5.994.755.821.181 VND."
+    },
+    "ground_truth": null
+}

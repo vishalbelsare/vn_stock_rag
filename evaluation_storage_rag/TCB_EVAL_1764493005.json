@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:56:45.813283",
+        "session_id": "TEST_AUTO_TCB_19",
+        "ticker": "TCB",
+        "user_query": "Tổng nợ phải trả của Techcombank (TCB) tính đến ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Techcombank (TCB) tính đến ngày 30/09/2025 là 950.139.865 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Techcombank (TCB) tính đến ngày 30/09/2025 là 950.139.865 triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của Techcombank (TCB) tính đến ngày 30/09/2025 là 950.139.865 triệu đồng."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:31:09.166663",
+        "session_id": "TEST_AUTO_UNKNOWN_74",
+        "ticker": "MWG",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Thế Giới Di Động trong 9 tháng năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Thế Giới Di Động trong 9 tháng năm 2025 là 6.708.012.370.123 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Thế Giới Di Động trong 9 tháng năm 2025 là 6.708.012.370.123 VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Thế Giới Di Động trong 9 tháng năm 2025 là 6.708.012.370.123 VND."
+    },
+    "ground_truth": null
+}

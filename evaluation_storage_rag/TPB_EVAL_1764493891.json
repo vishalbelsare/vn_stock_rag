@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:11:31.048373",
+        "session_id": "TEST_AUTO_TPB_58",
+        "ticker": "TPB",
+        "user_query": "Tổng tài sản của TPBank tại ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của TPBank tại ngày 30 tháng 9 năm 2025 là 451.893 .195 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của TPBank tại ngày 30 tháng 9 năm 2025 là 451.893 .195 Triệu VND."
+        ],
+        "answer": "Tổng tài sản của TPBank tại ngày 30 tháng 9 năm 2025 là 451.893.195 Triệu VND."
+    },
+    "ground_truth": null
+}

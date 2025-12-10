@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:11:56.558527",
+        "session_id": "TEST_AUTO_BID_23",
+        "ticker": "BID",
+        "user_query": "Tiền gửi của khách hàng tại BIDV (BID) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tiền gửi của khách hàng tại BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 2,087,181,421 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tiền gửi của khách hàng tại BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 2,087,181,421 Triệu VND."
+        ],
+        "answer": "Tiền gửi của khách hàng tại BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 2,087,181,421 Triệu VND."
+    },
+    "ground_truth": null
+}

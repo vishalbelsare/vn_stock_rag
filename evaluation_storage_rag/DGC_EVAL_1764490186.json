@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:09:46.264259",
+        "session_id": "TEST_AUTO_DGC_17",
+        "ticker": "DGC",
+        "user_query": "Tổng tài sản của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 19.424.382.428.034 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 19.424.382.428.034 VND."
+        ],
+        "answer": "Tổng tài sản của Hóa chất Đức Giang (DGC) tại ngày 30 tháng 09 năm 2025 là 19.424.382.428.034 VND."
+    },
+    "ground_truth": null
+}

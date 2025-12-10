@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:30:47.365980",
+        "session_id": "TEST_AUTO_UNKNOWN_73",
+        "ticker": "MWG",
+        "user_query": "Tổng nợ phải trả của Thế Giới Di Động tính đến ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Thế Giới Di Động tính đến ngày 30 tháng 09 năm 2025 là 48.491.298.270.189 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Thế Giới Di Động tính đến ngày 30 tháng 09 năm 2025 là 48.491.298.270.189 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Thế Giới Di Động tính đến ngày 30 tháng 09 năm 2025 là 48.491.298.270.189 VND."
+    },
+    "ground_truth": null
+}

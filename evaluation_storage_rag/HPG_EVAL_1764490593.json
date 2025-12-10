@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:16:33.420831",
+        "session_id": "TEST_AUTO_HPG_35",
+        "ticker": "HPG",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của HPG trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của HPG trong Quý 3 năm 2025 là 36.407.416.403.924 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của HPG trong Quý 3 năm 2025 là 36.407.416.403.924 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của HPG trong Quý 3 năm 2025 là 36.407.416.403.924 VND."
+    },
+    "ground_truth": null
+}

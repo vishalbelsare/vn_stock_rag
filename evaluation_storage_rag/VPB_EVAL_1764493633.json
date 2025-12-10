@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:07:13.229340",
+        "session_id": "TEST_AUTO_VPB_46",
+        "ticker": "VPB",
+        "user_query": "Tổng tài sản của VPBank tại ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của VPBank tại ngày 30 tháng 9 năm 2025 là 1.178.298.568 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của VPBank tại ngày 30 tháng 9 năm 2025 là 1.178.298.568 Triệu đồng."
+        ],
+        "answer": "Tổng tài sản của VPBank tại ngày 30 tháng 9 năm 2025 là 1.178.298.568 Triệu đồng."
+    },
+    "ground_truth": null
+}

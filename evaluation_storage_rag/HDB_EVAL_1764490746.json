@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:19:06.466194",
+        "session_id": "TEST_AUTO_HDB_42",
+        "ticker": "HDB",
+        "user_query": "Tổng tài sản của HDBank tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của HDBank tại ngày 30/09/2025 là 781.937.368 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của HDBank tại ngày 30/09/2025 là 781.937.368 Triệu đồng."
+        ],
+        "answer": "Tổng tài sản của HDBank tại ngày 30/09/2025 là 781.937.368 Triệu đồng."
+    },
+    "ground_truth": null
+}

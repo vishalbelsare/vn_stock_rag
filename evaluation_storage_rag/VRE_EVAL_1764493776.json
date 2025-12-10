@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:09:36.576278",
+        "session_id": "TEST_AUTO_UNKNOWN_53",
+        "ticker": "VRE",
+        "user_query": "Tổng tài sản của Vincom Retail tại thời điểm 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Vincom Retail tại thời điểm 30/09/2025 là 61.264.693 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Vincom Retail tại thời điểm 30/09/2025 là 61.264.693 Triệu VND."
+        ],
+        "answer": "Tổng tài sản của Vincom Retail tại thời điểm 30/09/2025 là 61.264.693 Triệu VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:07:56.334879",
+        "session_id": "TEST_AUTO_VPB_48",
+        "ticker": "VPB",
+        "user_query": "Tổng lợi nhuận trước thuế của VPBank trong Quý 3 năm 2025 đạt bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng lợi nhuận trước thuế của VPBank trong Quý 3 năm 2025 đạt 9.166.297 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng lợi nhuận trước thuế của VPBank trong Quý 3 năm 2025 đạt 9.166.297 Triệu đồng."
+        ],
+        "answer": "Tổng lợi nhuận trước thuế của VPBank trong Quý 3 năm 2025 đạt 9.166.297 Triệu đồng."
+    },
+    "ground_truth": null
+}

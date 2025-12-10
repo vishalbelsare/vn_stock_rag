@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:11:34.109492",
+        "session_id": "TEST_AUTO_BID_22",
+        "ticker": "BID",
+        "user_query": "Tổng tài sản của BIDV (BID) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 3,071,970,196 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 3,071,970,196 Triệu VND."
+        ],
+        "answer": "Tổng tài sản của BIDV (BID) tại ngày 30 tháng 09 năm 2025 là 3,071,970,196 Triệu VND."
+    },
+    "ground_truth": null
+}

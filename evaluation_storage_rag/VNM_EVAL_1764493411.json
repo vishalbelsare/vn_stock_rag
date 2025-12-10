@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:03:31.915189",
+        "session_id": "TEST_AUTO_UNKNOWN_36",
+        "ticker": "VNM",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vinamilk trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vinamilk trong Quý 3 năm 2025 là 16.953.231.537.863 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vinamilk trong Quý 3 năm 2025 là 16.953.231.537.863 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vinamilk trong Quý 3 năm 2025 là 16.953.231.537.863 VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:15:43.308337",
+        "session_id": "TEST_AUTO_FPT_33",
+        "ticker": "FPT",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của FPT trong kỳ kế toán kết thúc ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của FPT trong kỳ kế toán kết thúc ngày 30/09/2025 là 6.027.593.339.108 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của FPT trong kỳ kế toán kết thúc ngày 30/09/2025 là 6.027.593.339.108 VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của FPT trong kỳ kế toán kết thúc ngày 30/09/2025 là 6.027.593.339.108 VND."
+    },
+    "ground_truth": null
+}

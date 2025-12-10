@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:05:20.201607",
+        "session_id": "TEST_AUTO_BCM_5",
+        "ticker": "BCM",
+        "user_query": "Doanh thu bán hàng và cung cấp dịch vụ của Becamex (BCM) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu bán hàng và cung cấp dịch vụ của Becamex (BCM) trong Quý 3 năm 2025 là 851.829.440.858."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu bán hàng và cung cấp dịch vụ của Becamex (BCM) trong Quý 3 năm 2025 là 851.829.440.858."
+        ],
+        "answer": "Doanh thu bán hàng và cung cấp dịch vụ của Becamex (BCM) trong Quý 3 năm 2025 là 851.829.440.858 VND."
+    },
+    "ground_truth": null
+}

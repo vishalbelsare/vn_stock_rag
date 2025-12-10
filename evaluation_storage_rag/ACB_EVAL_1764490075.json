@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:07:55.935143",
+        "session_id": "TEST_AUTO_ACB_12",
+        "ticker": "ACB",
+        "user_query": "Tổng tài sản của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 948.549 .176 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 948.549 .176 Triệu đồng."
+        ],
+        "answer": "Tổng tài sản của Ngân hàng Á Châu (ACB) tại ngày 30 tháng 09 năm 2025 là 948.549.176 Triệu đồng."
+    },
+    "ground_truth": null
+}

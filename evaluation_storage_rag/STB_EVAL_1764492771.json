@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:52:51.429507",
+        "session_id": "TEST_AUTO_UNKNOWN_10",
+        "ticker": "STB",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Sacombank trong 9 tháng đầu năm 2025 trong báo cáo tài chính là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Sacombank trong 9 tháng đầu năm 2025 là 34,871,233 triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Sacombank trong 9 tháng đầu năm 2025 là 34,871,233 triệu VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của Sacombank trong 9 tháng đầu năm 2025 là 34,871,233 triệu VND."
+    },
+    "ground_truth": null
+}

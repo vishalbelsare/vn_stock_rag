@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:18:23.361241",
+        "session_id": "TEST_AUTO_HDB_40",
+        "ticker": "HDB",
+        "user_query": "Thu nhập lãi thuần của HDBank trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của HDBank trong Quý 3 năm 2025 là 7.763.322 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của HDBank trong Quý 3 năm 2025 là 7.763.322 Triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của HDBank trong Quý 3 năm 2025 là 7.763.322 Triệu đồng."
+    },
+    "ground_truth": null
+}

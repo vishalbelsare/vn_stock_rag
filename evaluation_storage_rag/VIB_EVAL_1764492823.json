@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:53:43.978559",
+        "session_id": "TEST_AUTO_VIB_11",
+        "ticker": "VIB",
+        "user_query": "Thu nhập lãi thuần của VIB trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của VIB trong 9 tháng đầu năm 2025 là 2.773.886 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của VIB trong 9 tháng đầu năm 2025 là 2.773.886 triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của VIB trong 9 tháng đầu năm 2025 là 2.773.886 triệu đồng."
+    },
+    "ground_truth": null
+}

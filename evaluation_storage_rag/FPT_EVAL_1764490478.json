@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:14:38.058220",
+        "session_id": "TEST_AUTO_FPT_30",
+        "ticker": "FPT",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của FPT trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của FPT trong Quý 3 năm 2025 là 17.204.521.225.302 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của FPT trong Quý 3 năm 2025 là 17.204.521.225.302 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của FPT trong Quý 3 năm 2025 là 17.204.521.225.302 VND."
+    },
+    "ground_truth": null
+}

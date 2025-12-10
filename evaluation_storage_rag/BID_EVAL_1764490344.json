@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:12:24.311561",
+        "session_id": "TEST_AUTO_BID_24",
+        "ticker": "BID",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV (BID) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV lũy kế 9 tháng đầu năm 2025 là 111,840,462 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV lũy kế 9 tháng đầu năm 2025 là 111,840,462 Triệu VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của BIDV lũy kế 9 tháng đầu năm 2025 là 111,840,462 Triệu VND."
+    },
+    "ground_truth": null
+}

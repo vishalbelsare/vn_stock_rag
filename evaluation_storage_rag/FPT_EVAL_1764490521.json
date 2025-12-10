@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:15:21.657412",
+        "session_id": "TEST_AUTO_FPT_32",
+        "ticker": "FPT",
+        "user_query": "Tổng tài sản của FPT tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của FPT tại ngày 30/09/2025 là 82.738.304.930.449 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của FPT tại ngày 30/09/2025 là 82.738.304.930.449 VND."
+        ],
+        "answer": "Tổng tài sản của FPT tại ngày 30/09/2025 là 82.738.304.930.449 VND."
+    },
+    "ground_truth": null
+}

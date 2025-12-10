@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:49:23.127090",
+        "session_id": "TEST_AUTO_LPB_1",
+        "ticker": "LPB",
+        "user_query": "Cộng doanh thu hoạt động của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Cộng doanh thu hoạt động của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là 430.396.894.089 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Cộng doanh thu hoạt động của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là 430.396.894.089 VND."
+        ],
+        "answer": "Cộng doanh thu hoạt động của Chứng khoán LPBank (LPB) trong Quý 3 năm 2025 là 430.396.894.089 VND."
+    },
+    "ground_truth": null
+}

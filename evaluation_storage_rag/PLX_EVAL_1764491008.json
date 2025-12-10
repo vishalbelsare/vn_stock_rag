@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:23:28.443669",
+        "session_id": "TEST_AUTO_UNKNOWN_53",
+        "ticker": "PLX",
+        "user_query": "Tổng nợ phải trả của Petrolimex ghi nhận tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Petrolimex ghi nhận tại ngày 30 tháng 09 năm 2025 là 33.705.732.847.845 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Petrolimex ghi nhận tại ngày 30 tháng 09 năm 2025 là 33.705.732.847.845 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Petrolimex ghi nhận tại ngày 30 tháng 09 năm 2025 là 33.705.732.847.845 VND."
+    },
+    "ground_truth": null
+}

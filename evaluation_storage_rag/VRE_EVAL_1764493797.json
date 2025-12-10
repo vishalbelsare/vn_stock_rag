@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:09:57.710344",
+        "session_id": "TEST_AUTO_UNKNOWN_54",
+        "ticker": "VRE",
+        "user_query": "Nợ phải trả của Vincom Retail tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Nợ phải trả của Vincom Retail tại ngày 30/09/2025 là 15.554.965 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Nợ phải trả của Vincom Retail tại ngày 30/09/2025 là 15.554.965 Triệu VND."
+        ],
+        "answer": "Nợ phải trả của Vincom Retail tại ngày 30/09/2025 là 15.554.965 Triệu VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:26:34.442661",
+        "session_id": "TEST_AUTO_UNKNOWN_61",
+        "ticker": "MSN",
+        "user_query": "Lợi nhuận kế toán trước thuế của Masan Group trong Quý 3 năm 2025 đạt bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận kế toán trước thuế của Masan Group trong Quý 3 năm 2025 đạt 1.948.255.643.435 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận kế toán trước thuế của Masan Group trong Quý 3 năm 2025 đạt 1.948.255.643.435 VND."
+        ],
+        "answer": "Lợi nhuận kế toán trước thuế của Masan Group trong Quý 3 năm 2025 đạt 1.948.255.643.435 VND."
+    },
+    "ground_truth": null
+}

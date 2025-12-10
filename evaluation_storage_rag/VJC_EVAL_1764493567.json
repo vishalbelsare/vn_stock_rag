@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:06:07.098919",
+        "session_id": "TEST_AUTO_UNKNOWN_43",
+        "ticker": "VJC",
+        "user_query": "Tổng tài sản của Vietjet tại ngày 30 tháng 9 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Vietjet tại ngày 30 tháng 9 năm 2025 là 104.742.436.712.889 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Vietjet tại ngày 30 tháng 9 năm 2025 là 104.742.436.712.889 VND."
+        ],
+        "answer": "Tổng tài sản của Vietjet tại ngày 30 tháng 9 năm 2025 là 104.742.436.712.889 VND."
+    },
+    "ground_truth": null
+}

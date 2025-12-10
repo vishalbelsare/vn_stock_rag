@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:32:33.627353",
+        "session_id": "TEST_AUTO_SHB_78",
+        "ticker": "SHB",
+        "user_query": "Tổng nợ phải trả của Ngân hàng SHB tính đến ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng Nợ phải trả của Ngân hàng SHB tính đến ngày 30/09/2025 là 786.861 .281 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng Nợ phải trả của Ngân hàng SHB tính đến ngày 30/09/2025 là 786.861 .281 Triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của Ngân hàng SHB tính đến ngày 30/09/2025 là 786.861.281 triệu đồng."
+    },
+    "ground_truth": null
+}

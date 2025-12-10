@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:04:33.246795",
+        "session_id": "TEST_AUTO_CTG_3",
+        "ticker": "CTG",
+        "user_query": "Tổng nợ phải trả của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là 2.591.669.938 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là 2.591.669.938 triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của VietinBank (CTG) tại ngày 30 tháng 09 năm 2025 là 2.591.669.938 triệu đồng."
+    },
+    "ground_truth": null
+}

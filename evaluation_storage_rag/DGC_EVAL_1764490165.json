@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:09:25.022705",
+        "session_id": "TEST_AUTO_DGC_16",
+        "ticker": "DGC",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 804.394.485.516 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 804.394.485.516 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 804.394.485.516 VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:04:36.864007",
+        "session_id": "TEST_AUTO_UNKNOWN_39",
+        "ticker": "VNM",
+        "user_query": "Nợ phải trả của Vinamilk tại thời điểm 30/9/2025 chiếm bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Nợ phải trả của Vinamilk tại thời điểm 30/9/2025 chiếm 17.725.023.298.796 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Nợ phải trả của Vinamilk tại thời điểm 30/9/2025 chiếm 17.725.023.298.796 VND."
+        ],
+        "answer": "Nợ phải trả của Vinamilk tại thời điểm 30/9/2025 chiếm 17.725.023.298.796 VND."
+    },
+    "ground_truth": null
+}

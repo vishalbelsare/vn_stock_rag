@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:58:43.436303",
+        "session_id": "TEST_AUTO_VCB_24",
+        "ticker": "VCB",
+        "user_query": "Tổng nợ phải trả của VCB tại thời điểm 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của VCB tại thời điểm 30/09/2025 là 14.071.347.705.364 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của VCB tại thời điểm 30/09/2025 là 14.071.347.705.364 VND."
+        ],
+        "answer": "Tổng nợ phải trả của VCB tại thời điểm 30/09/2025 là 14.071.347.705.364 VND."
+    },
+    "ground_truth": null
+}

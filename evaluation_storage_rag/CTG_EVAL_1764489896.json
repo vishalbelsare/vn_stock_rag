@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:04:56.155901",
+        "session_id": "TEST_AUTO_CTG_4",
+        "ticker": "CTG",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VietinBank (CTG) lũy kế 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VietinBank (CTG) lũy kế 9 tháng đầu năm 2025 là 85.022.836 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VietinBank (CTG) lũy kế 9 tháng đầu năm 2025 là 85.022.836 triệu đồng."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của VietinBank (CTG) lũy kế 9 tháng đầu năm 2025 là 85.022.836 triệu đồng."
+    },
+    "ground_truth": null
+}

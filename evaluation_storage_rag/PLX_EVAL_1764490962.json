@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:22:42.066466",
+        "session_id": "TEST_AUTO_UNKNOWN_51",
+        "ticker": "PLX",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Petrolimex trong Quý 3 năm 2025 đạt mức nào?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Petrolimex trong Quý 3 năm 2025 đạt mức 527.524.735.210 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của Petrolimex trong Quý 3 năm 2025 đạt mức 527.524.735.210 VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Petrolimex trong Quý 3 năm 2025 đạt 527.524.735.210 VND."
+    },
+    "ground_truth": null
+}

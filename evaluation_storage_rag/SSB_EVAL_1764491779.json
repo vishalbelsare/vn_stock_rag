@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:36:19.153521",
+        "session_id": "TEST_AUTO_UNKNOWN_88",
+        "ticker": "SSB",
+        "user_query": "Lợi nhuận sau thuế của SeABank lũy kế 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế của SeABank lũy kế 9 tháng đầu năm 2025 là 5.405.250 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế của SeABank lũy kế 9 tháng đầu năm 2025 là 5.405.250 Triệu đồng."
+        ],
+        "answer": "Lợi nhuận sau thuế của SeABank lũy kế 9 tháng đầu năm 2025 là 5.405.250 Triệu đồng."
+    },
+    "ground_truth": null
+}

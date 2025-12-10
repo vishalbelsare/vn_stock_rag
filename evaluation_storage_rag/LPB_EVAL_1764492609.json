@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:50:09.402064",
+        "session_id": "TEST_AUTO_LPB_3",
+        "ticker": "LPB",
+        "user_query": "Tổng tài sản của Chứng khoán LPBank (LPB) tại ngày 30 tháng 09 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Chứng khoán LPBank (LPB) tại ngày 30 tháng 9 năm 2025 là 18.269.759.231.794 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Chứng khoán LPBank (LPB) tại ngày 30 tháng 9 năm 2025 là 18.269.759.231.794 VND."
+        ],
+        "answer": "Tổng tài sản của Chứng khoán LPBank (LPB) tại ngày 30 tháng 9 năm 2025 là 18.269.759.231.794 VND."
+    },
+    "ground_truth": null
+}

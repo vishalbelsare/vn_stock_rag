@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:29:38.977056",
+        "session_id": "TEST_AUTO_MWG_70",
+        "ticker": "MWG",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Thế Giới Di Động (MWG) trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Thế Giới Di Động (MWG) trong 9 tháng đầu năm 2025 là 113.607.434.230.825 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Thế Giới Di Động (MWG) trong 9 tháng đầu năm 2025 là 113.607.434.230.825 VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Thế Giới Di Động (MWG) trong 9 tháng đầu năm 2025 là 113.607.434.230.825 VND."
+    },
+    "ground_truth": null
+}

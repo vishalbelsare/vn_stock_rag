@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:38:21.588465",
+        "session_id": "TEST_AUTO_SSI_93",
+        "ticker": "SSI",
+        "user_query": "Tổng nợ phải trả của Chứng khoán SSI tại thời điểm 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của Chứng khoán SSI tại thời điểm 30/09/2025 là 69.456.381.325.815 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của Chứng khoán SSI tại thời điểm 30/09/2025 là 69.456.381.325.815 VND."
+        ],
+        "answer": "Tổng nợ phải trả của Chứng khoán SSI tại thời điểm 30/09/2025 là 69.456.381.325.815 VND."
+    },
+    "ground_truth": null
+}

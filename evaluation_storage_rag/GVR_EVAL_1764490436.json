@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:13:56.912009",
+        "session_id": "TEST_AUTO_GVR_28",
+        "ticker": "GVR",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của GVR trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của GVR trong 9 tháng đầu năm 2025 là 4.348.387.841.590 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của GVR trong 9 tháng đầu năm 2025 là 4.348.387.841.590 VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của GVR trong 9 tháng đầu năm 2025 là 4.348.387.841.590 VND."
+    },
+    "ground_truth": null
+}

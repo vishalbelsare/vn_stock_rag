@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:05:23.385437",
+        "session_id": "TEST_AUTO_UNKNOWN_41",
+        "ticker": "VJC",
+        "user_query": "Doanh thu bán hàng và cung cấp dịch vụ của Vietjet trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu bán hàng và cung cấp dịch vụ của Vietjet trong Quý 3 năm 2025 là 16.728.207.200.018 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu bán hàng và cung cấp dịch vụ của Vietjet trong Quý 3 năm 2025 là 16.728.207.200.018 VND."
+        ],
+        "answer": "Doanh thu bán hàng và cung cấp dịch vụ của Vietjet trong Quý 3 năm 2025 là 16.728.207.200.018 VND."
+    },
+    "ground_truth": null
+}

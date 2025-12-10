@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:35:56.132819",
+        "session_id": "TEST_AUTO_UNKNOWN_87",
+        "ticker": "SSB",
+        "user_query": "Tổng nợ phải trả của SeABank tính đến ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng nợ phải trả của SeABank tính đến ngày 30/09/2025 là 340.540.436 Triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng nợ phải trả của SeABank tính đến ngày 30/09/2025 là 340.540.436 Triệu đồng."
+        ],
+        "answer": "Tổng nợ phải trả của SeABank tính đến ngày 30/09/2025 là 340.540.436 Triệu đồng."
+    },
+    "ground_truth": null
+}

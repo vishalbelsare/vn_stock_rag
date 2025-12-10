@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:02:21.188057",
+        "session_id": "TEST_AUTO_UNKNOWN_33",
+        "ticker": "VIC",
+        "user_query": "Tổng tài sản của Tập đoàn Vingroup tại thời điểm 30/9/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng tài sản của Tập đoàn Vingroup tại ngày 30 tháng 9 năm 2025 là 1.087.870.325 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng tài sản của Tập đoàn Vingroup tại ngày 30 tháng 9 năm 2025 là 1.087.870.325 Triệu VND."
+        ],
+        "answer": "Tổng tài sản của Tập đoàn Vingroup tại ngày 30 tháng 9 năm 2025 là 1.087.870.325 Triệu VND."
+    },
+    "ground_truth": null
+}

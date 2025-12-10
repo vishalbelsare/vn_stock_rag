@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:10:42.919184",
+        "session_id": "TEST_AUTO_TPB_56",
+        "ticker": "TPB",
+        "user_query": "Thu nhập lãi thuần của TPBank trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của TPBank trong Quý 3 năm 2025 là 3.237.619 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của TPBank trong Quý 3 năm 2025 là 3.237.619 Triệu VND."
+        ],
+        "answer": "Thu nhập lãi thuần của TPBank trong Quý 3 năm 2025 là 3.237.619 Triệu VND."
+    },
+    "ground_truth": null
+}

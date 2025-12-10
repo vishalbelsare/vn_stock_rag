@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:09:14.948903",
+        "session_id": "TEST_AUTO_UNKNOWN_52",
+        "ticker": "VRE",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vincom Retail trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế TNDN của Vincom Retail trong Quý 3 năm 2025 là 1.376.430 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế TNDN của Vincom Retail trong Quý 3 năm 2025 là 1.376.430 Triệu VND."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của Vincom Retail trong Quý 3 năm 2025 là 1.376.430 Triệu VND."
+    },
+    "ground_truth": null
+}

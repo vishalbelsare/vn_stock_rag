@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:37:05.881992",
+        "session_id": "TEST_AUTO_SSI_90",
+        "ticker": "SSI",
+        "user_query": "Cộng doanh thu hoạt động của Chứng khoán SSI trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Cộng doanh thu hoạt động của Chứng khoán SSI trong 9 tháng đầu năm 2025 là 9.328.977.087.703 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Cộng doanh thu hoạt động của Chứng khoán SSI trong 9 tháng đầu năm 2025 là 9.328.977.087.703 VND."
+        ],
+        "answer": "Cộng doanh thu hoạt động của Chứng khoán SSI trong 9 tháng đầu năm 2025 là 9.328.977.087.703 VND."
+    },
+    "ground_truth": null
+}

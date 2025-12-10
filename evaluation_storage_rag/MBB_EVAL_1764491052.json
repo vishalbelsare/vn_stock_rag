@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:24:12.278323",
+        "session_id": "TEST_AUTO_UNKNOWN_55",
+        "ticker": "MBB",
+        "user_query": "Thu nhập lãi thuần của Ngân hàng TMCP Quân đội (MB Bank) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Thu nhập lãi thuần của Ngân hàng TMCP Quân đội (MB Bank) trong Quý 3 năm 2025 là 12.990.524 triệu đồng."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Thu nhập lãi thuần của Ngân hàng TMCP Quân đội (MB Bank) trong Quý 3 năm 2025 là 12.990.524 triệu đồng."
+        ],
+        "answer": "Thu nhập lãi thuần của Ngân hàng TMCP Quân đội (MB Bank) trong Quý 3 năm 2025 là 12.990.524 triệu đồng."
+    },
+    "ground_truth": null
+}

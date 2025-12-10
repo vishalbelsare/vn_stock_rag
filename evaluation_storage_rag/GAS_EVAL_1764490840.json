@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:20:40.134159",
+        "session_id": "TEST_AUTO_GAS_46",
+        "ticker": "GAS",
+        "user_query": "Lợi nhuận sau thuế thu nhập doanh nghiệp của PV GAS trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lợi nhuận sau thuế thu nhập doanh nghiệp của PV GAS trong Quý 3 năm 2025 là 2.612.819.725.552."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lợi nhuận sau thuế thu nhập doanh nghiệp của PV GAS trong Quý 3 năm 2025 là 2.612.819.725.552."
+        ],
+        "answer": "Lợi nhuận sau thuế thu nhập doanh nghiệp của PV GAS trong Quý 3 năm 2025 là 2.612.819.725.552 VND."
+    },
+    "ground_truth": null
+}

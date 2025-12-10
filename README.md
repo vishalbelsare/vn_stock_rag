@@ -114,7 +114,7 @@ SMTP_PASSWORD="your_app_password"
 ```
 
 ### 3. Chuẩn bị Dữ liệu
-*   Tải thư mục `financial_reports` chứa các file PDF BCTC (nếu có) vào thư mục gốc.
+*   Tải thư mục `financial_reports` chứa các file PDF BCTC **[TẠI ĐÂY](https://drive.google.com/drive/folders/1NBpK8iOS33Ngv4Hs1I4QlV4ZJmaDy_uZ?usp=sharing)** và dán vào thư mục gốc.
 *   Khởi tạo Database:
     ```bash
     python database_manager.py

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:37:56.407952",
+        "session_id": "TEST_AUTO_SSI_92",
+        "ticker": "SSI",
+        "user_query": "Tổng cộng tài sản của Chứng khoán SSI tại ngày 30/09/2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Tổng cộng tài sản của Chứng khoán SSI tại ngày 30/09/2025 là 100.711.847.158.732 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Tổng cộng tài sản của Chứng khoán SSI tại ngày 30/09/2025 là 100.711.847.158.732 VND."
+        ],
+        "answer": "Tổng cộng tài sản của Chứng khoán SSI tại ngày 30/09/2025 là 100.711.847.158.732 VND."
+    },
+    "ground_truth": null
+}

@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T16:01:34.393185",
+        "session_id": "TEST_AUTO_UNKNOWN_31",
+        "ticker": "VIC",
+        "user_query": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vingroup trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vingroup trong Quý 3 năm 2025 là 39.135.103 Triệu VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vingroup trong Quý 3 năm 2025 là 39.135.103 Triệu VND."
+        ],
+        "answer": "Doanh thu thuần về bán hàng và cung cấp dịch vụ của Vingroup trong Quý 3 năm 2025 là 39.135.103 Triệu VND."
+    },
+    "ground_truth": null
+}

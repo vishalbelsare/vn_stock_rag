@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:34:45.901281",
+        "session_id": "TEST_AUTO_SAB_84",
+        "ticker": "SAB",
+        "user_query": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SABECO trong 9 tháng đầu năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SABECO trong 9 tháng đầu năm 2025 là 3,351,189,307,091 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SABECO trong 9 tháng đầu năm 2025 là 3,351,189,307,091 VND."
+        ],
+        "answer": "Lưu chuyển tiền thuần từ hoạt động kinh doanh của SABECO trong 9 tháng đầu năm 2025 là 3,351,189,307,091 VND."
+    },
+    "ground_truth": null
+}

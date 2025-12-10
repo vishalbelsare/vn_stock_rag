@@ -1,0 +1,21 @@
+{
+    "meta": {
+        "timestamp": "2025-11-30T15:09:04.136913",
+        "session_id": "TEST_AUTO_DGC_15",
+        "ticker": "DGC",
+        "user_query": "Doanh thu bán hàng và cung cấp dịch vụ của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là bao nhiêu?"
+    },
+    "sub_agents_retrieval": {
+        "market_news": null,
+        "technical": null,
+        "financial_competitor": null,
+        "internal_rag": "Doanh thu bán hàng và cung cấp dịch vụ của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 2.818.109.455.903 VND."
+    },
+    "final_generation": {
+        "context_provided": [
+            "Doanh thu bán hàng và cung cấp dịch vụ của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 2.818.109.455.903 VND."
+        ],
+        "answer": "Doanh thu bán hàng và cung cấp dịch vụ của Hóa chất Đức Giang (DGC) trong Quý 3 năm 2025 là 2.818.109.455.903 VND."
+    },
+    "ground_truth": null
+}
