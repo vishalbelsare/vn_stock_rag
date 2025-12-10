@@ -1,50 +1,50 @@
 # VnStock Multi-Agent RAG: Hệ thống Phân tích Đầu tư Thông minh
 
-> **Nền tảng phân tích chứng khoán chuyên sâu sử dụng kiến trúc Multi-Agent, tích hợp RAG (Retrieval-Augmented Generation) và Automation Pipeline.**
+> **Nền tảng phân tích chứng khoán chuyên sâu sử dụng kiến trúc Multi-Agent, tích hợp RAG (Retrieval-Augmented Generation).**
 
 ![Architecture Diagram](https://raw.githubusercontent.com/meth04/vn_stock_rag/main/assets/pipeline.png)
 
 ## 📖 Giới thiệu
 
-**VnStock RAG** là giải pháp công nghệ tài chính (Fintech) tự động hóa quy trình nghiên cứu đầu tư. Thay vì phụ thuộc vào việc thu thập dữ liệu thủ công, hệ thống vận hành một tập hợp các **AI Agents** chuyên biệt, phối hợp để thực hiện:
+**VnStock RAG** là giải pháp công nghệ tài chính tự động hóa quy trình phân tích cổ phiếu. Thay vì phụ thuộc vào việc thu thập dữ liệu thủ công, hệ thống vận hành một tập hợp các **AI Agents** chuyên biệt, phối hợp để thực hiện:
 1.  Thu thập dữ liệu thời gian thực (Real-time Data).
 2.  Phân tích đa chiều (Vĩ mô, Kỹ thuật, Cơ bản).
-3.  Xử lý tài liệu tài chính phức tạp (Financial Report OCR & RAG).
+3.  Xử lý tài liệu tài chính.
 4.  Tổng hợp và xuất bản báo cáo khuyến nghị chuẩn mực.
 
-Hệ thống bao gồm giao diện **Chatbot tương tác** và dịch vụ **Newsletter Automation** chạy nền (Background Scheduler).
+Hệ thống bao gồm giao diện **Chatbot tương tác** và dịch vụ **Newsletter Automation**.
 
 ---
 
 ## ✨ Tính năng Kỹ thuật Nổi bật
 
-### 1. Xử lý Ngôn ngữ & Hiểu ý định người dùng (Intent Routing)
-- Sử dụng **Google Gemini** làm bộ não trung tâm để phân loại ý định người dùng (Intent Classification).
+### 1. Xử lý Ngôn ngữ & Hiểu ý định người dùng
+- Sử dụng Google Gemini là lõi để phân loại ý định người dùng.
 - Tự động điều hướng yêu cầu: Chat hỏi đáp số liệu nhanh (RAG Query) hoặc Yêu cầu phân tích chuyên sâu (Full Analysis Workflow).
 
-### 2. Phân tích Đa lớp (Multi-layered Analysis)
+### 2. Phân tích Đa lớp 
 Hệ thống không chỉ tóm tắt văn bản mà thực hiện các tác vụ chuyên môn:
 - **Market Intelligence:** Quét và lọc tin tức vĩ mô, chính sách tiền tệ tác động đến ngành.
-- **Technical Analysis:** Tự động vẽ biểu đồ nến (Candlestick) tích hợp SMA20/50, tính toán RSI, MACD và xác định vùng kháng cự/hỗ trợ bằng Python (Matplotlib/Mplfinance).
-- **Fundamental Analysis:** Truy xuất dữ liệu tài chính (P/E, P/B, ROE) và so sánh tương quan với nhóm đối thủ cạnh tranh (Peer Comparison).
+- **Technical Analysis:** Tự động vẽ biểu đồ nến tích hợp SMA20/50, tính toán RSI, MACD và xác định vùng kháng cự/hỗ trợ bằng Python (Matplotlib/Mplfinance).
+- **Fundamental Analysis:** Truy xuất dữ liệu tài chính (P/E, P/B, ROE) và so sánh tương quan với nhóm đối thủ cạnh tranh.
 
 ### 3. RAG Engine cho Báo cáo Tài chính
 - **Ingestion Pipeline:** Tích hợp **MistralOCR** để số hóa các file PDF báo cáo tài chính (dạng ảnh/scan).
 - **Vector Store:** Lưu trữ dữ liệu vector để truy xuất chính xác các chỉ số tài chính phức tạp.
-- **Context-aware:** Giảm thiểu ảo giác (Hallucination) bằng cách buộc model trích dẫn nguồn dữ liệu gốc.
+- **Context-aware:** Giảm thiểu hiện tượng AI Hallucination bằng cách buộc model trích dẫn nguồn dữ liệu gốc.
 
-### 4. Hệ thống Tự động hóa & Phân phối (Automation)
-- **Scheduler:** Tiến trình chạy nền (Cron job) tự động kích hoạt phân tích danh mục theo dõi vào 07:00 sáng hàng ngày.
+### 4. Tự động gửi Email
+- **Scheduler:** Tiến trình chạy nền tự động kích hoạt phân tích danh mục theo dõi vào 07:00 sáng hàng ngày.
 - **Reporting:** Tự động biên tập nội dung Markdown và render thành file PDF chuyên nghiệp.
 - **Delivery:** Gửi email đính kèm báo cáo tới danh sách người dùng đăng ký.
 
 ---
 
-## 🏗️ Kiến trúc Hệ thống (System Architecture)
+## 🏗️ Kiến trúc Hệ thống
 
 Dự án được xây dựng trên nền tảng **CrewAI**, quản lý luồng làm việc của 5 Agents chuyên biệt:
 
-| Agent (Tác nhân) | Vai trò & Nhiệm vụ Kỹ thuật |
+| Agent | Vai trò & Nhiệm vụ Kỹ thuật |
 | :--- | :--- |
 | **Market Analyst** | Sử dụng `SerperDevTool` để thu thập tin tức, lọc nhiễu và đánh giá tác động vĩ mô (Sentiment Analysis). |
 | **Technical Analyst** | Gọi API `Vnstock` lấy dữ liệu OHLCV, sử dụng `ChartingTool` để visualize dữ liệu và đưa ra tín hiệu kỹ thuật. |
@@ -54,17 +54,16 @@ Dự án được xây dựng trên nền tảng **CrewAI**, quản lý luồng 
 
 ---
 
-## 🧪 Kiểm soát Chất lượng (Evaluation Pipeline)
+## 🧪 Đánh giá chất lượng kết quả
 
-Khác với các dự án chatbot thông thường, VnStock RAG tích hợp quy trình đánh giá hiệu năng nghiêm ngặt (Evaluation-as-Code):
-
-1.  **Component-wise Evaluation:** Đánh giá riêng lẻ từng Agent bằng phương pháp **LLM-as-a-Judge** với bộ tiêu chí (Rubrics) tùy chỉnh.
+1.  **Component-wise Evaluation:** Đánh giá riêng lẻ từng Agent bằng phương pháp **LLM-as-a-Judge** với bộ tiêu chí (Rubrics) tùy chỉnh:
+    * *Technical-analyst* có vẽ và trả về đường dẫn biểu đồ không? Có tính toán đầy đủ các chỉ báo RSI, MACD, MA không? Có xác định rõ xu hướng và vùng hỗ trợ kháng cự?
+    * *Financial-competitor* Truy xuất đầy đủ bộ chỉ số P/E, P/B, ROE không?
+    * *Market-news-analyst* Có tìm được 3 tin tức trong 7 ngày gần nhất không? Có dẫn nguồn và ngày tháng cụ thể không?
 2.  **RAG Evaluation:** Sử dụng thư viện **Ragas** để đo lường các chỉ số:
     *   *Faithfulness:* Độ trung thực của câu trả lời so với dữ liệu gốc.
     *   *Context Recall:* Khả năng tìm kiếm thông tin trong tài liệu dài.
     *   *Answer Correctness:* Độ chính xác so với Ground Truth.
-3.  **Monitoring Dashboard:** Tích hợp **Streamlit Dashboard** để trực quan hóa điểm số và truy vết lỗi (Debug) của hệ thống.
-
 ---
 
 ## 🛠️ Tech Stack
@@ -120,7 +119,7 @@ SMTP_PASSWORD="your_app_password"
     python database_manager.py
     ```
 
-### 4. Khởi chạy (Docker Compose)
+### 4. Khởi chạy (Docker-compose)
 Chạy lệnh sau để build và start toàn bộ dịch vụ:
 
 ```bash

@@ -163,14 +163,13 @@ def job():
 
 
 if __name__ == "__main__":
-    # print("Khởi chạy Scheduler - Hệ thống gửi bản tin tự động.")
-    # print("Công việc sẽ được thực thi vào 08:00 mỗi sáng.")
+    print("Khởi chạy Scheduler - Hệ thống gửi bản tin tự động.")
+    print("Công việc sẽ được thực thi vào 08:00 mỗi sáng.")
     
-    # schedule.every().day.at("08:00").do(job)
+    schedule.every().day.at("07:00").do(job)
 
-    # # Chạy thử 1 lần ngay lập tức để kiểm tra
-    print("Thử nghiệm ngay bây giờ...")
-    job()
+    # print("Thử nghiệm ngay bây giờ...")
+    # job()
 
     while True:
         schedule.run_pending()
