@@ -1,6 +1,6 @@
 # VnStock Multi-Agent RAG: Hệ thống Phân tích Đầu tư Thông minh
 
-> **Nền tảng phân tích chứng khoán chuyên sâu sử dụng kiến trúc Multi-Agent, tích hợp RAG (Retrieval-Augmented Generation).**
+> Nền tảng phân tích chứng khoán chuyên sâu sử dụng kiến trúc Multi-Agent, tích hợp RAG (Retrieval-Augmented Generation).
 
 ![Architecture Diagram](https://raw.githubusercontent.com/meth04/vn_stock_rag/main/assets/pipeline.png)
 
